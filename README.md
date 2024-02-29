@@ -19,7 +19,6 @@ Installed Playground Packages
 | [playground](https://github.com/gammamatrix/playground) | A base package for Laravel integration. |
 | [playground-auth](https://github.com/gammamatrix/playground-auth) | Provide authentication for Laravel applications. Allows using Sanctum. |
 | [playground-blade](https://github.com/gammamatrix/playground-blade) | Provides Blade UI handling. |
-| [playground-http](https://github.com/gammamatrix/playground-http) | Provide http content and filter handling for controllers. |
 | [playground-login-blade](https://github.com/gammamatrix/playgroundlogin-blade) | Provides a Blade UI for authentication handling. |
 | [playground-site-blade](https://github.com/gammamatrix/playgroundsite-blade) | Provides Blade UI handling for standard website. |
 | [playground-test](https://github.com/gammamatrix/playground-test) | A test helper for Playground Laravel packages. |

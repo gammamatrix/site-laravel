@@ -29,7 +29,6 @@
             <directory>vendor/gammamatrix/playground/tests/Unit</directory>
             <directory>vendor/gammamatrix/playground-auth/tests/Unit</directory>
             <directory>vendor/gammamatrix/playground-blade/tests/Unit</directory>
-            <directory>vendor/gammamatrix/playground-http/tests/Unit</directory>
             <directory>vendor/gammamatrix/playground-test/tests/Unit</directory>
         </testsuite>
         <testsuite name="Feature">
@@ -37,7 +36,6 @@
             <directory>vendor/gammamatrix/playground/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-auth/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-blade/tests/Feature</directory>
-            <directory>vendor/gammamatrix/playground-http/tests/Feature</directory>
             <!-- <directory>vendor/gammamatrix/playground-login-blade/tests/Feature</directory> -->
             <directory>vendor/gammamatrix/playground-site-blade/tests/Feature</directory>
             <directory>vendor/gammamatrix/playground-test/tests/Feature</directory>
@@ -70,7 +68,6 @@
             <directory suffix=".php">vendor/gammamatrix/playground/src</directory>
             <directory suffix=".php">vendor/gammamatrix/playground-auth/src</directory>
             <directory suffix=".php">vendor/gammamatrix/playground-blade/src</directory>
-            <directory suffix=".php">vendor/gammamatrix/playground-http/src</directory>
             <!-- <directory suffix=".php">vendor/gammamatrix/playground-login-blade/src</directory> -->
             <directory suffix=".php">vendor/gammamatrix/playground-matrix/src</directory>
             <directory suffix=".php">vendor/gammamatrix/playground-site-blade/src</directory>
