@@ -6,7 +6,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.1",
-        "gammamatrix/playground-site-blade": "^73.0@dev",
+        "gammamatrix/playground-site-blade": "dev-develop|dev-master|^73.0",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
@@ -14,7 +14,7 @@
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
-        "gammamatrix/playground-test": "dev-develop",
+        "gammamatrix/playground-test": "dev-develop|dev-master|^73.0",
         "laravel/pint": "^1.0",
         "laravel/sail": "^1.18",
         "mockery/mockery": "^1.4.4",
@@ -32,7 +32,17 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "Tests\\": "tests/",
+            "Tests\\Feature\\Playground\\": "vendor/gammamatrix/playground/tests/Feature/",
+            "Tests\\Unit\\Playground\\": "vendor/gammamatrix/playground/tests/Unit/",
+            "Tests\\Feature\\Playground\\Auth\\": "vendor/gammamatrix/playground-auth/tests/Feature/",
+            "Tests\\Unit\\Playground\\Auth\\": "vendor/gammamatrix/playground-auth/tests/Unit/",
+            "Tests\\Feature\\Playground\\Blade\\": "vendor/gammamatrix/playground-blade/tests/Feature/",
+            "Tests\\Unit\\Playground\\Blade\\": "vendor/gammamatrix/playground-blade/tests/Unit/",
+            "Tests\\Feature\\Playground\\Login\\Blade\\": "vendor/gammamatrix/playground-login-blade/tests/Feature/",
+            "Tests\\Feature\\Playground\\Site\\Blade\\": "vendor/gammamatrix/playground-site-blade/tests/Feature/",
+            "Tests\\Feature\\Playground\\Test\\": "vendor/gammamatrix/playground-test/tests/Feature/",
+            "Tests\\Unit\\Playground\\Test\\": "vendor/gammamatrix/playground-test/tests/Unit/"
         }
     },
     "scripts": {
