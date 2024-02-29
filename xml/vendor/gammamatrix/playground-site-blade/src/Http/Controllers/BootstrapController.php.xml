@@ -1,0 +1,559 @@
+<?xml version="1.0"?>
+<phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
+  <file name="BootstrapController.php" path="/vendor/gammamatrix/playground-site-blade/src/Http/Controllers">
+    <totals>
+      <lines total="68" comments="16" code="52" executable="24" executed="24" percent="100.00"/>
+      <methods count="2" tested="2" percent="100.00"/>
+      <functions count="0" tested="0" percent="0"/>
+      <classes count="1" tested="1" percent="100.00"/>
+      <traits count="0" tested="0" percent="0"/>
+    </totals>
+    <class name="Playground\Site\Blade\Http\Controllers\BootstrapController" start="15" executable="24" executed="24" crap="6">
+      <namespace name="Playground\Site\Blade\Http\Controllers"/>
+      <method name="index" signature="index(Illuminate\Http\Request $request): Illuminate\View\View" start="22" end="33" crap="1" executable="8" executed="8" coverage="100"/>
+      <method name="theme" signature="theme(Illuminate\Http\Request $request): \Illuminate\Http\RedirectResponse|\Illuminate\View\View" start="40" end="66" crap="5" executable="16" executed="16" coverage="100"/>
+    </class>
+    <coverage>
+      <line nr="24">
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_bootstrap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_json_bootstrap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_bootstrap_as_vendor_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_json_bootstrap_as_wheel_and_succeed"/>
+      </line>
+      <line nr="26">
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_bootstrap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_json_bootstrap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_bootstrap_as_vendor_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_json_bootstrap_as_wheel_and_succeed"/>
+      </line>
+      <line nr="27">
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_bootstrap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_json_bootstrap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_bootstrap_as_vendor_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_json_bootstrap_as_wheel_and_succeed"/>
+      </line>
+      <line nr="28">
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_bootstrap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_json_bootstrap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_bootstrap_as_vendor_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_json_bootstrap_as_wheel_and_succeed"/>
+      </line>
+      <line nr="29">
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_bootstrap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_json_bootstrap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_bootstrap_as_vendor_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_json_bootstrap_as_wheel_and_succeed"/>
+      </line>
+      <line nr="31">
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_bootstrap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_json_bootstrap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_bootstrap_as_vendor_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_json_bootstrap_as_wheel_and_succeed"/>
+      </line>
+      <line nr="42">
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_guest_with_preview_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_partner_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_sales_and_succeed_with_theme_and_redirect"/>
+      </line>
+      <line nr="44">
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_guest_with_preview_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_partner_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_sales_and_succeed_with_theme_and_redirect"/>
+      </line>
+      <line nr="45">
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_guest_with_preview_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_partner_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_sales_and_succeed_with_theme_and_redirect"/>
+      </line>
+      <line nr="47">
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_guest_with_preview_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_partner_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_sales_and_succeed_with_theme_and_redirect"/>
+      </line>
+      <line nr="49">
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_guest_with_preview_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_partner_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_sales_and_succeed_with_theme_and_redirect"/>
+      </line>
+      <line nr="51">
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_guest_with_preview_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_partner_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_sales_and_succeed_with_theme_and_redirect"/>
+      </line>
+      <line nr="53">
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_guest_with_preview_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_partner_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_sales_and_succeed_with_theme_and_redirect"/>
+      </line>
+      <line nr="54">
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_guest_with_preview_and_succeed"/>
+      </line>
+      <line nr="55">
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_guest_with_preview_and_succeed"/>
+      </line>
+      <line nr="56">
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_guest_with_preview_and_succeed"/>
+      </line>
+      <line nr="57">
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_guest_with_preview_and_succeed"/>
+      </line>
+      <line nr="59">
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_guest_with_preview_and_succeed"/>
+      </line>
+      <line nr="63">
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_partner_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_sales_and_succeed_with_theme_and_redirect"/>
+      </line>
+      <line nr="65">
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_partner_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_sales_and_succeed_with_theme_and_redirect"/>
+      </line>
+      <line nr="30">
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_bootstrap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_json_bootstrap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_bootstrap_as_vendor_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_json_bootstrap_as_wheel_and_succeed"/>
+      </line>
+      <line nr="32">
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_bootstrap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_json_bootstrap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_bootstrap_as_vendor_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_json_bootstrap_as_wheel_and_succeed"/>
+      </line>
+      <line nr="58">
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_guest_with_preview_and_succeed"/>
+      </line>
+      <line nr="60">
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_guest_with_preview_and_succeed"/>
+      </line>
+    </coverage>
+    <source>
+      <line no="1">
+        <token name="T_OPEN_TAG">&lt;?php</token>
+      </line>
+      <line no="2">
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="3">
+        <token name="T_DOC_COMMENT"> * Playground</token>
+      </line>
+      <line no="4">
+        <token name="T_DOC_COMMENT"> */</token>
+      </line>
+      <line no="5">
+        <token name="T_NAMESPACE">namespace</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Playground\Site\Blade\Http\Controllers</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="6"/>
+      <line no="7">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Illuminate\Http\RedirectResponse</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="8">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Illuminate\Http\Request</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="9">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Illuminate\View\View</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="10">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Playground\Blade\Facades\Ui</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="11"/>
+      <line no="12">
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="13">
+        <token name="T_DOC_COMMENT"> * \Playground\Http\Controllers\BootstrapController</token>
+      </line>
+      <line no="14">
+        <token name="T_DOC_COMMENT"> */</token>
+      </line>
+      <line no="15">
+        <token name="T_CLASS">class</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">BootstrapController</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EXTENDS">extends</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">Controller</token>
+      </line>
+      <line no="16">
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="17">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="18">
+        <token name="T_DOC_COMMENT">     * Display the Bootstrap theme view for UI component development previews.</token>
+      </line>
+      <line no="19">
+        <token name="T_DOC_COMMENT">     *</token>
+      </line>
+      <line no="20">
+        <token name="T_DOC_COMMENT">     * @route GET /bootstrap bootstrap</token>
+      </line>
+      <line no="21">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="22">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">index</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">Request</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$request</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">View</token>
+      </line>
+      <line no="23">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="24">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">init</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$request</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="25"/>
+      <line no="26">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">view</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">getPackageViewPathFromConfig</token>
+        <token name="T_OPEN_BRACKET">(</token>
+      </line>
+      <line no="27">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">package_config_site_blade</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="28">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'bootstrap'</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="29">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'index'</token>
+      </line>
+      <line no="30">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+      </line>
+      <line no="31">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'package_config_site_blade'</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_DOUBLE_ARROW">=&gt;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">package_config_site_blade</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="32">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="33">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="34"/>
+      <line no="35">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="36">
+        <token name="T_DOC_COMMENT">     * Handle the Bootstrap theme for the session.</token>
+      </line>
+      <line no="37">
+        <token name="T_DOC_COMMENT">     *</token>
+      </line>
+      <line no="38">
+        <token name="T_DOC_COMMENT">     * @route GET /theme theme</token>
+      </line>
+      <line no="39">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="40">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">theme</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">Request</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$request</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">RedirectResponse</token>
+        <token name="T_PIPE">|</token>
+        <token name="T_STRING">View</token>
+      </line>
+      <line no="41">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="42">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">init</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$request</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="43"/>
+      <line no="44">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$appTheme</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$request</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">input</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'appTheme'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="45">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$appTheme</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">is_string</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$appTheme</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_QUESTION_MARK">?</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$appTheme</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">''</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="46"/>
+      <line no="47">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$save</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EXCLAMATION_MARK">!</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$request</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">has</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'preview'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="48"/>
+      <line no="49">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$_return_url</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$request</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">input</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'_return_url'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="50"/>
+      <line no="51">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_STRING">Ui</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_STRING">setTheme</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$appTheme</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$save</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="52"/>
+      <line no="53">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$request</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">has</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'preview'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="54">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">view</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">getPackageViewPathFromConfig</token>
+        <token name="T_OPEN_BRACKET">(</token>
+      </line>
+      <line no="55">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">package_config_site_blade</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="56">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'bootstrap'</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="57">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'theme'</token>
+      </line>
+      <line no="58">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+      </line>
+      <line no="59">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'package_config_site_blade'</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_DOUBLE_ARROW">=&gt;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">package_config_site_blade</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="60">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="61">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="62"/>
+      <line no="63">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$_return_url</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EMPTY">empty</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$_return_url</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_BOOLEAN_OR">||</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EXCLAMATION_MARK">!</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">is_string</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$_return_url</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_QUESTION_MARK">?</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'/'</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$_return_url</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="64"/>
+      <line no="65">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">redirect</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$_return_url</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="66">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="67">
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="68"/>
+    </source>
+  </file>
+</phpunit>

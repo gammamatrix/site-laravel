@@ -1,0 +1,349 @@
+About Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\AboutRoute)
+ [x] Route about as guest and succeed
+ [x] Route json about as guest and succeed
+ [x] Route about as client and succeed
+ [x] Route json about as manager and succeed
+
+Abstract (Tests\Unit\Playground\Auth\Policies\Policy\Abstract)
+ [x] Before with root
+ [x] Before with root as secondary fails
+ [x] Index without role
+ [x] Index with admin
+ [x] View without role
+ [x] View with admin
+ [x] View with admin in roles
+
+Abstract Role (Tests\Unit\Playground\Auth\Policies\ModelPolicy\AbstractRole)
+ [x] Create without role
+ [x] Create with admin
+ [x] Delete without role
+ [x] Delete with admin
+ [x] Delete locked with admin
+ [x] Detail without role
+ [x] Detail with admin
+ [x] Edit without role
+ [x] Edit with admin
+ [x] ForceDelete without role
+ [x] ForceDelete with admin
+ [x] Lock without role
+ [x] Lock with admin
+ [x] Manage without role
+ [x] Manage with admin
+ [x] Restore without role
+ [x] Restore with admin
+ [x] Store without role
+ [x] Store with admin
+ [x] Update without role
+ [x] Update with admin
+ [x] Update locked with admin
+ [x] Unlock without role
+ [x] Unlock with admin
+
+Bootstrap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRoute)
+ [x] Route bootstrap as guest and succeed
+ [x] Route json bootstrap as guest and succeed
+ [x] Route bootstrap as vendor and succeed
+ [x] Route json bootstrap as wheel and succeed
+
+Command (Tests\Feature\Playground\Auth\Console\Commands\About\Command)
+ [x] Command about displays package information and succeed with code 0
+
+Command (Tests\Feature\Playground\Blade\Console\Commands\About\Command)
+ [x] Command about displays package information and succeed with code 0
+
+Command (Tests\Feature\Playground\Console\Commands\About\Command)
+ [x] Command about displays package information and succeed with code 0
+
+Command (Tests\Feature\Playground\Site\Blade\Console\Commands\About\Command)
+ [x] Command about displays package information and succeed with code 0
+
+Command (Tests\Feature\Playground\Test\Console\Commands\About\Command)
+ [x] Command about displays package information and succeed with code 0
+
+Command (Tests\Unit\Playground\Auth\Console\Commands\HashPassword\Command)
+ [x] Command auth hash password with json
+ [x] Command auth hash password
+ [x] Command auth hash password without argument and fail
+
+Component (Tests\Unit\Playground\Blade\View\Components\Forms\ColumnEditor\Component)
+ [x] Component instance
+ [x] Component can render view without parameters
+ [x] Component can render view with content textarea
+ [x] Component can render view with content textarea and described
+
+Component (Tests\Unit\Playground\Blade\View\Components\Forms\ColumnSelect\Component)
+ [x] Component instance
+ [x] Component can render view without parameters
+ [x] Component can render view with select
+
+Component (Tests\Unit\Playground\Blade\View\Components\Forms\Column\Component)
+ [x] Component instance
+ [x] Component can render view without parameters
+ [x] Component can render view without label on title column
+ [x] Component can render view with label on title column
+ [x] Component can render view with label on title column with error
+
+Component (Tests\Unit\Playground\Blade\View\Components\ModelFlag\Component)
+ [x] Component instance
+ [x] Component renders empty view without labels or classes
+ [x] Component can render view with true value
+ [x] Component can render view with false value
+ [x] Component can render view with null value
+
+Component (Tests\Unit\Playground\Blade\View\Components\Table\Data\Component)
+ [x] Component instance
+ [x] Component can render view
+
+Example (Tests\Feature\Example)
+ [x] The application returns a successful response
+
+Example (Tests\Unit\Example)
+ [x] That true is true
+
+Instance (Tests\Unit\Playground\ServiceProvider\Instance)
+ [x] Version matches
+ [x] UserPrimaryKeyType with empty model
+ [x] UserPrimaryKeyType with incrementing model
+ [x] UserPrimaryKeyType with uuid model
+ [x] UserPrimaryKeyType with exception
+
+Instance (Tests\Unit\Playground\Test\Models\PlaygroundUser\Instance)
+ [x] Get attributes
+ [x] HasRole is false without role
+ [x] HasRole is true with matching role
+ [x] HasRole is true with matching secondary role
+ [x] IsAdmin is true with admin role
+ [x] IsAdmin is true with admin secondary role
+ [x] IsAdmin is true with wheel role
+ [x] IsAdmin is true with wheel secondary role
+ [x] IsAdmin is true with root role
+ [x] IsAdmin is false with root secondary role
+ [x] Factory with make
+
+Model (Tests\Feature\Playground\Models\User\Model)
+ [x] Save model in database
+
+Model (Tests\Unit\Playground\Models\Model\Model)
+ [x] WithChildren children returns HasMany
+ [x] WithCreator creator returns HasOne
+ [x] WithModifier modifier returns HasOne
+ [x] WithOwner owner returns HasOne
+ [x] WithParent parent returns HasOne
+
+Model (Tests\Unit\Playground\Models\Traits\ScopeFilterColumns\Model)
+ [x] ScopeFilterColumns returns query without columns or filters
+ [x] ScopeFilterColumns returns query without filters
+ [x] ScopeFilterColumns returns query with invalid column
+ [x] ScopeFilterColumns returns query with filters without meta for strings
+ [x] ScopeFilterColumns returns query with null comparison and ignore
+ [x] ScopeFilterColumns returns query with comparison
+ [x] ScopeFilterColumns with boolean filter type and null value
+ [x] ScopeFilterColumns with boolean filter type and true value
+ [x] ScopeFilterColumns with boolean filter type and false value
+ [x] ScopeFilterColumns with filter operator without operator and default to like
+ [x] ScopeFilterColumns with filter operators
+ [x] ScopeFilterColumns with between filter operator without single parameter and ignore between
+ [x] ScopeFilterColumns with between filter operator
+ [x] ScopeFilterColumns with not between filter operator without single parameter and ignore between
+ [x] ScopeFilterColumns with not between filter operator
+
+Model (Tests\Unit\Playground\Models\Traits\ScopeFilterDates\Model)
+ [x] ScopeFilterDates returns query without dates or filters
+ [x] ScopeFilterDates returns query without filters
+ [x] ScopeFilterDates returns query with invalid column
+ [x] ScopeFilterDates returns query with filters without meta for strings
+ [x] ScopeFilterDates returns query with null comparison and ignore
+ [x] ScopeFilterDates returns query with null comparison and allow
+ [x] ScopeFilterDates returns query with comparison
+ [x] ScopeFilterDates returns query with wildcard
+ [x] ScopeFilterDates returns query with operator wildcard
+ [x] ScopeFilterDates returns query with object value and ignore
+ [x] ScopeFilterDates returns query with unnullable value and ignore
+ [x] ScopeFilterDates returns query with invalid operator and use like
+ [x] ScopeFilterDates returns query with invalid parsable value and ignore
+ [x] ScopeFilterDates returns query with short date and gte operator
+ [x] ScopeFilterDates returns query with phrase date and automatically parse
+ [x] ScopeFilterDates with between filter operator with parse
+ [x] ScopeFilterDates with not between filter operator with parse
+ [x] ScopeFilterDates with filter operators
+
+Model (Tests\Unit\Playground\Models\Traits\ScopeFilterFlags\Model)
+ [x] ScopeFilterFlags returns query without flags or filters
+ [x] ScopeFilterFlags returns query without filters
+ [x] ScopeFilterFlags returns query with filters
+
+Model (Tests\Unit\Playground\Models\Traits\ScopeFilterIds\Model)
+ [x] ScopeFilterIds returns query without ids or filters
+ [x] ScopeFilterIds returns query without filters
+ [x] ScopeFilterIds returns query with invalid column
+ [x] ScopeFilterIds returns query with null comparison
+ [x] ScopeFilterIds returns query with comparison
+ [x] ScopeFilterIds returns query with filters array
+ [x] ScopeFilterIds returns query with filters with integer
+ [x] ScopeFilterIds returns query with array of ids without type
+ [x] ScopeFilterIds returns query with array of uuids for integer type ids and ignore
+ [x] ScopeFilterIds returns query with array of integer ids ignore duplicate id
+ [x] ScopeFilterIds returns query with filters with null and string and array
+
+Model (Tests\Unit\Playground\Models\Traits\ScopeFilterTrash\Model)
+ [x] ScopeFilterTrash returns query with empty visibility
+ [x] ScopeFilterTrash returns query with trash
+ [x] ScopeFilterTrash returns query with only trash
+
+Model (Tests\Unit\Playground\Models\Traits\ScopeSort\Model)
+ [x] ScopeSort returns query with empty sort
+ [x] ScopeSort returns query with array boolean sort asc
+ [x] ScopeSort returns query with array boolean sort desc
+ [x] ScopeSort returns query with array boolean sort pair
+ [x] ScopeSort returns query with array boolean sort triplet
+ [x] ScopeSort returns query with csv sort asc
+ [x] ScopeSort returns query with csv sort desc
+ [x] ScopeSort returns query with simple array asc
+ [x] ScopeSort returns query with simple array desc
+ [x] ScopeSort returns query with hash array asc
+ [x] ScopeSort returns query with hash array desc
+
+Model (Tests\Unit\Playground\Models\User\Model)
+ [x] Add has and remove Abilities
+ [x] Add has and remove Privileges
+ [x] Add has and remove Roles
+ [x] IsAdmin with admins and users
+
+Model (Tests\Unit\Playground\Test\Models\AbstractUser\Model)
+ [x] Get attributes
+
+Model (Tests\Unit\Playground\Test\Models\ModelCase\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Test\Models\PlaygroundUser\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Test\Models\UserWithRoleAndPrivileges\Model)
+ [x] Get attributes
+ [x] HasPrivilege is false without privilege
+ [x] HasPrivilege is false with wrong privilege
+ [x] HasPrivilege is true with correct privilege
+ [x] Factory with make
+
+Model (Tests\Unit\Playground\Test\Models\UserWithRoleAndRolesAndPrivileges\Model)
+ [x] Get attributes
+ [x] Factory with make
+
+Model (Tests\Unit\Playground\Test\Models\UserWithRoleAndRoles\Model)
+ [x] Get attributes
+ [x] HasRole is false without role
+ [x] HasRole is true with matching role
+ [x] HasRole is true with matching secondary role
+ [x] IsAdmin is true with admin role
+ [x] IsAdmin is true with admin secondary role
+ [x] IsAdmin is true with wheel role
+ [x] IsAdmin is true with wheel secondary role
+ [x] IsAdmin is true with root role
+ [x] IsAdmin is false with root secondary role
+ [x] Factory with make
+
+Model (Tests\Unit\Playground\Test\Models\UserWithSanctum\Model)
+ [x] Get attributes
+ [x] Factory with make
+
+Model (Tests\Unit\Playground\Test\Models\User\Model)
+ [x] Get attributes
+ [x] Factory with make
+
+Public Dashboard Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicDashboardRoute)
+ [x] Route dashboard as guest and fail when disabled for guest and no redirect
+ [x] Route dashboard as guest and redirect when disabled for all
+ [x] Route dashboard as guest and redirect when disabled for guest
+ [x] Route json dashboard as guest and succeed
+
+Public Home Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicHomeRoute)
+ [x] Route home as guest and succeed
+ [x] Route json home as guest and succeed
+ [x] Route home as user admin and succeed
+ [x] Route json home as admin and succeed
+
+Public Sitemap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRoute)
+ [x] Route sitemap as guest and fail when disabled for guest and no redirect
+ [x] Route sitemap as guest and redirect when disabled for all
+ [x] Route sitemap as guest and redirect when disabled for guest
+ [x] Route json sitemap as guest and succeed
+ [x] Route sitemap as user and succeed
+ [x] Route sitemap as support and fail when disabled for all
+ [x] Route sitemap as user and fail when disabled for all and no redirect
+ [x] Route json sitemap as admin and succeed
+ [x] Route sitemap as user and succeed with package sitemaps
+
+Theme Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRoute)
+ [x] Route theme as guest and succeed
+ [x] Route theme as guest with preview and succeed
+ [x] Route theme as partner and succeed
+ [x] Route theme as sales and succeed with theme and redirect
+
+Trait (Tests\Unit\Playground\Auth\Policies\PolicyTrait\Trait)
+ [x] Get entity
+ [x] Get package
+ [x] Has token
+ [x] Get token
+ [x] Set token
+ [x] Verify does not log when app debugging is disabled
+ [x] Verify does not log when auth debugging is disabled
+ [x] Verify logs with debugging enabled
+ [x] Verify privileges
+ [x] Verify roles
+ [x] Verify user
+
+Trait (Tests\Unit\Playground\Auth\Policies\PrivilegeTrait\Trait)
+ [x] Privilege PrivilegePolicy without parameter
+ [x] Privilege PrivilegeModelPolicy without parameter
+ [x] Privilege UserPolicy without parameter
+ [x] Privilege with package and without parameter
+ [x] Privilege with package and entity and without parameter
+ [x] Has privilege
+ [x] HasPrivilege with user hasPrivilege
+ [x] HasPrivilege with user privileges
+ [x] HasPrivilege without privileges enabled
+
+Trait (Tests\Unit\Playground\Auth\Policies\RoleTrait\Trait)
+ [x] Get roles for admin
+ [x] Get roles for action
+ [x] Get roles to view
+ [x] Has role
+ [x] HasRole advanced role
+
+User Dashboard Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\UserDashboardRoute)
+ [x] Route dashboard as guest and fail when disabled for guest and no redirect with auth middleware
+ [x] Route dashboard as guest and redirect
+ [x] Route dashboard as guest and redirect when disabled for guest
+ [x] Route json dashboard as guest and fail
+ [x] Route dashboard as user and succeed
+ [x] Route dashboard as user and fail when disabled for all
+ [x] Route dashboard as user and fail when disabled for all and no redirect
+ [x] Route json dashboard as admin and succeed
+
+User Home Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\UserHomeRoute)
+ [x] Route home as guest and fail
+ [x] Route json home as guest and fail
+ [x] Route home as user admin and succeed
+ [x] Route json home as admin and succeed
+
+User Sitemap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRoute)
+ [x] Route sitemap as guest and fail when disabled for guest and no redirect
+ [x] Route sitemap as guest and redirect when disabled for all
+ [x] Route sitemap as guest and redirect when disabled for guest
+ [x] Route json sitemap as guest and fail
+ [x] Route sitemap as user and succeed
+ [x] Route sitemap as support and fail when disabled for all
+ [x] Route sitemap as user and fail when disabled for all and no redirect
+ [x] Route json sitemap as admin and succeed
+ [x] Route sitemap as user and succeed with package sitemaps
+
+Welcome Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\WelcomeRoute)
+ [x] Route welcome as guest and succeed
+ [x] Route json welcome as guest and succeed
+ [x] Route welcome as user and succeed
+ [x] Route json welcome as manager admin and succeed
+

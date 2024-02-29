@@ -1,0 +1,382 @@
+<?xml version="1.0"?>
+<phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
+  <file name="Font.php" path="/vendor/gammamatrix/playground-blade/src/Assets">
+    <totals>
+      <lines total="23" comments="6" code="17" executable="7" executed="7" percent="100.00"/>
+      <methods count="1" tested="1" percent="100.00"/>
+      <functions count="0" tested="0" percent="0"/>
+      <classes count="1" tested="1" percent="100.00"/>
+      <traits count="0" tested="0" percent="0"/>
+    </totals>
+    <class name="Playground\Blade\Assets\Font" start="10" executable="7" executed="7" crap="5">
+      <namespace name="Playground\Blade\Assets"/>
+      <method name="__toString" signature="__toString(): string" start="12" end="21" crap="5" executable="7" executed="7" coverage="100"/>
+    </class>
+    <coverage>
+      <line nr="14">
+        <covered by="Tests\Feature\ExampleTest::test_the_application_returns_a_successful_response"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\AboutRouteTest::test_route_about_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\AboutRouteTest::test_route_about_as_client_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_bootstrap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_json_bootstrap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_bootstrap_as_vendor_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_json_bootstrap_as_wheel_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicHomeRouteTest::test_route_home_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicHomeRouteTest::test_route_home_as_user_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_json_sitemap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_sitemap_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_json_sitemap_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_sitemap_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_guest_with_preview_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserDashboardRouteTest::test_route_dashboard_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserHomeRouteTest::test_route_home_as_user_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_json_sitemap_as_guest_and_fail"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_json_sitemap_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\WelcomeRouteTest::test_route_welcome_as_guest_and_succeed"/>
+      </line>
+      <line nr="15">
+        <covered by="Tests\Feature\ExampleTest::test_the_application_returns_a_successful_response"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\AboutRouteTest::test_route_about_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\AboutRouteTest::test_route_about_as_client_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_bootstrap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_json_bootstrap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_bootstrap_as_vendor_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_json_bootstrap_as_wheel_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicHomeRouteTest::test_route_home_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicHomeRouteTest::test_route_home_as_user_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_json_sitemap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_sitemap_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_json_sitemap_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_sitemap_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_guest_with_preview_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserDashboardRouteTest::test_route_dashboard_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserHomeRouteTest::test_route_home_as_user_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_json_sitemap_as_guest_and_fail"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_json_sitemap_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\WelcomeRouteTest::test_route_welcome_as_guest_and_succeed"/>
+      </line>
+      <line nr="16">
+        <covered by="Tests\Feature\ExampleTest::test_the_application_returns_a_successful_response"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\AboutRouteTest::test_route_about_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\AboutRouteTest::test_route_about_as_client_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_bootstrap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_json_bootstrap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_bootstrap_as_vendor_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_json_bootstrap_as_wheel_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicHomeRouteTest::test_route_home_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicHomeRouteTest::test_route_home_as_user_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_json_sitemap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_sitemap_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_json_sitemap_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_sitemap_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_guest_with_preview_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserDashboardRouteTest::test_route_dashboard_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserHomeRouteTest::test_route_home_as_user_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_json_sitemap_as_guest_and_fail"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_json_sitemap_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\WelcomeRouteTest::test_route_welcome_as_guest_and_succeed"/>
+      </line>
+      <line nr="17">
+        <covered by="Tests\Feature\ExampleTest::test_the_application_returns_a_successful_response"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\AboutRouteTest::test_route_about_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\AboutRouteTest::test_route_about_as_client_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_bootstrap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_json_bootstrap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_bootstrap_as_vendor_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_json_bootstrap_as_wheel_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicHomeRouteTest::test_route_home_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicHomeRouteTest::test_route_home_as_user_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_json_sitemap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_sitemap_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_json_sitemap_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_sitemap_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_guest_with_preview_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserDashboardRouteTest::test_route_dashboard_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserHomeRouteTest::test_route_home_as_user_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_json_sitemap_as_guest_and_fail"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_json_sitemap_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\WelcomeRouteTest::test_route_welcome_as_guest_and_succeed"/>
+      </line>
+      <line nr="18">
+        <covered by="Tests\Feature\ExampleTest::test_the_application_returns_a_successful_response"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\AboutRouteTest::test_route_about_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\AboutRouteTest::test_route_about_as_client_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_bootstrap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_json_bootstrap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_bootstrap_as_vendor_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_json_bootstrap_as_wheel_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicHomeRouteTest::test_route_home_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicHomeRouteTest::test_route_home_as_user_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_json_sitemap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_sitemap_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_json_sitemap_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_sitemap_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_guest_with_preview_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserDashboardRouteTest::test_route_dashboard_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserHomeRouteTest::test_route_home_as_user_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_json_sitemap_as_guest_and_fail"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_json_sitemap_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\WelcomeRouteTest::test_route_welcome_as_guest_and_succeed"/>
+      </line>
+      <line nr="19">
+        <covered by="Tests\Feature\ExampleTest::test_the_application_returns_a_successful_response"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\AboutRouteTest::test_route_about_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\AboutRouteTest::test_route_about_as_client_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_bootstrap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_json_bootstrap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_bootstrap_as_vendor_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_json_bootstrap_as_wheel_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicHomeRouteTest::test_route_home_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicHomeRouteTest::test_route_home_as_user_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_json_sitemap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_sitemap_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_json_sitemap_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_sitemap_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_guest_with_preview_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserDashboardRouteTest::test_route_dashboard_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserHomeRouteTest::test_route_home_as_user_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_json_sitemap_as_guest_and_fail"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_json_sitemap_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\WelcomeRouteTest::test_route_welcome_as_guest_and_succeed"/>
+      </line>
+      <line nr="20">
+        <covered by="Tests\Feature\ExampleTest::test_the_application_returns_a_successful_response"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\AboutRouteTest::test_route_about_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\AboutRouteTest::test_route_about_as_client_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_bootstrap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_json_bootstrap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_bootstrap_as_vendor_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_json_bootstrap_as_wheel_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicHomeRouteTest::test_route_home_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicHomeRouteTest::test_route_home_as_user_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_json_sitemap_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_sitemap_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_json_sitemap_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_sitemap_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_guest_with_preview_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserDashboardRouteTest::test_route_dashboard_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserHomeRouteTest::test_route_home_as_user_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_json_sitemap_as_guest_and_fail"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_json_sitemap_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\WelcomeRouteTest::test_route_welcome_as_guest_and_succeed"/>
+      </line>
+    </coverage>
+    <source>
+      <line no="1">
+        <token name="T_OPEN_TAG">&lt;?php</token>
+      </line>
+      <line no="2">
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="3">
+        <token name="T_DOC_COMMENT"> * Playground</token>
+      </line>
+      <line no="4">
+        <token name="T_DOC_COMMENT"> */</token>
+      </line>
+      <line no="5">
+        <token name="T_NAMESPACE">namespace</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Playground\Blade\Assets</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="6"/>
+      <line no="7">
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="8">
+        <token name="T_DOC_COMMENT"> * \Playground\Blade\Assets\Font</token>
+      </line>
+      <line no="9">
+        <token name="T_DOC_COMMENT"> */</token>
+      </line>
+      <line no="10">
+        <token name="T_CLASS">class</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">Font</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EXTENDS">extends</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">Stylesheet</token>
+      </line>
+      <line no="11">
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="12">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">__toString</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">string</token>
+      </line>
+      <line no="13">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="14">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">sprintf</token>
+        <token name="T_OPEN_BRACKET">(</token>
+      </line>
+      <line no="15">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'&lt;link%1$s%2$s%3$s%4$s&gt;'</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="16">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_EMPTY">empty</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">href</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_QUESTION_MARK">?</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">''</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">sprintf</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">' href="%1$s"'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">href</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="17">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_EMPTY">empty</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">integrity</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_QUESTION_MARK">?</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">''</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">sprintf</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">' integrity="%1$s"'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">integrity</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="18">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_EMPTY">empty</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">crossorigin</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_QUESTION_MARK">?</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">''</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">sprintf</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">' crossorigin="%1$s"'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">crossorigin</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="19">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_EMPTY">empty</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">rel</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_QUESTION_MARK">?</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">''</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">sprintf</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">' rel="%1$s"'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">rel</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+      </line>
+      <line no="20">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="21">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="22">
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="23"/>
+    </source>
+  </file>
+</phpunit>

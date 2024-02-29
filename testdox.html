@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Test Documentation</title>
+        <style>
+            body {
+                text-rendering: optimizeLegibility;
+                font-family: Source SansSerif Pro, Arial, sans-serif;
+                font-variant-ligatures: common-ligatures;
+                font-kerning: normal;
+                margin-left: 2rem;
+                background-color: #fff;
+                color: #000;
+            }
+
+            body > ul > li {
+                font-size: larger;
+            }
+
+            h2 {
+                font-size: larger;
+                text-decoration-line: underline;
+                text-decoration-thickness: 2px;
+                margin: 0;
+                padding: 0.5rem 0;
+            }
+
+            ul {
+                list-style: none;
+                margin: 0 0 2rem;
+                padding: 0 0 0 1rem;
+                text-indent: -1rem;
+            }
+
+            .success:before {
+                color: #4e9a06;
+                content: '✓';
+                padding-right: 0.5rem;
+            }
+
+            .defect {
+                color: #a40000;
+            }
+
+            .defect:before {
+                color: #a40000;
+                content: '✗';
+                padding-right: 0.5rem;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>About Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\AboutRoute)</h2>
+        <ul>
+            <li class="success">Route about as guest and succeed</li>
+            <li class="success">Route json about as guest and succeed</li>
+            <li class="success">Route about as client and succeed</li>
+            <li class="success">Route json about as manager and succeed</li>
+        </ul>
+        <h2>Abstract (Tests\Unit\Playground\Auth\Policies\Policy\Abstract)</h2>
+        <ul>
+            <li class="success">Before with root</li>
+            <li class="success">Before with root as secondary fails</li>
+            <li class="success">Index without role</li>
+            <li class="success">Index with admin</li>
+            <li class="success">View without role</li>
+            <li class="success">View with admin</li>
+            <li class="success">View with admin in roles</li>
+        </ul>
+        <h2>Abstract Role (Tests\Unit\Playground\Auth\Policies\ModelPolicy\AbstractRole)</h2>
+        <ul>
+            <li class="success">Create without role</li>
+            <li class="success">Create with admin</li>
+            <li class="success">Delete without role</li>
+            <li class="success">Delete with admin</li>
+            <li class="success">Delete locked with admin</li>
+            <li class="success">Detail without role</li>
+            <li class="success">Detail with admin</li>
+            <li class="success">Edit without role</li>
+            <li class="success">Edit with admin</li>
+            <li class="success">ForceDelete without role</li>
+            <li class="success">ForceDelete with admin</li>
+            <li class="success">Lock without role</li>
+            <li class="success">Lock with admin</li>
+            <li class="success">Manage without role</li>
+            <li class="success">Manage with admin</li>
+            <li class="success">Restore without role</li>
+            <li class="success">Restore with admin</li>
+            <li class="success">Store without role</li>
+            <li class="success">Store with admin</li>
+            <li class="success">Update without role</li>
+            <li class="success">Update with admin</li>
+            <li class="success">Update locked with admin</li>
+            <li class="success">Unlock without role</li>
+            <li class="success">Unlock with admin</li>
+        </ul>
+        <h2>Bootstrap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRoute)</h2>
+        <ul>
+            <li class="success">Route bootstrap as guest and succeed</li>
+            <li class="success">Route json bootstrap as guest and succeed</li>
+            <li class="success">Route bootstrap as vendor and succeed</li>
+            <li class="success">Route json bootstrap as wheel and succeed</li>
+        </ul>
+        <h2>Command (Tests\Feature\Playground\Auth\Console\Commands\About\Command)</h2>
+        <ul>
+            <li class="success">Command about displays package information and succeed with code 0</li>
+        </ul>
+        <h2>Command (Tests\Feature\Playground\Blade\Console\Commands\About\Command)</h2>
+        <ul>
+            <li class="success">Command about displays package information and succeed with code 0</li>
+        </ul>
+        <h2>Command (Tests\Feature\Playground\Console\Commands\About\Command)</h2>
+        <ul>
+            <li class="success">Command about displays package information and succeed with code 0</li>
+        </ul>
+        <h2>Command (Tests\Feature\Playground\Site\Blade\Console\Commands\About\Command)</h2>
+        <ul>
+            <li class="success">Command about displays package information and succeed with code 0</li>
+        </ul>
+        <h2>Command (Tests\Feature\Playground\Test\Console\Commands\About\Command)</h2>
+        <ul>
+            <li class="success">Command about displays package information and succeed with code 0</li>
+        </ul>
+        <h2>Command (Tests\Unit\Playground\Auth\Console\Commands\HashPassword\Command)</h2>
+        <ul>
+            <li class="success">Command auth hash password with json</li>
+            <li class="success">Command auth hash password</li>
+            <li class="success">Command auth hash password without argument and fail</li>
+        </ul>
+        <h2>Component (Tests\Unit\Playground\Blade\View\Components\Forms\ColumnEditor\Component)</h2>
+        <ul>
+            <li class="success">Component instance</li>
+            <li class="success">Component can render view without parameters</li>
+            <li class="success">Component can render view with content textarea</li>
+            <li class="success">Component can render view with content textarea and described</li>
+        </ul>
+        <h2>Component (Tests\Unit\Playground\Blade\View\Components\Forms\ColumnSelect\Component)</h2>
+        <ul>
+            <li class="success">Component instance</li>
+            <li class="success">Component can render view without parameters</li>
+            <li class="success">Component can render view with select</li>
+        </ul>
+        <h2>Component (Tests\Unit\Playground\Blade\View\Components\Forms\Column\Component)</h2>
+        <ul>
+            <li class="success">Component instance</li>
+            <li class="success">Component can render view without parameters</li>
+            <li class="success">Component can render view without label on title column</li>
+            <li class="success">Component can render view with label on title column</li>
+            <li class="success">Component can render view with label on title column with error</li>
+        </ul>
+        <h2>Component (Tests\Unit\Playground\Blade\View\Components\ModelFlag\Component)</h2>
+        <ul>
+            <li class="success">Component instance</li>
+            <li class="success">Component renders empty view without labels or classes</li>
+            <li class="success">Component can render view with true value</li>
+            <li class="success">Component can render view with false value</li>
+            <li class="success">Component can render view with null value</li>
+        </ul>
+        <h2>Component (Tests\Unit\Playground\Blade\View\Components\Table\Data\Component)</h2>
+        <ul>
+            <li class="success">Component instance</li>
+            <li class="success">Component can render view</li>
+        </ul>
+        <h2>Example (Tests\Feature\Example)</h2>
+        <ul>
+            <li class="success">The application returns a successful response</li>
+        </ul>
+        <h2>Example (Tests\Unit\Example)</h2>
+        <ul>
+            <li class="success">That true is true</li>
+        </ul>
+        <h2>Instance (Tests\Unit\Playground\ServiceProvider\Instance)</h2>
+        <ul>
+            <li class="success">Version matches</li>
+            <li class="success">UserPrimaryKeyType with empty model</li>
+            <li class="success">UserPrimaryKeyType with incrementing model</li>
+            <li class="success">UserPrimaryKeyType with uuid model</li>
+            <li class="success">UserPrimaryKeyType with exception</li>
+        </ul>
+        <h2>Instance (Tests\Unit\Playground\Test\Models\PlaygroundUser\Instance)</h2>
+        <ul>
+            <li class="success">Get attributes</li>
+            <li class="success">HasRole is false without role</li>
+            <li class="success">HasRole is true with matching role</li>
+            <li class="success">HasRole is true with matching secondary role</li>
+            <li class="success">IsAdmin is true with admin role</li>
+            <li class="success">IsAdmin is true with admin secondary role</li>
+            <li class="success">IsAdmin is true with wheel role</li>
+            <li class="success">IsAdmin is true with wheel secondary role</li>
+            <li class="success">IsAdmin is true with root role</li>
+            <li class="success">IsAdmin is false with root secondary role</li>
+            <li class="success">Factory with make</li>
+        </ul>
+        <h2>Model (Tests\Feature\Playground\Models\User\Model)</h2>
+        <ul>
+            <li class="success">Save model in database</li>
+        </ul>
+        <h2>Model (Tests\Unit\Playground\Models\Model\Model)</h2>
+        <ul>
+            <li class="success">WithChildren children returns HasMany</li>
+            <li class="success">WithCreator creator returns HasOne</li>
+            <li class="success">WithModifier modifier returns HasOne</li>
+            <li class="success">WithOwner owner returns HasOne</li>
+            <li class="success">WithParent parent returns HasOne</li>
+        </ul>
+        <h2>Model (Tests\Unit\Playground\Models\Traits\ScopeFilterColumns\Model)</h2>
+        <ul>
+            <li class="success">ScopeFilterColumns returns query without columns or filters</li>
+            <li class="success">ScopeFilterColumns returns query without filters</li>
+            <li class="success">ScopeFilterColumns returns query with invalid column</li>
+            <li class="success">ScopeFilterColumns returns query with filters without meta for strings</li>
+            <li class="success">ScopeFilterColumns returns query with null comparison and ignore</li>
+            <li class="success">ScopeFilterColumns returns query with comparison</li>
+            <li class="success">ScopeFilterColumns with boolean filter type and null value</li>
+            <li class="success">ScopeFilterColumns with boolean filter type and true value</li>
+            <li class="success">ScopeFilterColumns with boolean filter type and false value</li>
+            <li class="success">ScopeFilterColumns with filter operator without operator and default to like</li>
+            <li class="success">ScopeFilterColumns with filter operators</li>
+            <li class="success">ScopeFilterColumns with between filter operator without single parameter and ignore between</li>
+            <li class="success">ScopeFilterColumns with between filter operator</li>
+            <li class="success">ScopeFilterColumns with not between filter operator without single parameter and ignore between</li>
+            <li class="success">ScopeFilterColumns with not between filter operator</li>
+        </ul>
+        <h2>Model (Tests\Unit\Playground\Models\Traits\ScopeFilterDates\Model)</h2>
+        <ul>
+            <li class="success">ScopeFilterDates returns query without dates or filters</li>
+            <li class="success">ScopeFilterDates returns query without filters</li>
+            <li class="success">ScopeFilterDates returns query with invalid column</li>
+            <li class="success">ScopeFilterDates returns query with filters without meta for strings</li>
+            <li class="success">ScopeFilterDates returns query with null comparison and ignore</li>
+            <li class="success">ScopeFilterDates returns query with null comparison and allow</li>
+            <li class="success">ScopeFilterDates returns query with comparison</li>
+            <li class="success">ScopeFilterDates returns query with wildcard</li>
+            <li class="success">ScopeFilterDates returns query with operator wildcard</li>
+            <li class="success">ScopeFilterDates returns query with object value and ignore</li>
+            <li class="success">ScopeFilterDates returns query with unnullable value and ignore</li>
+            <li class="success">ScopeFilterDates returns query with invalid operator and use like</li>
+            <li class="success">ScopeFilterDates returns query with invalid parsable value and ignore</li>
+            <li class="success">ScopeFilterDates returns query with short date and gte operator</li>
+            <li class="success">ScopeFilterDates returns query with phrase date and automatically parse</li>
+            <li class="success">ScopeFilterDates with between filter operator with parse</li>
+            <li class="success">ScopeFilterDates with not between filter operator with parse</li>
+            <li class="success">ScopeFilterDates with filter operators</li>
+        </ul>
+        <h2>Model (Tests\Unit\Playground\Models\Traits\ScopeFilterFlags\Model)</h2>
+        <ul>
+            <li class="success">ScopeFilterFlags returns query without flags or filters</li>
+            <li class="success">ScopeFilterFlags returns query without filters</li>
+            <li class="success">ScopeFilterFlags returns query with filters</li>
+        </ul>
+        <h2>Model (Tests\Unit\Playground\Models\Traits\ScopeFilterIds\Model)</h2>
+        <ul>
+            <li class="success">ScopeFilterIds returns query without ids or filters</li>
+            <li class="success">ScopeFilterIds returns query without filters</li>
+            <li class="success">ScopeFilterIds returns query with invalid column</li>
+            <li class="success">ScopeFilterIds returns query with null comparison</li>
+            <li class="success">ScopeFilterIds returns query with comparison</li>
+            <li class="success">ScopeFilterIds returns query with filters array</li>
+            <li class="success">ScopeFilterIds returns query with filters with integer</li>
+            <li class="success">ScopeFilterIds returns query with array of ids without type</li>
+            <li class="success">ScopeFilterIds returns query with array of uuids for integer type ids and ignore</li>
+            <li class="success">ScopeFilterIds returns query with array of integer ids ignore duplicate id</li>
+            <li class="success">ScopeFilterIds returns query with filters with null and string and array</li>
+        </ul>
+        <h2>Model (Tests\Unit\Playground\Models\Traits\ScopeFilterTrash\Model)</h2>
+        <ul>
+            <li class="success">ScopeFilterTrash returns query with empty visibility</li>
+            <li class="success">ScopeFilterTrash returns query with trash</li>
+            <li class="success">ScopeFilterTrash returns query with only trash</li>
+        </ul>
+        <h2>Model (Tests\Unit\Playground\Models\Traits\ScopeSort\Model)</h2>
+        <ul>
+            <li class="success">ScopeSort returns query with empty sort</li>
+            <li class="success">ScopeSort returns query with array boolean sort asc</li>
+            <li class="success">ScopeSort returns query with array boolean sort desc</li>
+            <li class="success">ScopeSort returns query with array boolean sort pair</li>
+            <li class="success">ScopeSort returns query with array boolean sort triplet</li>
+            <li class="success">ScopeSort returns query with csv sort asc</li>
+            <li class="success">ScopeSort returns query with csv sort desc</li>
+            <li class="success">ScopeSort returns query with simple array asc</li>
+            <li class="success">ScopeSort returns query with simple array desc</li>
+            <li class="success">ScopeSort returns query with hash array asc</li>
+            <li class="success">ScopeSort returns query with hash array desc</li>
+        </ul>
+        <h2>Model (Tests\Unit\Playground\Models\User\Model)</h2>
+        <ul>
+            <li class="success">Add has and remove Abilities</li>
+            <li class="success">Add has and remove Privileges</li>
+            <li class="success">Add has and remove Roles</li>
+            <li class="success">IsAdmin with admins and users</li>
+        </ul>
+        <h2>Model (Tests\Unit\Playground\Test\Models\AbstractUser\Model)</h2>
+        <ul>
+            <li class="success">Get attributes</li>
+        </ul>
+        <h2>Model (Tests\Unit\Playground\Test\Models\ModelCase\Model)</h2>
+        <ul>
+            <li class="success">Model instance</li>
+            <li class="success">Verify model relationships</li>
+            <li class="success">Model factory make</li>
+        </ul>
+        <h2>Model (Tests\Unit\Playground\Test\Models\PlaygroundUser\Model)</h2>
+        <ul>
+            <li class="success">Model instance</li>
+            <li class="success">Verify model relationships</li>
+            <li class="success">Model factory make</li>
+        </ul>
+        <h2>Model (Tests\Unit\Playground\Test\Models\UserWithRoleAndPrivileges\Model)</h2>
+        <ul>
+            <li class="success">Get attributes</li>
+            <li class="success">HasPrivilege is false without privilege</li>
+            <li class="success">HasPrivilege is false with wrong privilege</li>
+            <li class="success">HasPrivilege is true with correct privilege</li>
+            <li class="success">Factory with make</li>
+        </ul>
+        <h2>Model (Tests\Unit\Playground\Test\Models\UserWithRoleAndRolesAndPrivileges\Model)</h2>
+        <ul>
+            <li class="success">Get attributes</li>
+            <li class="success">Factory with make</li>
+        </ul>
+        <h2>Model (Tests\Unit\Playground\Test\Models\UserWithRoleAndRoles\Model)</h2>
+        <ul>
+            <li class="success">Get attributes</li>
+            <li class="success">HasRole is false without role</li>
+            <li class="success">HasRole is true with matching role</li>
+            <li class="success">HasRole is true with matching secondary role</li>
+            <li class="success">IsAdmin is true with admin role</li>
+            <li class="success">IsAdmin is true with admin secondary role</li>
+            <li class="success">IsAdmin is true with wheel role</li>
+            <li class="success">IsAdmin is true with wheel secondary role</li>
+            <li class="success">IsAdmin is true with root role</li>
+            <li class="success">IsAdmin is false with root secondary role</li>
+            <li class="success">Factory with make</li>
+        </ul>
+        <h2>Model (Tests\Unit\Playground\Test\Models\UserWithSanctum\Model)</h2>
+        <ul>
+            <li class="success">Get attributes</li>
+            <li class="success">Factory with make</li>
+        </ul>
+        <h2>Model (Tests\Unit\Playground\Test\Models\User\Model)</h2>
+        <ul>
+            <li class="success">Get attributes</li>
+            <li class="success">Factory with make</li>
+        </ul>
+        <h2>Public Dashboard Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicDashboardRoute)</h2>
+        <ul>
+            <li class="success">Route dashboard as guest and fail when disabled for guest and no redirect</li>
+            <li class="success">Route dashboard as guest and redirect when disabled for all</li>
+            <li class="success">Route dashboard as guest and redirect when disabled for guest</li>
+            <li class="success">Route json dashboard as guest and succeed</li>
+        </ul>
+        <h2>Public Home Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicHomeRoute)</h2>
+        <ul>
+            <li class="success">Route home as guest and succeed</li>
+            <li class="success">Route json home as guest and succeed</li>
+            <li class="success">Route home as user admin and succeed</li>
+            <li class="success">Route json home as admin and succeed</li>
+        </ul>
+        <h2>Public Sitemap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRoute)</h2>
+        <ul>
+            <li class="success">Route sitemap as guest and fail when disabled for guest and no redirect</li>
+            <li class="success">Route sitemap as guest and redirect when disabled for all</li>
+            <li class="success">Route sitemap as guest and redirect when disabled for guest</li>
+            <li class="success">Route json sitemap as guest and succeed</li>
+            <li class="success">Route sitemap as user and succeed</li>
+            <li class="success">Route sitemap as support and fail when disabled for all</li>
+            <li class="success">Route sitemap as user and fail when disabled for all and no redirect</li>
+            <li class="success">Route json sitemap as admin and succeed</li>
+            <li class="success">Route sitemap as user and succeed with package sitemaps</li>
+        </ul>
+        <h2>Theme Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRoute)</h2>
+        <ul>
+            <li class="success">Route theme as guest and succeed</li>
+            <li class="success">Route theme as guest with preview and succeed</li>
+            <li class="success">Route theme as partner and succeed</li>
+            <li class="success">Route theme as sales and succeed with theme and redirect</li>
+        </ul>
+        <h2>Trait (Tests\Unit\Playground\Auth\Policies\PolicyTrait\Trait)</h2>
+        <ul>
+            <li class="success">Get entity</li>
+            <li class="success">Get package</li>
+            <li class="success">Has token</li>
+            <li class="success">Get token</li>
+            <li class="success">Set token</li>
+            <li class="success">Verify does not log when app debugging is disabled</li>
+            <li class="success">Verify does not log when auth debugging is disabled</li>
+            <li class="success">Verify logs with debugging enabled</li>
+            <li class="success">Verify privileges</li>
+            <li class="success">Verify roles</li>
+            <li class="success">Verify user</li>
+        </ul>
+        <h2>Trait (Tests\Unit\Playground\Auth\Policies\PrivilegeTrait\Trait)</h2>
+        <ul>
+            <li class="success">Privilege PrivilegePolicy without parameter</li>
+            <li class="success">Privilege PrivilegeModelPolicy without parameter</li>
+            <li class="success">Privilege UserPolicy without parameter</li>
+            <li class="success">Privilege with package and without parameter</li>
+            <li class="success">Privilege with package and entity and without parameter</li>
+            <li class="success">Has privilege</li>
+            <li class="success">HasPrivilege with user hasPrivilege</li>
+            <li class="success">HasPrivilege with user privileges</li>
+            <li class="success">HasPrivilege without privileges enabled</li>
+        </ul>
+        <h2>Trait (Tests\Unit\Playground\Auth\Policies\RoleTrait\Trait)</h2>
+        <ul>
+            <li class="success">Get roles for admin</li>
+            <li class="success">Get roles for action</li>
+            <li class="success">Get roles to view</li>
+            <li class="success">Has role</li>
+            <li class="success">HasRole advanced role</li>
+        </ul>
+        <h2>User Dashboard Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\UserDashboardRoute)</h2>
+        <ul>
+            <li class="success">Route dashboard as guest and fail when disabled for guest and no redirect with auth middleware</li>
+            <li class="success">Route dashboard as guest and redirect</li>
+            <li class="success">Route dashboard as guest and redirect when disabled for guest</li>
+            <li class="success">Route json dashboard as guest and fail</li>
+            <li class="success">Route dashboard as user and succeed</li>
+            <li class="success">Route dashboard as user and fail when disabled for all</li>
+            <li class="success">Route dashboard as user and fail when disabled for all and no redirect</li>
+            <li class="success">Route json dashboard as admin and succeed</li>
+        </ul>
+        <h2>User Home Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\UserHomeRoute)</h2>
+        <ul>
+            <li class="success">Route home as guest and fail</li>
+            <li class="success">Route json home as guest and fail</li>
+            <li class="success">Route home as user admin and succeed</li>
+            <li class="success">Route json home as admin and succeed</li>
+        </ul>
+        <h2>User Sitemap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRoute)</h2>
+        <ul>
+            <li class="success">Route sitemap as guest and fail when disabled for guest and no redirect</li>
+            <li class="success">Route sitemap as guest and redirect when disabled for all</li>
+            <li class="success">Route sitemap as guest and redirect when disabled for guest</li>
+            <li class="success">Route json sitemap as guest and fail</li>
+            <li class="success">Route sitemap as user and succeed</li>
+            <li class="success">Route sitemap as support and fail when disabled for all</li>
+            <li class="success">Route sitemap as user and fail when disabled for all and no redirect</li>
+            <li class="success">Route json sitemap as admin and succeed</li>
+            <li class="success">Route sitemap as user and succeed with package sitemaps</li>
+        </ul>
+        <h2>Welcome Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\WelcomeRoute)</h2>
+        <ul>
+            <li class="success">Route welcome as guest and succeed</li>
+            <li class="success">Route json welcome as guest and succeed</li>
+            <li class="success">Route welcome as user and succeed</li>
+            <li class="success">Route json welcome as manager admin and succeed</li>
+        </ul>
+    </body>
+</html>

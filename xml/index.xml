@@ -1,0 +1,1995 @@
+<?xml version="1.0"?>
+<phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
+  <build time="Thu Feb 29 20:31:14 UTC 2024" phpunit="10.5.11" coverage="10.1.11">
+    <runtime name="PHP" version="8.2.16" url="https://www.php.net/"/>
+    <driver name="xdebug" version="3.3.1"/>
+  </build>
+  <project source="/app">
+    <tests>
+      <test name="Tests\Unit\ExampleTest::test_that_true_is_true" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Model\ModelTest::test_WithChildren_children_returns_HasMany" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Model\ModelTest::test_WithCreator_creator_returns_HasOne" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Model\ModelTest::test_WithModifier_modifier_returns_HasOne" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Model\ModelTest::test_WithOwner_owner_returns_HasOne" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Model\ModelTest::test_WithParent_parent_returns_HasOne" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterColumns\ModelTest::test_scopeFilterColumns_returns_query_without_columns_or_filters" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterColumns\ModelTest::test_scopeFilterColumns_returns_query_without_filters" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterColumns\ModelTest::test_scopeFilterColumns_returns_query_with_invalid_column" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterColumns\ModelTest::test_scopeFilterColumns_returns_query_with_filters_without_meta_for_strings" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterColumns\ModelTest::test_scopeFilterColumns_returns_query_with_null_comparison_and_ignore" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterColumns\ModelTest::test_scopeFilterColumns_returns_query_with_comparison" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterColumns\ModelTest::test_scopeFilterColumns_with_boolean_filter_type_and_null_value" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterColumns\ModelTest::test_scopeFilterColumns_with_boolean_filter_type_and_true_value" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterColumns\ModelTest::test_scopeFilterColumns_with_boolean_filter_type_and_false_value" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterColumns\ModelTest::test_scopeFilterColumns_with_filter_operator_without_operator_and_default_to_like" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterColumns\ModelTest::test_scopeFilterColumns_with_filter_operators" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterColumns\ModelTest::test_scopeFilterColumns_with_between_filter_operator_without_single_parameter_and_ignore_between" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterColumns\ModelTest::test_scopeFilterColumns_with_between_filter_operator" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterColumns\ModelTest::test_scopeFilterColumns_with_not_between_filter_operator_without_single_parameter_and_ignore_between" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterColumns\ModelTest::test_scopeFilterColumns_with_not_between_filter_operator" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterDates\ModelTest::test_scopeFilterDates_returns_query_without_dates_or_filters" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterDates\ModelTest::test_scopeFilterDates_returns_query_without_filters" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterDates\ModelTest::test_scopeFilterDates_returns_query_with_invalid_column" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterDates\ModelTest::test_scopeFilterDates_returns_query_with_filters_without_meta_for_strings" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterDates\ModelTest::test_scopeFilterDates_returns_query_with_null_comparison_and_ignore" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterDates\ModelTest::test_scopeFilterDates_returns_query_with_null_comparison_and_allow" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterDates\ModelTest::test_scopeFilterDates_returns_query_with_comparison" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterDates\ModelTest::test_scopeFilterDates_returns_query_with_wildcard" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterDates\ModelTest::test_scopeFilterDates_returns_query_with_operator_wildcard" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterDates\ModelTest::test_scopeFilterDates_returns_query_with_object_value_and_ignore" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterDates\ModelTest::test_scopeFilterDates_returns_query_with_unnullable_value_and_ignore" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterDates\ModelTest::test_scopeFilterDates_returns_query_with_invalid_operator_and_use_like" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterDates\ModelTest::test_scopeFilterDates_returns_query_with_invalid_parsable_value_and_ignore" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterDates\ModelTest::test_scopeFilterDates_returns_query_with_short_date_and_gte_operator" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterDates\ModelTest::test_scopeFilterDates_returns_query_with_phrase_date_and_automatically_parse" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterDates\ModelTest::test_scopeFilterDates_with_between_filter_operator_with_parse" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterDates\ModelTest::test_scopeFilterDates_with_not_between_filter_operator_with_parse" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterDates\ModelTest::test_scopeFilterDates_with_filter_operators" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterFlags\ModelTest::test_scopeFilterFlags_returns_query_without_flags_or_filters" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterFlags\ModelTest::test_scopeFilterFlags_returns_query_without_filters" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterFlags\ModelTest::test_scopeFilterFlags_returns_query_with_filters" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterIds\ModelTest::test_scopeFilterIds_returns_query_without_ids_or_filters" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterIds\ModelTest::test_scopeFilterIds_returns_query_without_filters" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterIds\ModelTest::test_scopeFilterIds_returns_query_with_invalid_column" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterIds\ModelTest::test_scopeFilterIds_returns_query_with_null_comparison" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterIds\ModelTest::test_scopeFilterIds_returns_query_with_comparison" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterIds\ModelTest::test_scopeFilterIds_returns_query_with_filters_array" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterIds\ModelTest::test_scopeFilterIds_returns_query_with_filters_with_integer" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterIds\ModelTest::test_scopeFilterIds_returns_query_with_array_of_ids_without_type" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterIds\ModelTest::test_scopeFilterIds_returns_query_with_array_of_uuids_for_integer_type_ids_and_ignore" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterIds\ModelTest::test_scopeFilterIds_returns_query_with_array_of_integer_ids_ignore_duplicate_id" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterIds\ModelTest::test_scopeFilterIds_returns_query_with_filters_with_null_and_string_and_array" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterTrash\ModelTest::test_scopeFilterTrash_returns_query_with_empty_visibility" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterTrash\ModelTest::test_scopeFilterTrash_returns_query_with_trash" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeFilterTrash\ModelTest::test_scopeFilterTrash_returns_query_with_only_trash" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeSort\ModelTest::test_scopeSort_returns_query_with_empty_sort" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeSort\ModelTest::test_scopeSort_returns_query_with_array_boolean_sort_asc" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeSort\ModelTest::test_scopeSort_returns_query_with_array_boolean_sort_desc" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeSort\ModelTest::test_scopeSort_returns_query_with_array_boolean_sort_pair" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeSort\ModelTest::test_scopeSort_returns_query_with_array_boolean_sort_triplet" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeSort\ModelTest::test_scopeSort_returns_query_with_csv_sort_asc" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeSort\ModelTest::test_scopeSort_returns_query_with_csv_sort_desc" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeSort\ModelTest::test_scopeSort_returns_query_with_simple_array_asc" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeSort\ModelTest::test_scopeSort_returns_query_with_simple_array_desc" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeSort\ModelTest::test_scopeSort_returns_query_with_hash_array_asc" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\Traits\ScopeSort\ModelTest::test_scopeSort_returns_query_with_hash_array_desc" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\User\ModelTest::test_add_has_and_remove_Abilities" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\User\ModelTest::test_add_has_and_remove_Privileges" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\User\ModelTest::test_add_has_and_remove_Roles" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Models\User\ModelTest::test_isAdmin_with_admins_and_users" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\ServiceProvider\InstanceTest::test_version_matches" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\ServiceProvider\InstanceTest::test_userPrimaryKeyType_with_empty_model" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\ServiceProvider\InstanceTest::test_userPrimaryKeyType_with_incrementing_model" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\ServiceProvider\InstanceTest::test_userPrimaryKeyType_with_uuid_model" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\ServiceProvider\InstanceTest::test_userPrimaryKeyType_with_exception" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Console\Commands\HashPassword\CommandTest::test_command_auth_hash_password_with_json" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Console\Commands\HashPassword\CommandTest::test_command_auth_hash_password" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Console\Commands\HashPassword\CommandTest::test_command_auth_hash_password_without_argument_and_fail" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\ModelPolicy\AbstractRoleTest::test_create_without_role" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\ModelPolicy\AbstractRoleTest::test_create_with_admin" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\ModelPolicy\AbstractRoleTest::test_delete_without_role" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\ModelPolicy\AbstractRoleTest::test_delete_with_admin" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\ModelPolicy\AbstractRoleTest::test_delete_locked_with_admin" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\ModelPolicy\AbstractRoleTest::test_detail_without_role" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\ModelPolicy\AbstractRoleTest::test_detail_with_admin" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\ModelPolicy\AbstractRoleTest::test_edit_without_role" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\ModelPolicy\AbstractRoleTest::test_edit_with_admin" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\ModelPolicy\AbstractRoleTest::test_forceDelete_without_role" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\ModelPolicy\AbstractRoleTest::test_forceDelete_with_admin" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\ModelPolicy\AbstractRoleTest::test_lock_without_role" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\ModelPolicy\AbstractRoleTest::test_lock_with_admin" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\ModelPolicy\AbstractRoleTest::test_manage_without_role" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\ModelPolicy\AbstractRoleTest::test_manage_with_admin" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\ModelPolicy\AbstractRoleTest::test_restore_without_role" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\ModelPolicy\AbstractRoleTest::test_restore_with_admin" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\ModelPolicy\AbstractRoleTest::test_store_without_role" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\ModelPolicy\AbstractRoleTest::test_store_with_admin" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\ModelPolicy\AbstractRoleTest::test_update_without_role" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\ModelPolicy\AbstractRoleTest::test_update_with_admin" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\ModelPolicy\AbstractRoleTest::test_update_locked_with_admin" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\ModelPolicy\AbstractRoleTest::test_unlock_without_role" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\ModelPolicy\AbstractRoleTest::test_unlock_with_admin" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\Policy\AbstractTest::test_before_with_root" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\Policy\AbstractTest::test_before_with_root_as_secondary_fails" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\Policy\AbstractTest::test_index_without_role" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\Policy\AbstractTest::test_index_with_admin" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\Policy\AbstractTest::test_view_without_role" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\Policy\AbstractTest::test_view_with_admin" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\Policy\AbstractTest::test_view_with_admin_in_roles" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\PolicyTrait\TraitTest::test_getEntity" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\PolicyTrait\TraitTest::test_getPackage" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\PolicyTrait\TraitTest::test_hasToken" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\PolicyTrait\TraitTest::test_getToken" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\PolicyTrait\TraitTest::test_setToken" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\PolicyTrait\TraitTest::test_verify_does_not_log_when_app_debugging_is_disabled" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\PolicyTrait\TraitTest::test_verify_does_not_log_when_auth_debugging_is_disabled" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\PolicyTrait\TraitTest::test_verify_logs_with_debugging_enabled" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\PolicyTrait\TraitTest::test_verify_privileges" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\PolicyTrait\TraitTest::test_verify_roles" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\PolicyTrait\TraitTest::test_verify_user" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\PrivilegeTrait\TraitTest::test_privilege_PrivilegePolicy_without_parameter" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\PrivilegeTrait\TraitTest::test_privilege_PrivilegeModelPolicy_without_parameter" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\PrivilegeTrait\TraitTest::test_privilege_UserPolicy_without_parameter" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\PrivilegeTrait\TraitTest::test_privilege_with_package_and_without_parameter" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\PrivilegeTrait\TraitTest::test_privilege_with_package_and_entity_and_without_parameter" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\PrivilegeTrait\TraitTest::test_hasPrivilege" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\PrivilegeTrait\TraitTest::test_hasPrivilege_with_user_hasPrivilege" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\PrivilegeTrait\TraitTest::test_hasPrivilege_with_user_privileges" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\PrivilegeTrait\TraitTest::test_hasPrivilege_without_privileges_enabled" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\RoleTrait\TraitTest::test_getRolesForAdmin" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\RoleTrait\TraitTest::test_getRolesForAction" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\RoleTrait\TraitTest::test_getRolesToView" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\RoleTrait\TraitTest::test_hasRole" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Auth\Policies\RoleTrait\TraitTest::test_hasRole_advanced_role" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Blade\View\Components\Forms\Column\ComponentTest::test_component_instance" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Blade\View\Components\Forms\Column\ComponentTest::test_component_can_render_view_without_parameters" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Blade\View\Components\Forms\Column\ComponentTest::test_component_can_render_view_without_label_on_title_column" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Blade\View\Components\Forms\Column\ComponentTest::test_component_can_render_view_with_label_on_title_column" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Blade\View\Components\Forms\Column\ComponentTest::test_component_can_render_view_with_label_on_title_column_with_error" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Blade\View\Components\Forms\ColumnEditor\ComponentTest::test_component_instance" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Blade\View\Components\Forms\ColumnEditor\ComponentTest::test_component_can_render_view_without_parameters" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Blade\View\Components\Forms\ColumnEditor\ComponentTest::test_component_can_render_view_with_content_textarea" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Blade\View\Components\Forms\ColumnEditor\ComponentTest::test_component_can_render_view_with_content_textarea_and_described" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Blade\View\Components\Forms\ColumnSelect\ComponentTest::test_component_instance" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Blade\View\Components\Forms\ColumnSelect\ComponentTest::test_component_can_render_view_without_parameters" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Blade\View\Components\Forms\ColumnSelect\ComponentTest::test_component_can_render_view_with_select" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Blade\View\Components\ModelFlag\ComponentTest::test_component_instance" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Blade\View\Components\ModelFlag\ComponentTest::test_component_renders_empty_view_without_labels_or_classes" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Blade\View\Components\ModelFlag\ComponentTest::test_component_can_render_view_with_true_value" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Blade\View\Components\ModelFlag\ComponentTest::test_component_can_render_view_with_false_value" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Blade\View\Components\ModelFlag\ComponentTest::test_component_can_render_view_with_null_value" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Blade\View\Components\Table\Data\ComponentTest::test_component_instance" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Blade\View\Components\Table\Data\ComponentTest::test_component_can_render_view" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Test\Models\PlaygroundUser\InstanceTest::test_getAttributes" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Test\Models\PlaygroundUser\ModelTest::test_verify_model_relationships" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Test\Models\UserWithRoleAndPrivileges\ModelTest::test_getAttributes" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Test\Models\UserWithRoleAndPrivileges\ModelTest::test_hasPrivilege_is_false_without_privilege" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Test\Models\UserWithRoleAndPrivileges\ModelTest::test_hasPrivilege_is_false_with_wrong_privilege" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Test\Models\UserWithRoleAndPrivileges\ModelTest::test_hasPrivilege_is_true_with_correct_privilege" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Test\Models\UserWithRoleAndRoles\ModelTest::test_hasRole_is_false_without_role" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Test\Models\UserWithRoleAndRoles\ModelTest::test_hasRole_is_true_with_matching_role" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Test\Models\UserWithRoleAndRoles\ModelTest::test_hasRole_is_true_with_matching_secondary_role" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Test\Models\UserWithRoleAndRoles\ModelTest::test_isAdmin_is_true_with_admin_role" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Test\Models\UserWithRoleAndRoles\ModelTest::test_isAdmin_is_true_with_admin_secondary_role" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Test\Models\UserWithRoleAndRoles\ModelTest::test_isAdmin_is_true_with_wheel_role" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Test\Models\UserWithRoleAndRoles\ModelTest::test_isAdmin_is_true_with_wheel_secondary_role" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Test\Models\UserWithRoleAndRoles\ModelTest::test_isAdmin_is_true_with_root_role" size="unknown" status="success"/>
+      <test name="Tests\Unit\Playground\Test\Models\UserWithRoleAndRoles\ModelTest::test_isAdmin_is_false_with_root_secondary_role" size="unknown" status="success"/>
+      <test name="Tests\Feature\ExampleTest::test_the_application_returns_a_successful_response" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Console\Commands\About\CommandTest::test_command_about_displays_package_information_and_succeed_with_code_0" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Models\User\ModelTest::test_save_model_in_database" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Auth\Console\Commands\About\CommandTest::test_command_about_displays_package_information_and_succeed_with_code_0" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Blade\Console\Commands\About\CommandTest::test_command_about_displays_package_information_and_succeed_with_code_0" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\AboutRouteTest::test_route_about_as_guest_and_succeed" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\AboutRouteTest::test_route_json_about_as_guest_and_succeed" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\AboutRouteTest::test_route_about_as_client_and_succeed" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\AboutRouteTest::test_route_json_about_as_manager_and_succeed" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_bootstrap_as_guest_and_succeed" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_json_bootstrap_as_guest_and_succeed" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_bootstrap_as_vendor_and_succeed" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRouteTest::test_route_json_bootstrap_as_wheel_and_succeed" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicDashboardRouteTest::test_route_dashboard_as_guest_and_fail_when_disabled_for_guest_and_no_redirect" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicDashboardRouteTest::test_route_dashboard_as_guest_and_redirect_when_disabled_for_all" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicDashboardRouteTest::test_route_dashboard_as_guest_and_redirect_when_disabled_for_guest" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicDashboardRouteTest::test_route_json_dashboard_as_guest_and_succeed" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicHomeRouteTest::test_route_home_as_guest_and_succeed" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicHomeRouteTest::test_route_json_home_as_guest_and_succeed" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicHomeRouteTest::test_route_home_as_user_admin_and_succeed" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicHomeRouteTest::test_route_json_home_as_admin_and_succeed" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_sitemap_as_guest_and_fail_when_disabled_for_guest_and_no_redirect" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_sitemap_as_guest_and_redirect_when_disabled_for_all" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_sitemap_as_guest_and_redirect_when_disabled_for_guest" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_json_sitemap_as_guest_and_succeed" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_sitemap_as_user_and_succeed" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_sitemap_as_support_and_fail_when_disabled_for_all" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_sitemap_as_user_and_fail_when_disabled_for_all_and_no_redirect" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_json_sitemap_as_admin_and_succeed" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRouteTest::test_route_sitemap_as_user_and_succeed_with_package_sitemaps" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_guest_and_succeed" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_guest_with_preview_and_succeed" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_partner_and_succeed" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRouteTest::test_route_theme_as_sales_and_succeed_with_theme_and_redirect" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserDashboardRouteTest::test_route_dashboard_as_guest_and_fail_when_disabled_for_guest_and_no_redirect_with_auth_middleware" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserDashboardRouteTest::test_route_dashboard_as_guest_and_redirect" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserDashboardRouteTest::test_route_dashboard_as_guest_and_redirect_when_disabled_for_guest" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserDashboardRouteTest::test_route_json_dashboard_as_guest_and_fail" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserDashboardRouteTest::test_route_dashboard_as_user_and_succeed" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserDashboardRouteTest::test_route_dashboard_as_user_and_fail_when_disabled_for_all" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserDashboardRouteTest::test_route_dashboard_as_user_and_fail_when_disabled_for_all_and_no_redirect" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserDashboardRouteTest::test_route_json_dashboard_as_admin_and_succeed" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserHomeRouteTest::test_route_home_as_guest_and_fail" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserHomeRouteTest::test_route_json_home_as_guest_and_fail" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserHomeRouteTest::test_route_home_as_user_admin_and_succeed" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserHomeRouteTest::test_route_json_home_as_admin_and_succeed" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_sitemap_as_guest_and_fail_when_disabled_for_guest_and_no_redirect" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_sitemap_as_guest_and_redirect_when_disabled_for_all" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_sitemap_as_guest_and_redirect_when_disabled_for_guest" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_json_sitemap_as_guest_and_fail" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_sitemap_as_support_and_fail_when_disabled_for_all" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_sitemap_as_user_and_fail_when_disabled_for_all_and_no_redirect" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_json_sitemap_as_admin_and_succeed" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed_with_package_sitemaps" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\WelcomeRouteTest::test_route_welcome_as_guest_and_succeed" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\WelcomeRouteTest::test_route_json_welcome_as_guest_and_succeed" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\WelcomeRouteTest::test_route_welcome_as_user_and_succeed" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Site\Blade\Http\Controllers\WelcomeRouteTest::test_route_json_welcome_as_manager_admin_and_succeed" size="unknown" status="success"/>
+      <test name="Tests\Feature\Playground\Test\Console\Commands\About\CommandTest::test_command_about_displays_package_information_and_succeed_with_code_0" size="unknown" status="success"/>
+    </tests>
+    <directory name="/">
+      <totals>
+        <lines total="11557" comments="2383" code="9174" executable="3904" executed="1306" percent="33.45"/>
+        <methods count="393" tested="144" percent="36.64"/>
+        <functions count="0" tested="0" percent="0"/>
+        <classes count="49" tested="44" percent="89.80"/>
+        <traits count="50" tested="0" percent="0.00"/>
+      </totals>
+      <directory name="app">
+        <totals>
+          <lines total="516" comments="144" code="372" executable="31" executed="18" percent="58.06"/>
+          <methods count="13" tested="7" percent="53.85"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="10" tested="4" percent="40.00"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+        <directory name="Console">
+          <totals>
+            <lines total="27" comments="7" code="20" executable="3" executed="2" percent="66.67"/>
+            <methods count="2" tested="1" percent="50.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="0" percent="0.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+          <file name="Kernel.php" href="app/Console/Kernel.php.xml">
+            <totals>
+              <lines total="27" comments="7" code="20" executable="3" executed="2" percent="66.67"/>
+              <methods count="2" tested="1" percent="50.00"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="1" tested="0" percent="0.00"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+          </file>
+        </directory>
+        <directory name="Exceptions">
+          <totals>
+            <lines total="30" comments="9" code="21" executable="2" executed="2" percent="100.00"/>
+            <methods count="1" tested="1" percent="100.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="1" percent="100.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+          <file name="Handler.php" href="app/Exceptions/Handler.php.xml">
+            <totals>
+              <lines total="30" comments="9" code="21" executable="2" executed="2" percent="100.00"/>
+              <methods count="1" tested="1" percent="100.00"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="1" tested="1" percent="100.00"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+          </file>
+        </directory>
+        <directory name="Http">
+          <totals>
+            <lines total="267" comments="69" code="198" executable="9" executed="0" percent="0.00"/>
+            <methods count="3" tested="0" percent="0.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="3" tested="0" percent="0.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+          <directory name="Controllers">
+            <totals>
+              <lines total="12" comments="0" code="12" executable="0" executed="0" percent="0"/>
+              <methods count="0" tested="0" percent="0"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="0" tested="0" percent="0"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+            <file name="Controller.php" href="app/Http/Controllers/Controller.php.xml">
+              <totals>
+                <lines total="12" comments="0" code="12" executable="0" executed="0" percent="0"/>
+                <methods count="0" tested="0" percent="0"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="0" tested="0" percent="0"/>
+                <traits count="0" tested="0" percent="0"/>
+              </totals>
+            </file>
+          </directory>
+          <directory name="Middleware">
+            <totals>
+              <lines total="187" comments="48" code="139" executable="9" executed="0" percent="0.00"/>
+              <methods count="3" tested="0" percent="0.00"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="3" tested="0" percent="0.00"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+            <file name="Authenticate.php" href="app/Http/Middleware/Authenticate.php.xml">
+              <totals>
+                <lines total="17" comments="3" code="14" executable="1" executed="0" percent="0.00"/>
+                <methods count="1" tested="0" percent="0.00"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="1" tested="0" percent="0.00"/>
+                <traits count="0" tested="0" percent="0"/>
+              </totals>
+            </file>
+            <file name="EncryptCookies.php" href="app/Http/Middleware/EncryptCookies.php.xml">
+              <totals>
+                <lines total="17" comments="5" code="12" executable="0" executed="0" percent="0"/>
+                <methods count="0" tested="0" percent="0"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="0" tested="0" percent="0"/>
+                <traits count="0" tested="0" percent="0"/>
+              </totals>
+            </file>
+            <file name="PreventRequestsDuringMaintenance.php" href="app/Http/Middleware/PreventRequestsDuringMaintenance.php.xml">
+              <totals>
+                <lines total="17" comments="5" code="12" executable="0" executed="0" percent="0"/>
+                <methods count="0" tested="0" percent="0"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="0" tested="0" percent="0"/>
+                <traits count="0" tested="0" percent="0"/>
+              </totals>
+            </file>
+            <file name="RedirectIfAuthenticated.php" href="app/Http/Middleware/RedirectIfAuthenticated.php.xml">
+              <totals>
+                <lines total="30" comments="5" code="25" executable="5" executed="0" percent="0.00"/>
+                <methods count="1" tested="0" percent="0.00"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="1" tested="0" percent="0.00"/>
+                <traits count="0" tested="0" percent="0"/>
+              </totals>
+            </file>
+            <file name="TrimStrings.php" href="app/Http/Middleware/TrimStrings.php.xml">
+              <totals>
+                <lines total="19" comments="5" code="14" executable="0" executed="0" percent="0"/>
+                <methods count="0" tested="0" percent="0"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="0" tested="0" percent="0"/>
+                <traits count="0" tested="0" percent="0"/>
+              </totals>
+            </file>
+            <file name="TrustHosts.php" href="app/Http/Middleware/TrustHosts.php.xml">
+              <totals>
+                <lines total="20" comments="5" code="15" executable="3" executed="0" percent="0.00"/>
+                <methods count="1" tested="0" percent="0.00"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="1" tested="0" percent="0.00"/>
+                <traits count="0" tested="0" percent="0"/>
+              </totals>
+            </file>
+            <file name="TrustProxies.php" href="app/Http/Middleware/TrustProxies.php.xml">
+              <totals>
+                <lines total="28" comments="10" code="18" executable="0" executed="0" percent="0"/>
+                <methods count="0" tested="0" percent="0"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="0" tested="0" percent="0"/>
+                <traits count="0" tested="0" percent="0"/>
+              </totals>
+            </file>
+            <file name="ValidateSignature.php" href="app/Http/Middleware/ValidateSignature.php.xml">
+              <totals>
+                <lines total="22" comments="5" code="17" executable="0" executed="0" percent="0"/>
+                <methods count="0" tested="0" percent="0"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="0" tested="0" percent="0"/>
+                <traits count="0" tested="0" percent="0"/>
+              </totals>
+            </file>
+            <file name="VerifyCsrfToken.php" href="app/Http/Middleware/VerifyCsrfToken.php.xml">
+              <totals>
+                <lines total="17" comments="5" code="12" executable="0" executed="0" percent="0"/>
+                <methods count="0" tested="0" percent="0"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="0" tested="0" percent="0"/>
+                <traits count="0" tested="0" percent="0"/>
+              </totals>
+            </file>
+          </directory>
+          <file name="Kernel.php" href="app/Http/Kernel.php.xml">
+            <totals>
+              <lines total="68" comments="21" code="47" executable="0" executed="0" percent="0"/>
+              <methods count="0" tested="0" percent="0"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="0" tested="0" percent="0"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+          </file>
+        </directory>
+        <directory name="Models">
+          <totals>
+            <lines total="45" comments="16" code="29" executable="0" executed="0" percent="0"/>
+            <methods count="0" tested="0" percent="0"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="0" tested="0" percent="0"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+          <file name="User.php" href="app/Models/User.php.xml">
+            <totals>
+              <lines total="45" comments="16" code="29" executable="0" executed="0" percent="0"/>
+              <methods count="0" tested="0" percent="0"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="0" tested="0" percent="0"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+          </file>
+        </directory>
+        <directory name="Providers">
+          <totals>
+            <lines total="147" comments="43" code="104" executable="17" executed="14" percent="82.35"/>
+            <methods count="7" tested="5" percent="71.43"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="5" tested="3" percent="60.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+          <file name="AppServiceProvider.php" href="app/Providers/AppServiceProvider.php.xml">
+            <totals>
+              <lines total="24" comments="8" code="16" executable="2" executed="2" percent="100.00"/>
+              <methods count="2" tested="2" percent="100.00"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="1" tested="1" percent="100.00"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+          </file>
+          <file name="AuthServiceProvider.php" href="app/Providers/AuthServiceProvider.php.xml">
+            <totals>
+              <lines total="26" comments="10" code="16" executable="1" executed="1" percent="100.00"/>
+              <methods count="1" tested="1" percent="100.00"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="1" tested="1" percent="100.00"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+          </file>
+          <file name="BroadcastServiceProvider.php" href="app/Providers/BroadcastServiceProvider.php.xml">
+            <totals>
+              <lines total="19" comments="3" code="16" executable="2" executed="0" percent="0.00"/>
+              <methods count="1" tested="0" percent="0.00"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="1" tested="0" percent="0.00"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+          </file>
+          <file name="EventServiceProvider.php" href="app/Providers/EventServiceProvider.php.xml">
+            <totals>
+              <lines total="38" comments="12" code="26" executable="2" executed="2" percent="100.00"/>
+              <methods count="2" tested="2" percent="100.00"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="1" tested="1" percent="100.00"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+          </file>
+          <file name="RouteServiceProvider.php" href="app/Providers/RouteServiceProvider.php.xml">
+            <totals>
+              <lines total="40" comments="10" code="30" executable="10" executed="9" percent="90.00"/>
+              <methods count="1" tested="0" percent="0.00"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="1" tested="0" percent="0.00"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+          </file>
+        </directory>
+      </directory>
+      <directory name="vendor">
+        <totals>
+          <lines total="11041" comments="2239" code="8802" executable="3873" executed="1288" percent="33.26"/>
+          <methods count="380" tested="137" percent="36.05"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="39" tested="40" percent="102.56"/>
+          <traits count="50" tested="0" percent="0.00"/>
+        </totals>
+        <directory name="gammamatrix">
+          <totals>
+            <lines total="11041" comments="2239" code="8802" executable="3873" executed="1288" percent="33.26"/>
+            <methods count="380" tested="137" percent="36.05"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="39" tested="40" percent="102.56"/>
+            <traits count="50" tested="0" percent="0.00"/>
+          </totals>
+          <directory name="playground-auth">
+            <totals>
+              <lines total="1777" comments="373" code="1404" executable="586" executed="280" percent="47.78"/>
+              <methods count="54" tested="33" percent="61.11"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="8" tested="4" percent="50.00"/>
+              <traits count="3" tested="0" percent="0.00"/>
+            </totals>
+            <directory name="src">
+              <totals>
+                <lines total="1777" comments="373" code="1404" executable="586" executed="280" percent="47.78"/>
+                <methods count="54" tested="33" percent="61.11"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="8" tested="4" percent="50.00"/>
+                <traits count="3" tested="0" percent="0.00"/>
+              </totals>
+              <directory name="Console">
+                <totals>
+                  <lines total="70" comments="20" code="50" executable="16" executed="15" percent="93.75"/>
+                  <methods count="1" tested="0" percent="0.00"/>
+                  <functions count="0" tested="0" percent="0"/>
+                  <classes count="1" tested="0" percent="0.00"/>
+                  <traits count="0" tested="0" percent="0"/>
+                </totals>
+                <directory name="Commands">
+                  <totals>
+                    <lines total="70" comments="20" code="50" executable="16" executed="15" percent="93.75"/>
+                    <methods count="1" tested="0" percent="0.00"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="1" tested="0" percent="0.00"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                  <file name="HashPassword.php" href="vendor/gammamatrix/playground-auth/src/Console/Commands/HashPassword.php.xml">
+                    <totals>
+                      <lines total="70" comments="20" code="50" executable="16" executed="15" percent="93.75"/>
+                      <methods count="1" tested="0" percent="0.00"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="1" tested="0" percent="0.00"/>
+                      <traits count="0" tested="0" percent="0"/>
+                    </totals>
+                  </file>
+                </directory>
+              </directory>
+              <directory name="Facades">
+                <totals>
+                  <lines total="32" comments="17" code="15" executable="1" executed="1" percent="100.00"/>
+                  <methods count="1" tested="1" percent="100.00"/>
+                  <functions count="0" tested="0" percent="0"/>
+                  <classes count="1" tested="1" percent="100.00"/>
+                  <traits count="0" tested="0" percent="0"/>
+                </totals>
+                <file name="Can.php" href="vendor/gammamatrix/playground-auth/src/Facades/Can.php.xml">
+                  <totals>
+                    <lines total="32" comments="17" code="15" executable="1" executed="1" percent="100.00"/>
+                    <methods count="1" tested="1" percent="100.00"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="1" tested="1" percent="100.00"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+              </directory>
+              <directory name="Policies">
+                <totals>
+                  <lines total="666" comments="204" code="462" executable="151" executed="123" percent="81.46"/>
+                  <methods count="29" tested="25" percent="86.21"/>
+                  <functions count="0" tested="0" percent="0"/>
+                  <classes count="2" tested="3" percent="150.00"/>
+                  <traits count="3" tested="0" percent="0.00"/>
+                </totals>
+                <directory name="Contracts">
+                  <totals>
+                    <lines total="40" comments="21" code="19" executable="0" executed="0" percent="0"/>
+                    <methods count="0" tested="0" percent="0"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="0" percent="0"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                  <file name="Role.php" href="vendor/gammamatrix/playground-auth/src/Policies/Contracts/Role.php.xml">
+                    <totals>
+                      <lines total="40" comments="21" code="19" executable="0" executed="0" percent="0"/>
+                      <methods count="0" tested="0" percent="0"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="0" tested="0" percent="0"/>
+                      <traits count="0" tested="0" percent="0"/>
+                    </totals>
+                  </file>
+                </directory>
+                <file name="ModelPolicy.php" href="vendor/gammamatrix/playground-auth/src/Policies/ModelPolicy.php.xml">
+                  <totals>
+                    <lines total="130" comments="49" code="81" executable="20" executed="20" percent="100.00"/>
+                    <methods count="11" tested="11" percent="100.00"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="1" tested="1" percent="100.00"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+                <file name="Policy.php" href="vendor/gammamatrix/playground-auth/src/Policies/Policy.php.xml">
+                  <totals>
+                    <lines total="105" comments="59" code="46" executable="9" executed="9" percent="100.00"/>
+                    <methods count="3" tested="3" percent="100.00"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="1" tested="1" percent="100.00"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+                <file name="PolicyTrait.php" href="vendor/gammamatrix/playground-auth/src/Policies/PolicyTrait.php.xml">
+                  <totals>
+                    <lines total="93" comments="16" code="77" executable="23" executed="22" percent="95.65"/>
+                    <methods count="6" tested="5" percent="83.33"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="0" percent="0"/>
+                    <traits count="1" tested="0" percent="0.00"/>
+                  </totals>
+                </file>
+                <file name="PrivilegeTrait.php" href="vendor/gammamatrix/playground-auth/src/Policies/PrivilegeTrait.php.xml">
+                  <totals>
+                    <lines total="140" comments="16" code="124" executable="51" executed="24" percent="47.06"/>
+                    <methods count="4" tested="1" percent="25.00"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="0" percent="0"/>
+                    <traits count="1" tested="0" percent="0.00"/>
+                  </totals>
+                </file>
+                <file name="RoleTrait.php" href="vendor/gammamatrix/playground-auth/src/Policies/RoleTrait.php.xml">
+                  <totals>
+                    <lines total="158" comments="43" code="115" executable="48" executed="48" percent="100.00"/>
+                    <methods count="5" tested="5" percent="100.00"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="1" percent="0"/>
+                    <traits count="1" tested="0" percent="0.00"/>
+                  </totals>
+                </file>
+              </directory>
+              <file name="Can.php" href="vendor/gammamatrix/playground-auth/src/Can.php.xml">
+                <totals>
+                  <lines total="419" comments="37" code="382" executable="175" executed="55" percent="31.43"/>
+                  <methods count="8" tested="0" percent="0.00"/>
+                  <functions count="0" tested="0" percent="0"/>
+                  <classes count="1" tested="0" percent="0.00"/>
+                  <traits count="0" tested="0" percent="0"/>
+                </totals>
+              </file>
+              <file name="Issuer.php" href="vendor/gammamatrix/playground-auth/src/Issuer.php.xml">
+                <totals>
+                  <lines total="368" comments="65" code="303" executable="150" executed="0" percent="0.00"/>
+                  <methods count="6" tested="0" percent="0.00"/>
+                  <functions count="0" tested="0" percent="0"/>
+                  <classes count="1" tested="0" percent="0.00"/>
+                  <traits count="0" tested="0" percent="0"/>
+                </totals>
+              </file>
+              <file name="Permission.php" href="vendor/gammamatrix/playground-auth/src/Permission.php.xml">
+                <totals>
+                  <lines total="49" comments="6" code="43" executable="7" executed="5" percent="71.43"/>
+                  <methods count="5" tested="4" percent="80.00"/>
+                  <functions count="0" tested="0" percent="0"/>
+                  <classes count="1" tested="0" percent="0.00"/>
+                  <traits count="0" tested="0" percent="0"/>
+                </totals>
+              </file>
+              <file name="ServiceProvider.php" href="vendor/gammamatrix/playground-auth/src/ServiceProvider.php.xml">
+                <totals>
+                  <lines total="173" comments="24" code="149" executable="86" executed="81" percent="94.19"/>
+                  <methods count="4" tested="3" percent="75.00"/>
+                  <functions count="0" tested="0" percent="0"/>
+                  <classes count="1" tested="0" percent="0.00"/>
+                  <traits count="0" tested="0" percent="0"/>
+                </totals>
+              </file>
+            </directory>
+          </directory>
+          <directory name="playground-blade">
+            <totals>
+              <lines total="1639" comments="313" code="1326" executable="358" executed="313" percent="87.43"/>
+              <methods count="80" tested="51" percent="63.75"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="16" tested="10" percent="62.50"/>
+              <traits count="2" tested="0" percent="0.00"/>
+            </totals>
+            <directory name="src">
+              <totals>
+                <lines total="1639" comments="313" code="1326" executable="358" executed="313" percent="87.43"/>
+                <methods count="80" tested="51" percent="63.75"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="16" tested="10" percent="62.50"/>
+                <traits count="2" tested="0" percent="0.00"/>
+              </totals>
+              <directory name="Assets">
+                <totals>
+                  <lines total="631" comments="77" code="554" executable="139" executed="106" percent="76.26"/>
+                  <methods count="40" tested="18" percent="45.00"/>
+                  <functions count="0" tested="0" percent="0"/>
+                  <classes count="7" tested="1" percent="14.29"/>
+                  <traits count="0" tested="0" percent="0"/>
+                </totals>
+                <directory name="Contracts">
+                  <totals>
+                    <lines total="112" comments="30" code="82" executable="0" executed="0" percent="0"/>
+                    <methods count="0" tested="0" percent="0"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="0" percent="0"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                  <file name="Icon.php" href="vendor/gammamatrix/playground-blade/src/Assets/Contracts/Icon.php.xml">
+                    <totals>
+                      <lines total="14" comments="6" code="8" executable="0" executed="0" percent="0"/>
+                      <methods count="0" tested="0" percent="0"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="0" tested="0" percent="0"/>
+                      <traits count="0" tested="0" percent="0"/>
+                    </totals>
+                  </file>
+                  <file name="Link.php" href="vendor/gammamatrix/playground-blade/src/Assets/Contracts/Link.php.xml">
+                    <totals>
+                      <lines total="30" comments="6" code="24" executable="0" executed="0" percent="0"/>
+                      <methods count="0" tested="0" percent="0"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="0" tested="0" percent="0"/>
+                      <traits count="0" tested="0" percent="0"/>
+                    </totals>
+                  </file>
+                  <file name="Script.php" href="vendor/gammamatrix/playground-blade/src/Assets/Contracts/Script.php.xml">
+                    <totals>
+                      <lines total="36" comments="6" code="30" executable="0" executed="0" percent="0"/>
+                      <methods count="0" tested="0" percent="0"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="0" tested="0" percent="0"/>
+                      <traits count="0" tested="0" percent="0"/>
+                    </totals>
+                  </file>
+                  <file name="Style.php" href="vendor/gammamatrix/playground-blade/src/Assets/Contracts/Style.php.xml">
+                    <totals>
+                      <lines total="16" comments="6" code="10" executable="0" executed="0" percent="0"/>
+                      <methods count="0" tested="0" percent="0"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="0" tested="0" percent="0"/>
+                      <traits count="0" tested="0" percent="0"/>
+                    </totals>
+                  </file>
+                  <file name="Stylesheet.php" href="vendor/gammamatrix/playground-blade/src/Assets/Contracts/Stylesheet.php.xml">
+                    <totals>
+                      <lines total="16" comments="6" code="10" executable="0" executed="0" percent="0"/>
+                      <methods count="0" tested="0" percent="0"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="0" tested="0" percent="0"/>
+                      <traits count="0" tested="0" percent="0"/>
+                    </totals>
+                  </file>
+                </directory>
+                <file name="Asset.php" href="vendor/gammamatrix/playground-blade/src/Assets/Asset.php.xml">
+                  <totals>
+                    <lines total="37" comments="9" code="28" executable="6" executed="2" percent="33.33"/>
+                    <methods count="2" tested="1" percent="50.00"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="1" tested="0" percent="0.00"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+                <file name="Font.php" href="vendor/gammamatrix/playground-blade/src/Assets/Font.php.xml">
+                  <totals>
+                    <lines total="23" comments="6" code="17" executable="7" executed="7" percent="100.00"/>
+                    <methods count="1" tested="1" percent="100.00"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="1" tested="1" percent="100.00"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+                <file name="Icon.php" href="vendor/gammamatrix/playground-blade/src/Assets/Icon.php.xml">
+                  <totals>
+                    <lines total="46" comments="6" code="40" executable="14" executed="13" percent="92.86"/>
+                    <methods count="3" tested="2" percent="66.67"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="1" tested="0" percent="0.00"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+                <file name="Link.php" href="vendor/gammamatrix/playground-blade/src/Assets/Link.php.xml">
+                  <totals>
+                    <lines total="137" comments="6" code="131" executable="39" executed="25" percent="64.10"/>
+                    <methods count="11" tested="4" percent="36.36"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="1" tested="0" percent="0.00"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+                <file name="Script.php" href="vendor/gammamatrix/playground-blade/src/Assets/Script.php.xml">
+                  <totals>
+                    <lines total="172" comments="8" code="164" executable="48" executed="38" percent="79.17"/>
+                    <methods count="15" tested="6" percent="40.00"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="1" tested="0" percent="0.00"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+                <file name="Style.php" href="vendor/gammamatrix/playground-blade/src/Assets/Style.php.xml">
+                  <totals>
+                    <lines total="46" comments="6" code="40" executable="8" executed="7" percent="87.50"/>
+                    <methods count="4" tested="3" percent="75.00"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="1" tested="0" percent="0.00"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+                <file name="Stylesheet.php" href="vendor/gammamatrix/playground-blade/src/Assets/Stylesheet.php.xml">
+                  <totals>
+                    <lines total="58" comments="6" code="52" executable="17" executed="14" percent="82.35"/>
+                    <methods count="4" tested="1" percent="25.00"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="1" tested="0" percent="0.00"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+              </directory>
+              <directory name="Concerns">
+                <totals>
+                  <lines total="320" comments="56" code="264" executable="111" executed="99" percent="89.19"/>
+                  <methods count="15" tested="8" percent="53.33"/>
+                  <functions count="0" tested="0" percent="0"/>
+                  <classes count="0" tested="0" percent="0"/>
+                  <traits count="2" tested="0" percent="0.00"/>
+                </totals>
+                <file name="WithAssets.php" href="vendor/gammamatrix/playground-blade/src/Concerns/WithAssets.php.xml">
+                  <totals>
+                    <lines total="152" comments="24" code="128" executable="66" executed="61" percent="92.42"/>
+                    <methods count="5" tested="3" percent="60.00"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="0" percent="0"/>
+                    <traits count="1" tested="0" percent="0.00"/>
+                  </totals>
+                </file>
+                <file name="WithThemes.php" href="vendor/gammamatrix/playground-blade/src/Concerns/WithThemes.php.xml">
+                  <totals>
+                    <lines total="168" comments="32" code="136" executable="45" executed="38" percent="84.44"/>
+                    <methods count="10" tested="5" percent="50.00"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="0" percent="0"/>
+                    <traits count="1" tested="0" percent="0.00"/>
+                  </totals>
+                </file>
+              </directory>
+              <directory name="Contracts">
+                <totals>
+                  <lines total="66" comments="30" code="36" executable="0" executed="0" percent="0"/>
+                  <methods count="0" tested="0" percent="0"/>
+                  <functions count="0" tested="0" percent="0"/>
+                  <classes count="0" tested="0" percent="0"/>
+                  <traits count="0" tested="0" percent="0"/>
+                </totals>
+                <file name="HasAssets.php" href="vendor/gammamatrix/playground-blade/src/Contracts/HasAssets.php.xml">
+                  <totals>
+                    <lines total="36" comments="18" code="18" executable="0" executed="0" percent="0"/>
+                    <methods count="0" tested="0" percent="0"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="0" percent="0"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+                <file name="HasThemes.php" href="vendor/gammamatrix/playground-blade/src/Contracts/HasThemes.php.xml">
+                  <totals>
+                    <lines total="30" comments="12" code="18" executable="0" executed="0" percent="0"/>
+                    <methods count="0" tested="0" percent="0"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="0" percent="0"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+              </directory>
+              <directory name="Facades">
+                <totals>
+                  <lines total="37" comments="22" code="15" executable="1" executed="1" percent="100.00"/>
+                  <methods count="1" tested="1" percent="100.00"/>
+                  <functions count="0" tested="0" percent="0"/>
+                  <classes count="1" tested="1" percent="100.00"/>
+                  <traits count="0" tested="0" percent="0"/>
+                </totals>
+                <file name="Ui.php" href="vendor/gammamatrix/playground-blade/src/Facades/Ui.php.xml">
+                  <totals>
+                    <lines total="37" comments="22" code="15" executable="1" executed="1" percent="100.00"/>
+                    <methods count="1" tested="1" percent="100.00"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="1" tested="1" percent="100.00"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+              </directory>
+              <directory name="Themes">
+                <totals>
+                  <lines total="167" comments="30" code="137" executable="32" executed="32" percent="100.00"/>
+                  <methods count="10" tested="10" percent="100.00"/>
+                  <functions count="0" tested="0" percent="0"/>
+                  <classes count="2" tested="2" percent="100.00"/>
+                  <traits count="0" tested="0" percent="0"/>
+                </totals>
+                <directory name="Contracts">
+                  <totals>
+                    <lines total="19" comments="11" code="8" executable="0" executed="0" percent="0"/>
+                    <methods count="0" tested="0" percent="0"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="0" percent="0"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                  <file name="Bootstrap.php" href="vendor/gammamatrix/playground-blade/src/Themes/Contracts/Bootstrap.php.xml">
+                    <totals>
+                      <lines total="19" comments="11" code="8" executable="0" executed="0" percent="0"/>
+                      <methods count="0" tested="0" percent="0"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="0" tested="0" percent="0"/>
+                      <traits count="0" tested="0" percent="0"/>
+                    </totals>
+                  </file>
+                </directory>
+                <file name="Bootstrap.php" href="vendor/gammamatrix/playground-blade/src/Themes/Bootstrap.php.xml">
+                  <totals>
+                    <lines total="38" comments="8" code="30" executable="6" executed="6" percent="100.00"/>
+                    <methods count="2" tested="2" percent="100.00"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="1" tested="1" percent="100.00"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+                <file name="Theme.php" href="vendor/gammamatrix/playground-blade/src/Themes/Theme.php.xml">
+                  <totals>
+                    <lines total="110" comments="11" code="99" executable="26" executed="26" percent="100.00"/>
+                    <methods count="8" tested="8" percent="100.00"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="1" tested="1" percent="100.00"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+              </directory>
+              <directory name="View">
+                <totals>
+                  <lines total="295" comments="82" code="213" executable="30" executed="30" percent="100.00"/>
+                  <methods count="10" tested="10" percent="100.00"/>
+                  <functions count="0" tested="0" percent="0"/>
+                  <classes count="5" tested="5" percent="100.00"/>
+                  <traits count="0" tested="0" percent="0"/>
+                </totals>
+                <directory name="Components">
+                  <totals>
+                    <lines total="295" comments="82" code="213" executable="30" executed="30" percent="100.00"/>
+                    <methods count="10" tested="10" percent="100.00"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="5" tested="5" percent="100.00"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                  <directory name="Forms">
+                    <totals>
+                      <lines total="163" comments="46" code="117" executable="18" executed="18" percent="100.00"/>
+                      <methods count="6" tested="6" percent="100.00"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="3" tested="3" percent="100.00"/>
+                      <traits count="0" tested="0" percent="0"/>
+                    </totals>
+                    <file name="Column.php" href="vendor/gammamatrix/playground-blade/src/View/Components/Forms/Column.php.xml">
+                      <totals>
+                        <lines total="56" comments="16" code="40" executable="6" executed="6" percent="100.00"/>
+                        <methods count="2" tested="2" percent="100.00"/>
+                        <functions count="0" tested="0" percent="0"/>
+                        <classes count="1" tested="1" percent="100.00"/>
+                        <traits count="0" tested="0" percent="0"/>
+                      </totals>
+                    </file>
+                    <file name="ColumnEditor.php" href="vendor/gammamatrix/playground-blade/src/View/Components/Forms/ColumnEditor.php.xml">
+                      <totals>
+                        <lines total="48" comments="14" code="34" executable="6" executed="6" percent="100.00"/>
+                        <methods count="2" tested="2" percent="100.00"/>
+                        <functions count="0" tested="0" percent="0"/>
+                        <classes count="1" tested="1" percent="100.00"/>
+                        <traits count="0" tested="0" percent="0"/>
+                      </totals>
+                    </file>
+                    <file name="ColumnSelect.php" href="vendor/gammamatrix/playground-blade/src/View/Components/Forms/ColumnSelect.php.xml">
+                      <totals>
+                        <lines total="59" comments="16" code="43" executable="6" executed="6" percent="100.00"/>
+                        <methods count="2" tested="2" percent="100.00"/>
+                        <functions count="0" tested="0" percent="0"/>
+                        <classes count="1" tested="1" percent="100.00"/>
+                        <traits count="0" tested="0" percent="0"/>
+                      </totals>
+                    </file>
+                  </directory>
+                  <directory name="Table">
+                    <totals>
+                      <lines total="97" comments="27" code="70" executable="6" executed="6" percent="100.00"/>
+                      <methods count="2" tested="2" percent="100.00"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="1" tested="1" percent="100.00"/>
+                      <traits count="0" tested="0" percent="0"/>
+                    </totals>
+                    <file name="Data.php" href="vendor/gammamatrix/playground-blade/src/View/Components/Table/Data.php.xml">
+                      <totals>
+                        <lines total="97" comments="27" code="70" executable="6" executed="6" percent="100.00"/>
+                        <methods count="2" tested="2" percent="100.00"/>
+                        <functions count="0" tested="0" percent="0"/>
+                        <classes count="1" tested="1" percent="100.00"/>
+                        <traits count="0" tested="0" percent="0"/>
+                      </totals>
+                    </file>
+                  </directory>
+                  <file name="ModelFlag.php" href="vendor/gammamatrix/playground-blade/src/View/Components/ModelFlag.php.xml">
+                    <totals>
+                      <lines total="35" comments="9" code="26" executable="6" executed="6" percent="100.00"/>
+                      <methods count="2" tested="2" percent="100.00"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="1" tested="1" percent="100.00"/>
+                      <traits count="0" tested="0" percent="0"/>
+                    </totals>
+                  </file>
+                </directory>
+              </directory>
+              <file name="ServiceProvider.php" href="vendor/gammamatrix/playground-blade/src/ServiceProvider.php.xml">
+                <totals>
+                  <lines total="103" comments="10" code="93" executable="45" executed="45" percent="100.00"/>
+                  <methods count="4" tested="4" percent="100.00"/>
+                  <functions count="0" tested="0" percent="0"/>
+                  <classes count="1" tested="1" percent="100.00"/>
+                  <traits count="0" tested="0" percent="0"/>
+                </totals>
+              </file>
+              <file name="Ui.php" href="vendor/gammamatrix/playground-blade/src/Ui.php.xml">
+                <totals>
+                  <lines total="20" comments="6" code="14" executable="0" executed="0" percent="0"/>
+                  <methods count="0" tested="0" percent="0"/>
+                  <functions count="0" tested="0" percent="0"/>
+                  <classes count="0" tested="0" percent="0"/>
+                  <traits count="0" tested="0" percent="0"/>
+                </totals>
+              </file>
+            </directory>
+          </directory>
+          <directory name="playground-site-blade">
+            <totals>
+              <lines total="680" comments="136" code="544" executable="232" executed="223" percent="96.12"/>
+              <methods count="20" tested="16" percent="80.00"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="9" tested="6" percent="66.67"/>
+              <traits count="0" tested="0" percent="0"/>
+            </totals>
+            <directory name="src">
+              <totals>
+                <lines total="680" comments="136" code="544" executable="232" executed="223" percent="96.12"/>
+                <methods count="20" tested="16" percent="80.00"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="9" tested="6" percent="66.67"/>
+                <traits count="0" tested="0" percent="0"/>
+              </totals>
+              <directory name="Http">
+                <totals>
+                  <lines total="537" comments="122" code="415" executable="165" executed="156" percent="94.55"/>
+                  <methods count="15" tested="11" percent="73.33"/>
+                  <functions count="0" tested="0" percent="0"/>
+                  <classes count="8" tested="5" percent="62.50"/>
+                  <traits count="0" tested="0" percent="0"/>
+                </totals>
+                <directory name="Controllers">
+                  <totals>
+                    <lines total="537" comments="122" code="415" executable="165" executed="156" percent="94.55"/>
+                    <methods count="15" tested="11" percent="73.33"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="8" tested="5" percent="62.50"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                  <file name="AboutController.php" href="vendor/gammamatrix/playground-site-blade/src/Http/Controllers/AboutController.php.xml">
+                    <totals>
+                      <lines total="40" comments="11" code="29" executable="11" executed="11" percent="100.00"/>
+                      <methods count="1" tested="1" percent="100.00"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="1" tested="1" percent="100.00"/>
+                      <traits count="0" tested="0" percent="0"/>
+                    </totals>
+                  </file>
+                  <file name="BootstrapController.php" href="vendor/gammamatrix/playground-site-blade/src/Http/Controllers/BootstrapController.php.xml">
+                    <totals>
+                      <lines total="68" comments="16" code="52" executable="24" executed="24" percent="100.00"/>
+                      <methods count="2" tested="2" percent="100.00"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="1" tested="1" percent="100.00"/>
+                      <traits count="0" tested="0" percent="0"/>
+                    </totals>
+                  </file>
+                  <file name="Controller.php" href="vendor/gammamatrix/playground-site-blade/src/Http/Controllers/Controller.php.xml">
+                    <totals>
+                      <lines total="69" comments="14" code="55" executable="18" executed="18" percent="100.00"/>
+                      <methods count="3" tested="3" percent="100.00"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="1" tested="1" percent="100.00"/>
+                      <traits count="0" tested="0" percent="0"/>
+                    </totals>
+                  </file>
+                  <file name="DashboardController.php" href="vendor/gammamatrix/playground-site-blade/src/Http/Controllers/DashboardController.php.xml">
+                    <totals>
+                      <lines total="86" comments="13" code="73" executable="28" executed="27" percent="96.43"/>
+                      <methods count="2" tested="1" percent="50.00"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="1" tested="0" percent="0.00"/>
+                      <traits count="0" tested="0" percent="0"/>
+                    </totals>
+                  </file>
+                  <file name="HomeController.php" href="vendor/gammamatrix/playground-site-blade/src/Http/Controllers/HomeController.php.xml">
+                    <totals>
+                      <lines total="42" comments="12" code="30" executable="11" executed="11" percent="100.00"/>
+                      <methods count="1" tested="1" percent="100.00"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="1" tested="1" percent="100.00"/>
+                      <traits count="0" tested="0" percent="0"/>
+                    </totals>
+                  </file>
+                  <file name="IndexController.php" href="vendor/gammamatrix/playground-site-blade/src/Http/Controllers/IndexController.php.xml">
+                    <totals>
+                      <lines total="42" comments="12" code="30" executable="11" executed="9" percent="81.82"/>
+                      <methods count="1" tested="0" percent="0.00"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="1" tested="0" percent="0.00"/>
+                      <traits count="0" tested="0" percent="0"/>
+                    </totals>
+                  </file>
+                  <file name="SitemapController.php" href="vendor/gammamatrix/playground-site-blade/src/Http/Controllers/SitemapController.php.xml">
+                    <totals>
+                      <lines total="149" comments="32" code="117" executable="51" executed="45" percent="88.24"/>
+                      <methods count="4" tested="2" percent="50.00"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="1" tested="0" percent="0.00"/>
+                      <traits count="0" tested="0" percent="0"/>
+                    </totals>
+                  </file>
+                  <file name="WelcomeController.php" href="vendor/gammamatrix/playground-site-blade/src/Http/Controllers/WelcomeController.php.xml">
+                    <totals>
+                      <lines total="41" comments="12" code="29" executable="11" executed="11" percent="100.00"/>
+                      <methods count="1" tested="1" percent="100.00"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="1" tested="1" percent="100.00"/>
+                      <traits count="0" tested="0" percent="0"/>
+                    </totals>
+                  </file>
+                </directory>
+              </directory>
+              <file name="ServiceProvider.php" href="vendor/gammamatrix/playground-site-blade/src/ServiceProvider.php.xml">
+                <totals>
+                  <lines total="143" comments="14" code="129" executable="67" executed="67" percent="100.00"/>
+                  <methods count="5" tested="5" percent="100.00"/>
+                  <functions count="0" tested="0" percent="0"/>
+                  <classes count="1" tested="1" percent="100.00"/>
+                  <traits count="0" tested="0" percent="0"/>
+                </totals>
+              </file>
+            </directory>
+          </directory>
+          <directory name="playground-test">
+            <totals>
+              <lines total="5295" comments="949" code="4346" executable="2270" executed="45" percent="1.98"/>
+              <methods count="199" tested="10" percent="5.03"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="5" tested="4" percent="80.00"/>
+              <traits count="30" tested="0" percent="0.00"/>
+            </totals>
+            <directory name="src">
+              <totals>
+                <lines total="5295" comments="949" code="4346" executable="2270" executed="45" percent="1.98"/>
+                <methods count="199" tested="10" percent="5.03"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="5" tested="4" percent="80.00"/>
+                <traits count="30" tested="0" percent="0.00"/>
+              </totals>
+              <directory name="Feature">
+                <totals>
+                  <lines total="4381" comments="621" code="3760" executable="2129" executed="0" percent="0.00"/>
+                  <methods count="174" tested="0" percent="0.00"/>
+                  <functions count="0" tested="0" percent="0"/>
+                  <classes count="1" tested="0" percent="0.00"/>
+                  <traits count="26" tested="0" percent="0.00"/>
+                </totals>
+                <directory name="Http">
+                  <totals>
+                    <lines total="3825" comments="409" code="3416" executable="1933" executed="0" percent="0.00"/>
+                    <methods count="165" tested="0" percent="0.00"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="0" percent="0"/>
+                    <traits count="26" tested="0" percent="0.00"/>
+                  </totals>
+                  <directory name="Controllers">
+                    <totals>
+                      <lines total="3825" comments="409" code="3416" executable="1933" executed="0" percent="0.00"/>
+                      <methods count="165" tested="0" percent="0.00"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="0" tested="0" percent="0"/>
+                      <traits count="26" tested="0" percent="0.00"/>
+                    </totals>
+                    <directory name="Resource">
+                      <totals>
+                        <lines total="3825" comments="409" code="3416" executable="1933" executed="0" percent="0.00"/>
+                        <methods count="165" tested="0" percent="0.00"/>
+                        <functions count="0" tested="0" percent="0"/>
+                        <classes count="0" tested="0" percent="0"/>
+                        <traits count="26" tested="0" percent="0.00"/>
+                      </totals>
+                      <directory name="Playground">
+                        <totals>
+                          <lines total="3825" comments="409" code="3416" executable="1933" executed="0" percent="0.00"/>
+                          <methods count="165" tested="0" percent="0.00"/>
+                          <functions count="0" tested="0" percent="0"/>
+                          <classes count="0" tested="0" percent="0"/>
+                          <traits count="26" tested="0" percent="0.00"/>
+                        </totals>
+                        <file name="CreateJsonTrait.php" href="vendor/gammamatrix/playground-test/src/Feature/Http/Controllers/Resource/Playground/CreateJsonTrait.php.xml">
+                          <totals>
+                            <lines total="91" comments="16" code="75" executable="35" executed="0" percent="0.00"/>
+                            <methods count="6" tested="0" percent="0.00"/>
+                            <functions count="0" tested="0" percent="0"/>
+                            <classes count="0" tested="0" percent="0"/>
+                            <traits count="1" tested="0" percent="0.00"/>
+                          </totals>
+                        </file>
+                        <file name="CreateTrait.php" href="vendor/gammamatrix/playground-test/src/Feature/Http/Controllers/Resource/Playground/CreateTrait.php.xml">
+                          <totals>
+                            <lines total="111" comments="16" code="95" executable="48" executed="0" percent="0.00"/>
+                            <methods count="6" tested="0" percent="0.00"/>
+                            <functions count="0" tested="0" percent="0"/>
+                            <classes count="0" tested="0" percent="0"/>
+                            <traits count="1" tested="0" percent="0.00"/>
+                          </totals>
+                        </file>
+                        <file name="DestroyJsonTrait.php" href="vendor/gammamatrix/playground-test/src/Feature/Http/Controllers/Resource/Playground/DestroyJsonTrait.php.xml">
+                          <totals>
+                            <lines total="260" comments="16" code="244" executable="161" executed="0" percent="0.00"/>
+                            <methods count="8" tested="0" percent="0.00"/>
+                            <functions count="0" tested="0" percent="0"/>
+                            <classes count="0" tested="0" percent="0"/>
+                            <traits count="1" tested="0" percent="0.00"/>
+                          </totals>
+                        </file>
+                        <file name="DestroyTrait.php" href="vendor/gammamatrix/playground-test/src/Feature/Http/Controllers/Resource/Playground/DestroyTrait.php.xml">
+                          <totals>
+                            <lines total="217" comments="12" code="205" executable="133" executed="0" percent="0.00"/>
+                            <methods count="7" tested="0" percent="0.00"/>
+                            <functions count="0" tested="0" percent="0"/>
+                            <classes count="0" tested="0" percent="0"/>
+                            <traits count="1" tested="0" percent="0.00"/>
+                          </totals>
+                        </file>
+                        <file name="EditJsonTrait.php" href="vendor/gammamatrix/playground-test/src/Feature/Http/Controllers/Resource/Playground/EditJsonTrait.php.xml">
+                          <totals>
+                            <lines total="110" comments="19" code="91" executable="48" executed="0" percent="0.00"/>
+                            <methods count="6" tested="0" percent="0.00"/>
+                            <functions count="0" tested="0" percent="0"/>
+                            <classes count="0" tested="0" percent="0"/>
+                            <traits count="1" tested="0" percent="0.00"/>
+                          </totals>
+                        </file>
+                        <file name="EditTrait.php" href="vendor/gammamatrix/playground-test/src/Feature/Http/Controllers/Resource/Playground/EditTrait.php.xml">
+                          <totals>
+                            <lines total="130" comments="13" code="117" executable="61" executed="0" percent="0.00"/>
+                            <methods count="6" tested="0" percent="0.00"/>
+                            <functions count="0" tested="0" percent="0"/>
+                            <classes count="0" tested="0" percent="0"/>
+                            <traits count="1" tested="0" percent="0.00"/>
+                          </totals>
+                        </file>
+                        <file name="IndexJsonTrait.php" href="vendor/gammamatrix/playground-test/src/Feature/Http/Controllers/Resource/Playground/IndexJsonTrait.php.xml">
+                          <totals>
+                            <lines total="128" comments="23" code="105" executable="38" executed="0" percent="0.00"/>
+                            <methods count="6" tested="0" percent="0.00"/>
+                            <functions count="0" tested="0" percent="0"/>
+                            <classes count="0" tested="0" percent="0"/>
+                            <traits count="1" tested="0" percent="0.00"/>
+                          </totals>
+                        </file>
+                        <file name="IndexTrait.php" href="vendor/gammamatrix/playground-test/src/Feature/Http/Controllers/Resource/Playground/IndexTrait.php.xml">
+                          <totals>
+                            <lines total="114" comments="14" code="100" executable="36" executed="0" percent="0.00"/>
+                            <methods count="5" tested="0" percent="0.00"/>
+                            <functions count="0" tested="0" percent="0"/>
+                            <classes count="0" tested="0" percent="0"/>
+                            <traits count="1" tested="0" percent="0.00"/>
+                          </totals>
+                        </file>
+                        <file name="LockJsonTrait.php" href="vendor/gammamatrix/playground-test/src/Feature/Http/Controllers/Resource/Playground/LockJsonTrait.php.xml">
+                          <totals>
+                            <lines total="184" comments="21" code="163" executable="101" executed="0" percent="0.00"/>
+                            <methods count="7" tested="0" percent="0.00"/>
+                            <functions count="0" tested="0" percent="0"/>
+                            <classes count="0" tested="0" percent="0"/>
+                            <traits count="1" tested="0" percent="0.00"/>
+                          </totals>
+                        </file>
+                        <file name="LockTrait.php" href="vendor/gammamatrix/playground-test/src/Feature/Http/Controllers/Resource/Playground/LockTrait.php.xml">
+                          <totals>
+                            <lines total="172" comments="12" code="160" executable="101" executed="0" percent="0.00"/>
+                            <methods count="6" tested="0" percent="0.00"/>
+                            <functions count="0" tested="0" percent="0"/>
+                            <classes count="0" tested="0" percent="0"/>
+                            <traits count="1" tested="0" percent="0.00"/>
+                          </totals>
+                        </file>
+                        <file name="RestoreJsonTrait.php" href="vendor/gammamatrix/playground-test/src/Feature/Http/Controllers/Resource/Playground/RestoreJsonTrait.php.xml">
+                          <totals>
+                            <lines total="182" comments="12" code="170" executable="108" executed="0" percent="0.00"/>
+                            <methods count="6" tested="0" percent="0.00"/>
+                            <functions count="0" tested="0" percent="0"/>
+                            <classes count="0" tested="0" percent="0"/>
+                            <traits count="1" tested="0" percent="0.00"/>
+                          </totals>
+                        </file>
+                        <file name="RestoreRevisionJsonTrait.php" href="vendor/gammamatrix/playground-test/src/Feature/Http/Controllers/Resource/Playground/RestoreRevisionJsonTrait.php.xml">
+                          <totals>
+                            <lines total="205" comments="22" code="183" executable="113" executed="0" percent="0.00"/>
+                            <methods count="10" tested="0" percent="0.00"/>
+                            <functions count="0" tested="0" percent="0"/>
+                            <classes count="0" tested="0" percent="0"/>
+                            <traits count="1" tested="0" percent="0.00"/>
+                          </totals>
+                        </file>
+                        <file name="RestoreRevisionTrait.php" href="vendor/gammamatrix/playground-test/src/Feature/Http/Controllers/Resource/Playground/RestoreRevisionTrait.php.xml">
+                          <totals>
+                            <lines total="198" comments="19" code="179" executable="112" executed="0" percent="0.00"/>
+                            <methods count="9" tested="0" percent="0.00"/>
+                            <functions count="0" tested="0" percent="0"/>
+                            <classes count="0" tested="0" percent="0"/>
+                            <traits count="1" tested="0" percent="0.00"/>
+                          </totals>
+                        </file>
+                        <file name="RestoreTrait.php" href="vendor/gammamatrix/playground-test/src/Feature/Http/Controllers/Resource/Playground/RestoreTrait.php.xml">
+                          <totals>
+                            <lines total="185" comments="16" code="169" executable="108" executed="0" percent="0.00"/>
+                            <methods count="6" tested="0" percent="0.00"/>
+                            <functions count="0" tested="0" percent="0"/>
+                            <classes count="0" tested="0" percent="0"/>
+                            <traits count="1" tested="0" percent="0.00"/>
+                          </totals>
+                        </file>
+                        <file name="RevisionJsonTrait.php" href="vendor/gammamatrix/playground-test/src/Feature/Http/Controllers/Resource/Playground/RevisionJsonTrait.php.xml">
+                          <totals>
+                            <lines total="99" comments="15" code="84" executable="45" executed="0" percent="0.00"/>
+                            <methods count="7" tested="0" percent="0.00"/>
+                            <functions count="0" tested="0" percent="0"/>
+                            <classes count="0" tested="0" percent="0"/>
+                            <traits count="1" tested="0" percent="0.00"/>
+                          </totals>
+                        </file>
+                        <file name="RevisionTrait.php" href="vendor/gammamatrix/playground-test/src/Feature/Http/Controllers/Resource/Playground/RevisionTrait.php.xml">
+                          <totals>
+                            <lines total="97" comments="15" code="82" executable="44" executed="0" percent="0.00"/>
+                            <methods count="7" tested="0" percent="0.00"/>
+                            <functions count="0" tested="0" percent="0"/>
+                            <classes count="0" tested="0" percent="0"/>
+                            <traits count="1" tested="0" percent="0.00"/>
+                          </totals>
+                        </file>
+                        <file name="RevisionsJsonTrait.php" href="vendor/gammamatrix/playground-test/src/Feature/Http/Controllers/Resource/Playground/RevisionsJsonTrait.php.xml">
+                          <totals>
+                            <lines total="141" comments="16" code="125" executable="63" executed="0" percent="0.00"/>
+                            <methods count="6" tested="0" percent="0.00"/>
+                            <functions count="0" tested="0" percent="0"/>
+                            <classes count="0" tested="0" percent="0"/>
+                            <traits count="1" tested="0" percent="0.00"/>
+                          </totals>
+                        </file>
+                        <file name="RevisionsTrait.php" href="vendor/gammamatrix/playground-test/src/Feature/Http/Controllers/Resource/Playground/RevisionsTrait.php.xml">
+                          <totals>
+                            <lines total="139" comments="16" code="123" executable="62" executed="0" percent="0.00"/>
+                            <methods count="6" tested="0" percent="0.00"/>
+                            <functions count="0" tested="0" percent="0"/>
+                            <classes count="0" tested="0" percent="0"/>
+                            <traits count="1" tested="0" percent="0.00"/>
+                          </totals>
+                        </file>
+                        <file name="ShowJsonTrait.php" href="vendor/gammamatrix/playground-test/src/Feature/Http/Controllers/Resource/Playground/ShowJsonTrait.php.xml">
+                          <totals>
+                            <lines total="72" comments="12" code="60" executable="28" executed="0" percent="0.00"/>
+                            <methods count="4" tested="0" percent="0.00"/>
+                            <functions count="0" tested="0" percent="0"/>
+                            <classes count="0" tested="0" percent="0"/>
+                            <traits count="1" tested="0" percent="0.00"/>
+                          </totals>
+                        </file>
+                        <file name="ShowTrait.php" href="vendor/gammamatrix/playground-test/src/Feature/Http/Controllers/Resource/Playground/ShowTrait.php.xml">
+                          <totals>
+                            <lines total="71" comments="12" code="59" executable="27" executed="0" percent="0.00"/>
+                            <methods count="4" tested="0" percent="0.00"/>
+                            <functions count="0" tested="0" percent="0"/>
+                            <classes count="0" tested="0" percent="0"/>
+                            <traits count="1" tested="0" percent="0.00"/>
+                          </totals>
+                        </file>
+                        <file name="StoreJsonTrait.php" href="vendor/gammamatrix/playground-test/src/Feature/Http/Controllers/Resource/Playground/StoreJsonTrait.php.xml">
+                          <totals>
+                            <lines total="110" comments="15" code="95" executable="43" executed="0" percent="0.00"/>
+                            <methods count="6" tested="0" percent="0.00"/>
+                            <functions count="0" tested="0" percent="0"/>
+                            <classes count="0" tested="0" percent="0"/>
+                            <traits count="1" tested="0" percent="0.00"/>
+                          </totals>
+                        </file>
+                        <file name="StoreTrait.php" href="vendor/gammamatrix/playground-test/src/Feature/Http/Controllers/Resource/Playground/StoreTrait.php.xml">
+                          <totals>
+                            <lines total="153" comments="19" code="134" executable="67" executed="0" percent="0.00"/>
+                            <methods count="6" tested="0" percent="0.00"/>
+                            <functions count="0" tested="0" percent="0"/>
+                            <classes count="0" tested="0" percent="0"/>
+                            <traits count="1" tested="0" percent="0.00"/>
+                          </totals>
+                        </file>
+                        <file name="UnlockJsonTrait.php" href="vendor/gammamatrix/playground-test/src/Feature/Http/Controllers/Resource/Playground/UnlockJsonTrait.php.xml">
+                          <totals>
+                            <lines total="184" comments="15" code="169" executable="107" executed="0" percent="0.00"/>
+                            <methods count="7" tested="0" percent="0.00"/>
+                            <functions count="0" tested="0" percent="0"/>
+                            <classes count="0" tested="0" percent="0"/>
+                            <traits count="1" tested="0" percent="0.00"/>
+                          </totals>
+                        </file>
+                        <file name="UnlockTrait.php" href="vendor/gammamatrix/playground-test/src/Feature/Http/Controllers/Resource/Playground/UnlockTrait.php.xml">
+                          <totals>
+                            <lines total="187" comments="19" code="168" executable="107" executed="0" percent="0.00"/>
+                            <methods count="7" tested="0" percent="0.00"/>
+                            <functions count="0" tested="0" percent="0"/>
+                            <classes count="0" tested="0" percent="0"/>
+                            <traits count="1" tested="0" percent="0.00"/>
+                          </totals>
+                        </file>
+                        <file name="UpdateJsonTrait.php" href="vendor/gammamatrix/playground-test/src/Feature/Http/Controllers/Resource/Playground/UpdateJsonTrait.php.xml">
+                          <totals>
+                            <lines total="120" comments="12" code="108" executable="54" executed="0" percent="0.00"/>
+                            <methods count="5" tested="0" percent="0.00"/>
+                            <functions count="0" tested="0" percent="0"/>
+                            <classes count="0" tested="0" percent="0"/>
+                            <traits count="1" tested="0" percent="0.00"/>
+                          </totals>
+                        </file>
+                        <file name="UpdateTrait.php" href="vendor/gammamatrix/playground-test/src/Feature/Http/Controllers/Resource/Playground/UpdateTrait.php.xml">
+                          <totals>
+                            <lines total="165" comments="12" code="153" executable="83" executed="0" percent="0.00"/>
+                            <methods count="6" tested="0" percent="0.00"/>
+                            <functions count="0" tested="0" percent="0"/>
+                            <classes count="0" tested="0" percent="0"/>
+                            <traits count="1" tested="0" percent="0.00"/>
+                          </totals>
+                        </file>
+                      </directory>
+                    </directory>
+                  </directory>
+                </directory>
+                <directory name="Models">
+                  <totals>
+                    <lines total="556" comments="212" code="344" executable="196" executed="0" percent="0.00"/>
+                    <methods count="9" tested="0" percent="0.00"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="1" tested="0" percent="0.00"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                  <file name="ModelCase.php" href="vendor/gammamatrix/playground-test/src/Feature/Models/ModelCase.php.xml">
+                    <totals>
+                      <lines total="556" comments="212" code="344" executable="196" executed="0" percent="0.00"/>
+                      <methods count="9" tested="0" percent="0.00"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="1" tested="0" percent="0.00"/>
+                      <traits count="0" tested="0" percent="0"/>
+                    </totals>
+                  </file>
+                </directory>
+              </directory>
+              <directory name="Models">
+                <totals>
+                  <lines total="335" comments="116" code="219" executable="21" executed="13" percent="61.90"/>
+                  <methods count="5" tested="3" percent="60.00"/>
+                  <functions count="0" tested="0" percent="0"/>
+                  <classes count="1" tested="1" percent="100.00"/>
+                  <traits count="1" tested="0" percent="0.00"/>
+                </totals>
+                <directory name="Traits">
+                  <totals>
+                    <lines total="65" comments="24" code="41" executable="13" executed="13" percent="100.00"/>
+                    <methods count="3" tested="3" percent="100.00"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="1" percent="0"/>
+                    <traits count="1" tested="0" percent="0.00"/>
+                  </totals>
+                  <file name="UserPrivileges.php" href="vendor/gammamatrix/playground-test/src/Models/Traits/UserPrivileges.php.xml">
+                    <totals>
+                      <lines total="65" comments="24" code="41" executable="13" executed="13" percent="100.00"/>
+                      <methods count="3" tested="3" percent="100.00"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="0" tested="1" percent="0"/>
+                      <traits count="1" tested="0" percent="0.00"/>
+                    </totals>
+                  </file>
+                </directory>
+                <file name="AbstractUser.php" href="vendor/gammamatrix/playground-test/src/Models/AbstractUser.php.xml">
+                  <totals>
+                    <lines total="51" comments="15" code="36" executable="0" executed="0" percent="0"/>
+                    <methods count="0" tested="0" percent="0"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="0" percent="0"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+                <file name="PlaygroundUser.php" href="vendor/gammamatrix/playground-test/src/Models/PlaygroundUser.php.xml">
+                  <totals>
+                    <lines total="25" comments="8" code="17" executable="0" executed="0" percent="0"/>
+                    <methods count="0" tested="0" percent="0"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="0" percent="0"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+                <file name="PlaygroundUserWithSanctum.php" href="vendor/gammamatrix/playground-test/src/Models/PlaygroundUserWithSanctum.php.xml">
+                  <totals>
+                    <lines total="21" comments="8" code="13" executable="0" executed="0" percent="0"/>
+                    <methods count="0" tested="0" percent="0"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="0" percent="0"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+                <file name="User.php" href="vendor/gammamatrix/playground-test/src/Models/User.php.xml">
+                  <totals>
+                    <lines total="33" comments="11" code="22" executable="0" executed="0" percent="0"/>
+                    <methods count="0" tested="0" percent="0"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="0" percent="0"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+                <file name="UserWithRole.php" href="vendor/gammamatrix/playground-test/src/Models/UserWithRole.php.xml">
+                  <totals>
+                    <lines total="49" comments="17" code="32" executable="8" executed="0" percent="0.00"/>
+                    <methods count="2" tested="0" percent="0.00"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="1" tested="0" percent="0.00"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+                <file name="UserWithRoleAndPrivileges.php" href="vendor/gammamatrix/playground-test/src/Models/UserWithRoleAndPrivileges.php.xml">
+                  <totals>
+                    <lines total="25" comments="9" code="16" executable="0" executed="0" percent="0"/>
+                    <methods count="0" tested="0" percent="0"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="0" percent="0"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+                <file name="UserWithRoleAndRoles.php" href="vendor/gammamatrix/playground-test/src/Models/UserWithRoleAndRoles.php.xml">
+                  <totals>
+                    <lines total="24" comments="9" code="15" executable="0" executed="0" percent="0"/>
+                    <methods count="0" tested="0" percent="0"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="0" percent="0"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+                <file name="UserWithRoleAndRolesAndPrivileges.php" href="vendor/gammamatrix/playground-test/src/Models/UserWithRoleAndRolesAndPrivileges.php.xml">
+                  <totals>
+                    <lines total="25" comments="9" code="16" executable="0" executed="0" percent="0"/>
+                    <methods count="0" tested="0" percent="0"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="0" percent="0"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+                <file name="UserWithSanctum.php" href="vendor/gammamatrix/playground-test/src/Models/UserWithSanctum.php.xml">
+                  <totals>
+                    <lines total="17" comments="6" code="11" executable="0" executed="0" percent="0"/>
+                    <methods count="0" tested="0" percent="0"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="0" percent="0"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+              </directory>
+              <directory name="Unit">
+                <totals>
+                  <lines total="340" comments="134" code="206" executable="72" executed="0" percent="0.00"/>
+                  <methods count="10" tested="0" percent="0.00"/>
+                  <functions count="0" tested="0" percent="0"/>
+                  <classes count="2" tested="0" percent="0.00"/>
+                  <traits count="0" tested="0" percent="0"/>
+                </totals>
+                <directory name="Http">
+                  <totals>
+                    <lines total="48" comments="16" code="32" executable="6" executed="0" percent="0.00"/>
+                    <methods count="3" tested="0" percent="0.00"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="1" tested="0" percent="0.00"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                  <directory name="Requests">
+                    <totals>
+                      <lines total="48" comments="16" code="32" executable="6" executed="0" percent="0.00"/>
+                      <methods count="3" tested="0" percent="0.00"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="1" tested="0" percent="0.00"/>
+                      <traits count="0" tested="0" percent="0"/>
+                    </totals>
+                    <file name="RequestCase.php" href="vendor/gammamatrix/playground-test/src/Unit/Http/Requests/RequestCase.php.xml">
+                      <totals>
+                        <lines total="48" comments="16" code="32" executable="6" executed="0" percent="0.00"/>
+                        <methods count="3" tested="0" percent="0.00"/>
+                        <functions count="0" tested="0" percent="0"/>
+                        <classes count="1" tested="0" percent="0.00"/>
+                        <traits count="0" tested="0" percent="0"/>
+                      </totals>
+                    </file>
+                  </directory>
+                </directory>
+                <directory name="Models">
+                  <totals>
+                    <lines total="292" comments="118" code="174" executable="66" executed="0" percent="0.00"/>
+                    <methods count="7" tested="0" percent="0.00"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="1" tested="0" percent="0.00"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                  <file name="ModelCase.php" href="vendor/gammamatrix/playground-test/src/Unit/Models/ModelCase.php.xml">
+                    <totals>
+                      <lines total="292" comments="118" code="174" executable="66" executed="0" percent="0.00"/>
+                      <methods count="7" tested="0" percent="0.00"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="1" tested="0" percent="0.00"/>
+                      <traits count="0" tested="0" percent="0"/>
+                    </totals>
+                  </file>
+                </directory>
+              </directory>
+              <file name="MockingTrait.php" href="vendor/gammamatrix/playground-test/src/MockingTrait.php.xml">
+                <totals>
+                  <lines total="91" comments="41" code="50" executable="16" executed="0" percent="0.00"/>
+                  <methods count="3" tested="0" percent="0.00"/>
+                  <functions count="0" tested="0" percent="0"/>
+                  <classes count="0" tested="0" percent="0"/>
+                  <traits count="1" tested="0" percent="0.00"/>
+                </totals>
+              </file>
+              <file name="OrchestraTestCase.php" href="vendor/gammamatrix/playground-test/src/OrchestraTestCase.php.xml">
+                <totals>
+                  <lines total="16" comments="6" code="10" executable="0" executed="0" percent="0"/>
+                  <methods count="0" tested="0" percent="0"/>
+                  <functions count="0" tested="0" percent="0"/>
+                  <classes count="0" tested="0" percent="0"/>
+                  <traits count="0" tested="0" percent="0"/>
+                </totals>
+              </file>
+              <file name="ServiceProvider.php" href="vendor/gammamatrix/playground-test/src/ServiceProvider.php.xml">
+                <totals>
+                  <lines total="72" comments="13" code="59" executable="24" executed="24" percent="100.00"/>
+                  <methods count="4" tested="4" percent="100.00"/>
+                  <functions count="0" tested="0" percent="0"/>
+                  <classes count="1" tested="1" percent="100.00"/>
+                  <traits count="0" tested="0" percent="0"/>
+                </totals>
+              </file>
+              <file name="SqlTrait.php" href="vendor/gammamatrix/playground-test/src/SqlTrait.php.xml">
+                <totals>
+                  <lines total="34" comments="12" code="22" executable="5" executed="5" percent="100.00"/>
+                  <methods count="2" tested="2" percent="100.00"/>
+                  <functions count="0" tested="0" percent="0"/>
+                  <classes count="0" tested="1" percent="0"/>
+                  <traits count="1" tested="0" percent="0.00"/>
+                </totals>
+              </file>
+              <file name="WithFaker.php" href="vendor/gammamatrix/playground-test/src/WithFaker.php.xml">
+                <totals>
+                  <lines total="26" comments="6" code="20" executable="3" executed="3" percent="100.00"/>
+                  <methods count="1" tested="1" percent="100.00"/>
+                  <functions count="0" tested="0" percent="0"/>
+                  <classes count="0" tested="1" percent="0"/>
+                  <traits count="1" tested="0" percent="0.00"/>
+                </totals>
+              </file>
+            </directory>
+          </directory>
+          <directory name="playground">
+            <totals>
+              <lines total="1650" comments="468" code="1182" executable="427" executed="427" percent="100.00"/>
+              <methods count="27" tested="27" percent="100.00"/>
+              <functions count="0" tested="0" percent="0"/>
+              <classes count="1" tested="16" percent="1600.00"/>
+              <traits count="15" tested="0" percent="0.00"/>
+            </totals>
+            <directory name="src">
+              <totals>
+                <lines total="1650" comments="468" code="1182" executable="427" executed="427" percent="100.00"/>
+                <methods count="27" tested="27" percent="100.00"/>
+                <functions count="0" tested="0" percent="0"/>
+                <classes count="1" tested="16" percent="1600.00"/>
+                <traits count="15" tested="0" percent="0.00"/>
+              </totals>
+              <directory name="Models">
+                <totals>
+                  <lines total="1434" comments="439" code="995" executable="353" executed="353" percent="100.00"/>
+                  <methods count="21" tested="21" percent="100.00"/>
+                  <functions count="0" tested="0" percent="0"/>
+                  <classes count="0" tested="15" percent="0"/>
+                  <traits count="15" tested="0" percent="0.00"/>
+                </totals>
+                <directory name="Contracts">
+                  <totals>
+                    <lines total="123" comments="79" code="44" executable="0" executed="0" percent="0"/>
+                    <methods count="0" tested="0" percent="0"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="0" percent="0"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                  <file name="Abilities.php" href="vendor/gammamatrix/playground/src/Models/Contracts/Abilities.php.xml">
+                    <totals>
+                      <lines total="35" comments="23" code="12" executable="0" executed="0" percent="0"/>
+                      <methods count="0" tested="0" percent="0"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="0" tested="0" percent="0"/>
+                      <traits count="0" tested="0" percent="0"/>
+                    </totals>
+                  </file>
+                  <file name="Admin.php" href="vendor/gammamatrix/playground/src/Models/Contracts/Admin.php.xml">
+                    <totals>
+                      <lines total="17" comments="9" code="8" executable="0" executed="0" percent="0"/>
+                      <methods count="0" tested="0" percent="0"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="0" tested="0" percent="0"/>
+                      <traits count="0" tested="0" percent="0"/>
+                    </totals>
+                  </file>
+                  <file name="Privileges.php" href="vendor/gammamatrix/playground/src/Models/Contracts/Privileges.php.xml">
+                    <totals>
+                      <lines total="35" comments="23" code="12" executable="0" executed="0" percent="0"/>
+                      <methods count="0" tested="0" percent="0"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="0" tested="0" percent="0"/>
+                      <traits count="0" tested="0" percent="0"/>
+                    </totals>
+                  </file>
+                  <file name="Role.php" href="vendor/gammamatrix/playground/src/Models/Contracts/Role.php.xml">
+                    <totals>
+                      <lines total="36" comments="24" code="12" executable="0" executed="0" percent="0"/>
+                      <methods count="0" tested="0" percent="0"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="0" tested="0" percent="0"/>
+                      <traits count="0" tested="0" percent="0"/>
+                    </totals>
+                  </file>
+                </directory>
+                <directory name="Interfaces">
+                  <totals>
+                    <lines total="114" comments="54" code="60" executable="0" executed="0" percent="0"/>
+                    <methods count="0" tested="0" percent="0"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="0" percent="0"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                  <file name="WithChildrenInterface.php" href="vendor/gammamatrix/playground/src/Models/Interfaces/WithChildrenInterface.php.xml">
+                    <totals>
+                      <lines total="19" comments="9" code="10" executable="0" executed="0" percent="0"/>
+                      <methods count="0" tested="0" percent="0"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="0" tested="0" percent="0"/>
+                      <traits count="0" tested="0" percent="0"/>
+                    </totals>
+                  </file>
+                  <file name="WithCreatorInterface.php" href="vendor/gammamatrix/playground/src/Models/Interfaces/WithCreatorInterface.php.xml">
+                    <totals>
+                      <lines total="19" comments="9" code="10" executable="0" executed="0" percent="0"/>
+                      <methods count="0" tested="0" percent="0"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="0" tested="0" percent="0"/>
+                      <traits count="0" tested="0" percent="0"/>
+                    </totals>
+                  </file>
+                  <file name="WithModifierInterface.php" href="vendor/gammamatrix/playground/src/Models/Interfaces/WithModifierInterface.php.xml">
+                    <totals>
+                      <lines total="19" comments="9" code="10" executable="0" executed="0" percent="0"/>
+                      <methods count="0" tested="0" percent="0"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="0" tested="0" percent="0"/>
+                      <traits count="0" tested="0" percent="0"/>
+                    </totals>
+                  </file>
+                  <file name="WithOwnerInterface.php" href="vendor/gammamatrix/playground/src/Models/Interfaces/WithOwnerInterface.php.xml">
+                    <totals>
+                      <lines total="19" comments="9" code="10" executable="0" executed="0" percent="0"/>
+                      <methods count="0" tested="0" percent="0"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="0" tested="0" percent="0"/>
+                      <traits count="0" tested="0" percent="0"/>
+                    </totals>
+                  </file>
+                  <file name="WithParentInterface.php" href="vendor/gammamatrix/playground/src/Models/Interfaces/WithParentInterface.php.xml">
+                    <totals>
+                      <lines total="19" comments="9" code="10" executable="0" executed="0" percent="0"/>
+                      <methods count="0" tested="0" percent="0"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="0" tested="0" percent="0"/>
+                      <traits count="0" tested="0" percent="0"/>
+                    </totals>
+                  </file>
+                  <file name="WithRevisionInterface.php" href="vendor/gammamatrix/playground/src/Models/Interfaces/WithRevisionInterface.php.xml">
+                    <totals>
+                      <lines total="19" comments="9" code="10" executable="0" executed="0" percent="0"/>
+                      <methods count="0" tested="0" percent="0"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="0" tested="0" percent="0"/>
+                      <traits count="0" tested="0" percent="0"/>
+                    </totals>
+                  </file>
+                </directory>
+                <directory name="Traits">
+                  <totals>
+                    <lines total="982" comments="234" code="748" executable="353" executed="353" percent="100.00"/>
+                    <methods count="21" tested="21" percent="100.00"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="15" percent="0"/>
+                    <traits count="15" tested="0" percent="0.00"/>
+                  </totals>
+                  <file name="Abilities.php" href="vendor/gammamatrix/playground/src/Models/Traits/Abilities.php.xml">
+                    <totals>
+                      <lines total="76" comments="21" code="55" executable="22" executed="22" percent="100.00"/>
+                      <methods count="3" tested="3" percent="100.00"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="0" tested="1" percent="0"/>
+                      <traits count="1" tested="0" percent="0.00"/>
+                    </totals>
+                  </file>
+                  <file name="Admin.php" href="vendor/gammamatrix/playground/src/Models/Traits/Admin.php.xml">
+                    <totals>
+                      <lines total="22" comments="9" code="13" executable="3" executed="3" percent="100.00"/>
+                      <methods count="1" tested="1" percent="100.00"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="0" tested="1" percent="0"/>
+                      <traits count="1" tested="0" percent="0.00"/>
+                    </totals>
+                  </file>
+                  <file name="Privileges.php" href="vendor/gammamatrix/playground/src/Models/Traits/Privileges.php.xml">
+                    <totals>
+                      <lines total="76" comments="21" code="55" executable="22" executed="22" percent="100.00"/>
+                      <methods count="3" tested="3" percent="100.00"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="0" tested="1" percent="0"/>
+                      <traits count="1" tested="0" percent="0.00"/>
+                    </totals>
+                  </file>
+                  <file name="Role.php" href="vendor/gammamatrix/playground/src/Models/Traits/Role.php.xml">
+                    <totals>
+                      <lines total="86" comments="24" code="62" executable="27" executed="27" percent="100.00"/>
+                      <methods count="3" tested="3" percent="100.00"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="0" tested="1" percent="0"/>
+                      <traits count="1" tested="0" percent="0.00"/>
+                    </totals>
+                  </file>
+                  <file name="ScopeFilterColumns.php" href="vendor/gammamatrix/playground/src/Models/Traits/ScopeFilterColumns.php.xml">
+                    <totals>
+                      <lines total="150" comments="25" code="125" executable="79" executed="79" percent="100.00"/>
+                      <methods count="1" tested="1" percent="100.00"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="0" tested="1" percent="0"/>
+                      <traits count="1" tested="0" percent="0.00"/>
+                    </totals>
+                  </file>
+                  <file name="ScopeFilterDates.php" href="vendor/gammamatrix/playground/src/Models/Traits/ScopeFilterDates.php.xml">
+                    <totals>
+                      <lines total="196" comments="30" code="166" executable="102" executed="102" percent="100.00"/>
+                      <methods count="1" tested="1" percent="100.00"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="0" tested="1" percent="0"/>
+                      <traits count="1" tested="0" percent="0.00"/>
+                    </totals>
+                  </file>
+                  <file name="ScopeFilterFlags.php" href="vendor/gammamatrix/playground/src/Models/Traits/ScopeFilterFlags.php.xml">
+                    <totals>
+                      <lines total="50" comments="17" code="33" executable="10" executed="10" percent="100.00"/>
+                      <methods count="1" tested="1" percent="100.00"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="0" tested="1" percent="0"/>
+                      <traits count="1" tested="0" percent="0.00"/>
+                    </totals>
+                  </file>
+                  <file name="ScopeFilterIds.php" href="vendor/gammamatrix/playground/src/Models/Traits/ScopeFilterIds.php.xml">
+                    <totals>
+                      <lines total="98" comments="21" code="77" executable="37" executed="37" percent="100.00"/>
+                      <methods count="1" tested="1" percent="100.00"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="0" tested="1" percent="0"/>
+                      <traits count="1" tested="0" percent="0.00"/>
+                    </totals>
+                  </file>
+                  <file name="ScopeFilterTrash.php" href="vendor/gammamatrix/playground/src/Models/Traits/ScopeFilterTrash.php.xml">
+                    <totals>
+                      <lines total="31" comments="6" code="25" executable="7" executed="7" percent="100.00"/>
+                      <methods count="1" tested="1" percent="100.00"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="0" tested="1" percent="0"/>
+                      <traits count="1" tested="0" percent="0.00"/>
+                    </totals>
+                  </file>
+                  <file name="ScopeSort.php" href="vendor/gammamatrix/playground/src/Models/Traits/ScopeSort.php.xml">
+                    <totals>
+                      <lines total="64" comments="6" code="58" executable="28" executed="28" percent="100.00"/>
+                      <methods count="1" tested="1" percent="100.00"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="0" tested="1" percent="0"/>
+                      <traits count="1" tested="0" percent="0.00"/>
+                    </totals>
+                  </file>
+                  <file name="WithChildren.php" href="vendor/gammamatrix/playground/src/Models/Traits/WithChildren.php.xml">
+                    <totals>
+                      <lines total="26" comments="9" code="17" executable="5" executed="5" percent="100.00"/>
+                      <methods count="1" tested="1" percent="100.00"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="0" tested="1" percent="0"/>
+                      <traits count="1" tested="0" percent="0.00"/>
+                    </totals>
+                  </file>
+                  <file name="WithCreator.php" href="vendor/gammamatrix/playground/src/Models/Traits/WithCreator.php.xml">
+                    <totals>
+                      <lines total="27" comments="12" code="15" executable="2" executed="2" percent="100.00"/>
+                      <methods count="1" tested="1" percent="100.00"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="0" tested="1" percent="0"/>
+                      <traits count="1" tested="0" percent="0.00"/>
+                    </totals>
+                  </file>
+                  <file name="WithModifier.php" href="vendor/gammamatrix/playground/src/Models/Traits/WithModifier.php.xml">
+                    <totals>
+                      <lines total="27" comments="12" code="15" executable="2" executed="2" percent="100.00"/>
+                      <methods count="1" tested="1" percent="100.00"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="0" tested="1" percent="0"/>
+                      <traits count="1" tested="0" percent="0.00"/>
+                    </totals>
+                  </file>
+                  <file name="WithOwner.php" href="vendor/gammamatrix/playground/src/Models/Traits/WithOwner.php.xml">
+                    <totals>
+                      <lines total="27" comments="12" code="15" executable="2" executed="2" percent="100.00"/>
+                      <methods count="1" tested="1" percent="100.00"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="0" tested="1" percent="0"/>
+                      <traits count="1" tested="0" percent="0.00"/>
+                    </totals>
+                  </file>
+                  <file name="WithParent.php" href="vendor/gammamatrix/playground/src/Models/Traits/WithParent.php.xml">
+                    <totals>
+                      <lines total="26" comments="9" code="17" executable="5" executed="5" percent="100.00"/>
+                      <methods count="1" tested="1" percent="100.00"/>
+                      <functions count="0" tested="0" percent="0"/>
+                      <classes count="0" tested="1" percent="0"/>
+                      <traits count="1" tested="0" percent="0.00"/>
+                    </totals>
+                  </file>
+                </directory>
+                <file name="Model.php" href="vendor/gammamatrix/playground/src/Models/Model.php.xml">
+                  <totals>
+                    <lines total="46" comments="15" code="31" executable="0" executed="0" percent="0"/>
+                    <methods count="0" tested="0" percent="0"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="0" percent="0"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+                <file name="User.php" href="vendor/gammamatrix/playground/src/Models/User.php.xml">
+                  <totals>
+                    <lines total="136" comments="39" code="97" executable="0" executed="0" percent="0"/>
+                    <methods count="0" tested="0" percent="0"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="0" percent="0"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+                <file name="UuidModel.php" href="vendor/gammamatrix/playground/src/Models/UuidModel.php.xml">
+                  <totals>
+                    <lines total="33" comments="18" code="15" executable="0" executed="0" percent="0"/>
+                    <methods count="0" tested="0" percent="0"/>
+                    <functions count="0" tested="0" percent="0"/>
+                    <classes count="0" tested="0" percent="0"/>
+                    <traits count="0" tested="0" percent="0"/>
+                  </totals>
+                </file>
+              </directory>
+              <file name="ServiceProvider.php" href="vendor/gammamatrix/playground/src/ServiceProvider.php.xml">
+                <totals>
+                  <lines total="216" comments="29" code="187" executable="74" executed="74" percent="100.00"/>
+                  <methods count="6" tested="6" percent="100.00"/>
+                  <functions count="0" tested="0" percent="0"/>
+                  <classes count="1" tested="1" percent="100.00"/>
+                  <traits count="0" tested="0" percent="0"/>
+                </totals>
+              </file>
+            </directory>
+          </directory>
+        </directory>
+      </directory>
+    </directory>
+  </project>
+</phpunit>
