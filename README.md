@@ -4,7 +4,7 @@
 [![Test Coverage](https://raw.githubusercontent.com/gammamatrix/site-laravel/testing/develop/coverage.svg)](tests)
 [![PHPStan Level 9 src and tests](https://img.shields.io/badge/PHPStan-level%209-brightgreen)](.github/workflows/ci.yml#L120)
 
-This package includes a standard [Laravel](https://laravel.com/docs/10.x) installation with the [playground-site-blade](https://github.com/gammamatrix/playground-site-blade) package.
+This package includes a standard [Laravel](https://laravel.com/docs/11.x) installation with the [playground-site-blade](https://github.com/gammamatrix/playground-site-blade) package.
 - This uses a standard Laravel user with an incrementing ID.
 - To use a UUID for the primary key on the User model, use [site-playground](https://github.com/gammamatrix/site-playground) instead.
 
@@ -25,10 +25,22 @@ Installed Playground Packages
 | [playground-site-blade](https://github.com/gammamatrix/playground-site-blade) | Provides Blade UI handling for standard website. |
 | [playground-test](https://github.com/gammamatrix/playground-test) | A test helper for Playground Laravel packages. |
 
+
+
+```sh
+composer require --dev gammamatrix/playground-test
+```
+
 ```sh
 composer require gammamatrix/playground-site-blade
-composer require --dev gammamatrix/playground-test
-composer require --dev tomasvotruba/bladestan
+```
+
+```sh
+composer require gammamatrix/playground-login-blade
+```
+
+```sh
+composer require gammamatrix/playground-admin-resource
 ```
 
 NOTE: Disable default Laravel welcome route.
