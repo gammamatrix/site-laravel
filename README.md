@@ -1,14 +1,14 @@
 # Site: Laravel with Playground and Increments User
 
 [![Playground CI Workflow](https://github.com/gammamatrix/site-laravel/actions/workflows/ci.yml/badge.svg?branch=develop)](https://raw.githubusercontent.com/gammamatrix/site-laravel/testing/develop/testdox.txt)
-[![Test Coverage](https://raw.githubusercontent.com/gammamatrix/site-laravel/testing/develop/coverage.svg)](tests)
+[![Test Coverage](https://raw.githubusercontent.com/gammamatrix/site-laravel/testing/develop/coverage.svg)]([tests](https://raw.githubusercontent.com/gammamatrix/site-laravel/testing/develop/testdox.txt))
 [![PHPStan Level 9 src and tests](https://img.shields.io/badge/PHPStan-level%209-brightgreen)](.github/workflows/ci.yml#L120)
 
 This package includes a standard [Laravel](https://laravel.com/docs/11.x) installation with the [playground-site-blade](https://github.com/gammamatrix/playground-site-blade) package.
 - This uses a standard Laravel user with an incrementing ID.
 - To use a UUID for the primary key on the User model, use [site-playground](https://github.com/gammamatrix/site-playground) instead.
 
-Read more on using [Site: Laravel at the Read the Docs: Playground Documentation.](https://gammamatrix-playground.readthedocs.io/en/develop/applications/site-laravel.html)
+Read more on using [Site: Laravel at Read the Docs: Playground Documentation.](https://gammamatrix-playground.readthedocs.io/en/develop/applications/site-laravel.html)
 
 This package may be installed with `composer create-project`
 
@@ -27,8 +27,6 @@ Installed Playground Packages
 | [playground-login-blade](https://github.com/gammamatrix/playground-login-blade) | Provides a Blade UI for authentication handling. |
 | [playground-site-blade](https://github.com/gammamatrix/playground-site-blade) | Provides Blade UI handling for standard website. |
 | [playground-test](https://github.com/gammamatrix/playground-test) | A test helper for Playground Laravel packages. |
-
-
 
 ```sh
 composer require --dev gammamatrix/playground-test
@@ -49,13 +47,15 @@ composer require gammamatrix/playground-admin-resource
 ```sh
 php artisan install:api
 ```
+- Installs Sanctum
+- Update the user model to enable Sanctum: `use HasApiTokens`
 
 NOTE: Disable default Laravel welcome route.
 
 ## Testing
 
 This application supports running integration tests with the installed Playground packages.
-- Currently, over [250 Unit and Feature tests are run.](https://raw.githubusercontent.com/gammamatrix/site-laravel/testing/develop/testdox.txt)
+- Currently, over [400 Unit and Feature tests are run.](https://raw.githubusercontent.com/gammamatrix/site-laravel/testing/develop/testdox.txt)
 
 ```xml
 <testsuites>
