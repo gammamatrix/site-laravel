@@ -23,6 +23,7 @@
         "gammamatrix/playground-login-blade": "^73.0@dev",
         "gammamatrix/playground-site-blade": "^73.0@dev",
         "laravel/framework": "^11.0",
+        "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.9"
     },
     "require-dev": {

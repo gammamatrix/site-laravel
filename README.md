@@ -8,11 +8,14 @@ This package includes a standard [Laravel](https://laravel.com/docs/11.x) instal
 - This uses a standard Laravel user with an incrementing ID.
 - To use a UUID for the primary key on the User model, use [site-playground](https://github.com/gammamatrix/site-playground) instead.
 
+Read more on using [Site: Laravel at the Read the Docs: Playground Documentation.](https://gammamatrix-playground.readthedocs.io/en/develop/applications/site-laravel.html)
+
 This package may be installed with `composer create-project`
 
 ```sh
 composer create-project gammamatrix/site-laravel site-example
 ```
+- **NOTE** A stable version needs to be released for `create-project`
 
 Installed Playground Packages
 
@@ -41,6 +44,10 @@ composer require gammamatrix/playground-login-blade
 
 ```sh
 composer require gammamatrix/playground-admin-resource
+```
+
+```sh
+php artisan install:api
 ```
 
 NOTE: Disable default Laravel welcome route.
