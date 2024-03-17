@@ -51,12 +51,25 @@
         </style>
     </head>
     <body>
-        <h2>About Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\AboutRoute)</h2>
+        <h2>About Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\AboutRoute)</h2>
         <ul>
-            <li class="success">Route about as guest and succeed</li>
-            <li class="success">Route json about as guest and succeed</li>
-            <li class="success">Route about as client and succeed</li>
-            <li class="success">Route json about as manager and succeed</li>
+            <li class="success">As guest and succeed</li>
+            <li class="success">Json as guest and succeed</li>
+            <li class="success">As user and succeed</li>
+            <li class="success">Json as user and succeed</li>
+        </ul>
+        <h2>About Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRoute)</h2>
+        <ul>
+            <li class="success">As guest and succeed</li>
+            <li class="success">Json as guest and succeed</li>
+            <li class="success">As user and succeed</li>
+            <li class="success">Json as user and succeed</li>
+            <li class="success">As client and succeed</li>
+            <li class="success">Json as client and succeed</li>
+            <li class="success">As manager and succeed</li>
+            <li class="success">Json as manager and succeed</li>
+            <li class="success">As admin and succeed</li>
+            <li class="success">Json as admin and succeed</li>
         </ul>
         <h2>Abstract (Tests\Unit\Playground\Auth\Policies\Policy\Abstract)</h2>
         <ul>
@@ -95,12 +108,47 @@
             <li class="success">Unlock without role</li>
             <li class="success">Unlock with admin</li>
         </ul>
-        <h2>Bootstrap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\BootstrapRoute)</h2>
+        <h2>Authentication Route (Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\AuthenticationRoute)</h2>
         <ul>
-            <li class="success">Route bootstrap as guest and succeed</li>
-            <li class="success">Route json bootstrap as guest and succeed</li>
-            <li class="success">Route bootstrap as vendor and succeed</li>
-            <li class="success">Route json bootstrap as wheel and succeed</li>
+            <li class="success">Login screen can be rendered</li>
+            <li class="success">Users can authenticate using the login screen laravel</li>
+            <li class="success">Users can authenticate using json</li>
+            <li class="success">Users cannot authenticate with invalid password</li>
+            <li class="success">Users can logout on get request</li>
+            <li class="success">Users can logout on get request using json</li>
+            <li class="success">Users can logout on post request</li>
+            <li class="success">Guests can logout on get request</li>
+            <li class="success">Csfr token request</li>
+            <li class="success">Login repeat under rate limit and clear</li>
+            <li class="success">Login repeat and hit rate limit</li>
+        </ul>
+        <h2>Authentication Route (Tests\Feature\Playground\Login\Blade\Http\Controllers\Playground\AuthenticationRoute)</h2>
+        <ul>
+            <li class="success">Login screen can be rendered</li>
+            <li class="success">Users can authenticate using the login screen playground</li>
+            <li class="success">Users can authenticate using json</li>
+            <li class="success">Users cannot authenticate with invalid password</li>
+            <li class="success">Users can logout on get request</li>
+            <li class="success">Users can logout on get request using json</li>
+            <li class="success">Users can logout on post request</li>
+            <li class="success">Guests can logout on get request</li>
+            <li class="success">Csfr token request</li>
+            <li class="success">Login repeat under rate limit and clear</li>
+            <li class="success">Login repeat and hit rate limit</li>
+        </ul>
+        <h2>Bootstrap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\BootstrapRoute)</h2>
+        <ul>
+            <li class="success">As guest and succeed</li>
+            <li class="success">Json as guest and succeed</li>
+            <li class="success">As wheel and succeed</li>
+            <li class="success">Json as wheel and succeed</li>
+        </ul>
+        <h2>Bootstrap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\BootstrapRoute)</h2>
+        <ul>
+            <li class="success">As guest and succeed</li>
+            <li class="success">Json as guest and succeed</li>
+            <li class="success">As wheel and succeed</li>
+            <li class="success">Json as wheel and succeed</li>
         </ul>
         <h2>Command (Tests\Feature\Playground\Auth\Console\Commands\About\Command)</h2>
         <ul>
@@ -111,6 +159,10 @@
             <li class="success">Command about displays package information and succeed with code 0</li>
         </ul>
         <h2>Command (Tests\Feature\Playground\Console\Commands\About\Command)</h2>
+        <ul>
+            <li class="success">Command about displays package information and succeed with code 0</li>
+        </ul>
+        <h2>Command (Tests\Feature\Playground\Login\Blade\Console\Commands\About\Command)</h2>
         <ul>
             <li class="success">Command about displays package information and succeed with code 0</li>
         </ul>
@@ -162,6 +214,32 @@
             <li class="success">Component instance</li>
             <li class="success">Component can render view</li>
         </ul>
+        <h2>Email Verification Route (Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\EmailVerificationRoute)</h2>
+        <ul>
+            <li class="success">Email verification screen can be rendered</li>
+            <li class="success">Email verification screen is not rendered if already verified</li>
+            <li class="success">Json send email verification notification as guest</li>
+            <li class="success">Send email verification notification as guest and redirect</li>
+            <li class="success">Send email verification notification as user</li>
+            <li class="success">Send email verification notification when already verified</li>
+            <li class="success">Email can be verified</li>
+            <li class="success">Email is not verified with invalid hash</li>
+            <li class="success">Email is not verified with invalid user id</li>
+            <li class="success">Email verified with already verified</li>
+        </ul>
+        <h2>Email Verification Route (Tests\Feature\Playground\Login\Blade\Http\Controllers\Playground\EmailVerificationRoute)</h2>
+        <ul>
+            <li class="success">Email verification screen can be rendered</li>
+            <li class="success">Email verification screen is not rendered if already verified</li>
+            <li class="success">Json send email verification notification as guest</li>
+            <li class="success">Send email verification notification as guest and redirect</li>
+            <li class="success">Send email verification notification as user</li>
+            <li class="success">Send email verification notification when already verified</li>
+            <li class="success">Email can be verified</li>
+            <li class="success">Email is not verified with invalid hash</li>
+            <li class="success">Email is not verified with invalid user id</li>
+            <li class="success">Email verified with already verified</li>
+        </ul>
         <h2>Example (Tests\Feature\Example)</h2>
         <ul>
             <li class="success">The application returns a successful response</li>
@@ -170,6 +248,34 @@
         <ul>
             <li class="success">That true is true</li>
         </ul>
+        <h2>Instance (Tests\Unit\Playground\Blade\Assets\Comment\Instance)</h2>
+        <ul>
+            <li class="success">Instance with docs</li>
+        </ul>
+        <h2>Instance (Tests\Unit\Playground\Blade\Assets\Font\Instance)</h2>
+        <ul>
+            <li class="success">Instance with docs</li>
+        </ul>
+        <h2>Instance (Tests\Unit\Playground\Blade\Assets\Icon\Instance)</h2>
+        <ul>
+            <li class="success">Instance with docs</li>
+        </ul>
+        <h2>Instance (Tests\Unit\Playground\Blade\Assets\Link\Instance)</h2>
+        <ul>
+            <li class="success">Instance with docs</li>
+        </ul>
+        <h2>Instance (Tests\Unit\Playground\Blade\Assets\Script\Instance)</h2>
+        <ul>
+            <li class="success">Instance with docs</li>
+        </ul>
+        <h2>Instance (Tests\Unit\Playground\Blade\Assets\Style\Instance)</h2>
+        <ul>
+            <li class="success">Instance with docs</li>
+        </ul>
+        <h2>Instance (Tests\Unit\Playground\Blade\Assets\Stylesheet\Instance)</h2>
+        <ul>
+            <li class="success">Instance with docs</li>
+        </ul>
         <h2>Instance (Tests\Unit\Playground\ServiceProvider\Instance)</h2>
         <ul>
             <li class="success">Version matches</li>
@@ -177,6 +283,20 @@
             <li class="success">UserPrimaryKeyType with incrementing model</li>
             <li class="success">UserPrimaryKeyType with uuid model</li>
             <li class="success">UserPrimaryKeyType with exception</li>
+        </ul>
+        <h2>Instance (Tests\Unit\Playground\Test\Models\AppPlaygroundUser\Instance)</h2>
+        <ul>
+            <li class="success">Get attributes</li>
+            <li class="success">HasRole is false without role</li>
+            <li class="success">HasRole is true with matching role</li>
+            <li class="success">HasRole is true with matching secondary role</li>
+            <li class="success">IsAdmin is true with admin role</li>
+            <li class="success">IsAdmin is true with admin secondary role</li>
+            <li class="success">IsAdmin is true with wheel role</li>
+            <li class="success">IsAdmin is true with wheel secondary role</li>
+            <li class="success">IsAdmin is true with root role</li>
+            <li class="success">IsAdmin is false with root secondary role</li>
+            <li class="success">Factory with make</li>
         </ul>
         <h2>Instance (Tests\Unit\Playground\Test\Models\PlaygroundUser\Instance)</h2>
         <ul>
@@ -192,6 +312,14 @@
             <li class="success">IsAdmin is false with root secondary role</li>
             <li class="success">Factory with make</li>
         </ul>
+        <h2>Logout Route (Tests\Feature\Playground\Login\Blade\Http\Controllers\Sanctum\LogoutRoute)</h2>
+        <ul>
+            <li class="success">Sanctum users can authenticate and logout and delete token</li>
+            <li class="success">Sanctum users can logout without token using json</li>
+            <li class="success">Sanctum users can logout all tokens without token using json</li>
+            <li class="success">Sanctum users can logout everywhere tokens without token</li>
+            <li class="success">Sanctum users can authenticate and logout and delete token with sessions</li>
+        </ul>
         <h2>Model (Tests\Feature\Playground\Models\User\Model)</h2>
         <ul>
             <li class="success">Save model in database</li>
@@ -204,7 +332,7 @@
             <li class="success">WithOwner owner returns HasOne</li>
             <li class="success">WithParent parent returns HasOne</li>
         </ul>
-        <h2>Model (Tests\Unit\Playground\Models\Traits\ScopeFilterColumns\Model)</h2>
+        <h2>Model (Tests\Unit\Playground\Models\Scopes\ScopeFilterColumns\Model)</h2>
         <ul>
             <li class="success">ScopeFilterColumns returns query without columns or filters</li>
             <li class="success">ScopeFilterColumns returns query without filters</li>
@@ -222,7 +350,7 @@
             <li class="success">ScopeFilterColumns with not between filter operator without single parameter and ignore between</li>
             <li class="success">ScopeFilterColumns with not between filter operator</li>
         </ul>
-        <h2>Model (Tests\Unit\Playground\Models\Traits\ScopeFilterDates\Model)</h2>
+        <h2>Model (Tests\Unit\Playground\Models\Scopes\ScopeFilterDates\Model)</h2>
         <ul>
             <li class="success">ScopeFilterDates returns query without dates or filters</li>
             <li class="success">ScopeFilterDates returns query without filters</li>
@@ -243,13 +371,13 @@
             <li class="success">ScopeFilterDates with not between filter operator with parse</li>
             <li class="success">ScopeFilterDates with filter operators</li>
         </ul>
-        <h2>Model (Tests\Unit\Playground\Models\Traits\ScopeFilterFlags\Model)</h2>
+        <h2>Model (Tests\Unit\Playground\Models\Scopes\ScopeFilterFlags\Model)</h2>
         <ul>
             <li class="success">ScopeFilterFlags returns query without flags or filters</li>
             <li class="success">ScopeFilterFlags returns query without filters</li>
             <li class="success">ScopeFilterFlags returns query with filters</li>
         </ul>
-        <h2>Model (Tests\Unit\Playground\Models\Traits\ScopeFilterIds\Model)</h2>
+        <h2>Model (Tests\Unit\Playground\Models\Scopes\ScopeFilterIds\Model)</h2>
         <ul>
             <li class="success">ScopeFilterIds returns query without ids or filters</li>
             <li class="success">ScopeFilterIds returns query without filters</li>
@@ -263,13 +391,13 @@
             <li class="success">ScopeFilterIds returns query with array of integer ids ignore duplicate id</li>
             <li class="success">ScopeFilterIds returns query with filters with null and string and array</li>
         </ul>
-        <h2>Model (Tests\Unit\Playground\Models\Traits\ScopeFilterTrash\Model)</h2>
+        <h2>Model (Tests\Unit\Playground\Models\Scopes\ScopeFilterTrash\Model)</h2>
         <ul>
             <li class="success">ScopeFilterTrash returns query with empty visibility</li>
             <li class="success">ScopeFilterTrash returns query with trash</li>
             <li class="success">ScopeFilterTrash returns query with only trash</li>
         </ul>
-        <h2>Model (Tests\Unit\Playground\Models\Traits\ScopeSort\Model)</h2>
+        <h2>Model (Tests\Unit\Playground\Models\Scopes\ScopeSort\Model)</h2>
         <ul>
             <li class="success">ScopeSort returns query with empty sort</li>
             <li class="success">ScopeSort returns query with array boolean sort asc</li>
@@ -290,9 +418,11 @@
             <li class="success">Add has and remove Roles</li>
             <li class="success">IsAdmin with admins and users</li>
         </ul>
-        <h2>Model (Tests\Unit\Playground\Test\Models\AbstractUser\Model)</h2>
+        <h2>Model (Tests\Unit\Playground\Test\Models\AppPlaygroundUser\Model)</h2>
         <ul>
-            <li class="success">Get attributes</li>
+            <li class="success">Model instance</li>
+            <li class="success">Verify model relationships</li>
+            <li class="success">Model factory make</li>
         </ul>
         <h2>Model (Tests\Unit\Playground\Test\Models\ModelCase\Model)</h2>
         <ul>
@@ -341,40 +471,114 @@
         <h2>Model (Tests\Unit\Playground\Test\Models\User\Model)</h2>
         <ul>
             <li class="success">Get attributes</li>
+            <li class="success">GetAttributes filled</li>
             <li class="success">Factory with make</li>
         </ul>
-        <h2>Public Dashboard Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicDashboardRoute)</h2>
+        <h2>Password Confirmation Route (Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordConfirmationRoute)</h2>
         <ul>
-            <li class="success">Route dashboard as guest and fail when disabled for guest and no redirect</li>
-            <li class="success">Route dashboard as guest and redirect when disabled for all</li>
-            <li class="success">Route dashboard as guest and redirect when disabled for guest</li>
-            <li class="success">Route json dashboard as guest and succeed</li>
+            <li class="success">Confirm password screen can be rendered</li>
+            <li class="success">Password can be confirmed</li>
+            <li class="success">Password is not confirmed with invalid password</li>
         </ul>
-        <h2>Public Home Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicHomeRoute)</h2>
+        <h2>Password Confirmation Route (Tests\Feature\Playground\Login\Blade\Http\Controllers\Playground\PasswordConfirmationRoute)</h2>
         <ul>
-            <li class="success">Route home as guest and succeed</li>
-            <li class="success">Route json home as guest and succeed</li>
-            <li class="success">Route home as user admin and succeed</li>
-            <li class="success">Route json home as admin and succeed</li>
+            <li class="success">Confirm password screen can be rendered</li>
+            <li class="success">Password can be confirmed</li>
+            <li class="success">Password is not confirmed with invalid password</li>
         </ul>
-        <h2>Public Sitemap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\PublicSitemapRoute)</h2>
+        <h2>Password Reset Route (Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordResetRoute)</h2>
         <ul>
-            <li class="success">Route sitemap as guest and fail when disabled for guest and no redirect</li>
-            <li class="success">Route sitemap as guest and redirect when disabled for all</li>
-            <li class="success">Route sitemap as guest and redirect when disabled for guest</li>
-            <li class="success">Route json sitemap as guest and succeed</li>
-            <li class="success">Route sitemap as user and succeed</li>
-            <li class="success">Route sitemap as support and fail when disabled for all</li>
-            <li class="success">Route sitemap as user and fail when disabled for all and no redirect</li>
-            <li class="success">Route json sitemap as admin and succeed</li>
-            <li class="success">Route sitemap as user and succeed with package sitemaps</li>
+            <li class="success">Reset password link screen can be rendered</li>
+            <li class="success">Reset password link can be requested</li>
+            <li class="success">Reset password screen can be rendered</li>
+            <li class="success">Password can be reset with valid token</li>
+            <li class="success">Password reset with invalid token</li>
+            <li class="success">Password reset with invalid user</li>
         </ul>
-        <h2>Theme Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\ThemeRoute)</h2>
+        <h2>Password Reset Route (Tests\Feature\Playground\Login\Blade\Http\Controllers\Playground\PasswordResetRoute)</h2>
         <ul>
-            <li class="success">Route theme as guest and succeed</li>
-            <li class="success">Route theme as guest with preview and succeed</li>
-            <li class="success">Route theme as partner and succeed</li>
-            <li class="success">Route theme as sales and succeed with theme and redirect</li>
+            <li class="success">Reset password link screen can be rendered</li>
+            <li class="success">Reset password link can be requested</li>
+            <li class="success">Reset password screen can be rendered</li>
+            <li class="success">Password can be reset with valid token</li>
+            <li class="success">Password reset with invalid token</li>
+            <li class="success">Password reset with invalid user</li>
+        </ul>
+        <h2>Public Dashboard Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicDashboardRoute)</h2>
+        <ul>
+            <li class="success">As guest and fail when disabled for guest and no redirect</li>
+            <li class="success">As guest and redirect when disabled for all</li>
+            <li class="success">As guest and redirect when disabled for guest</li>
+            <li class="success">As guest and succeed</li>
+        </ul>
+        <h2>Public Dashboard Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicDashboardRoute)</h2>
+        <ul>
+            <li class="success">As guest and fail when disabled for guest and no redirect</li>
+            <li class="success">As guest and redirect when disabled for all</li>
+            <li class="success">As guest and redirect when disabled for guest</li>
+            <li class="success">As guest and succeed</li>
+        </ul>
+        <h2>Public Home Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicHomeRoute)</h2>
+        <ul>
+            <li class="success">As guest and succeed</li>
+            <li class="success">Json as guest and succeed</li>
+            <li class="success">As admin and succeed</li>
+            <li class="success">Json as admin and succeed</li>
+        </ul>
+        <h2>Public Home Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicHomeRoute)</h2>
+        <ul>
+            <li class="success">As guest and succeed</li>
+            <li class="success">Json as guest and succeed</li>
+            <li class="success">As admin and succeed</li>
+            <li class="success">Json as admin and succeed</li>
+        </ul>
+        <h2>Public Sitemap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRoute)</h2>
+        <ul>
+            <li class="success">As guest and fail when disabled for guest and no redirect</li>
+            <li class="success">As guest and redirect when disabled for all</li>
+            <li class="success">As guest and redirect when disabled for guest</li>
+            <li class="success">As guest and succeed</li>
+            <li class="success">As user and succeed</li>
+            <li class="success">As support and fail when disabled for all</li>
+            <li class="success">As user and fail when disabled for all and no redirect</li>
+            <li class="success">As admin and succeed</li>
+            <li class="success">As user and succeed with package sitemaps</li>
+        </ul>
+        <h2>Public Sitemap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicSitemapRoute)</h2>
+        <ul>
+            <li class="success">As guest and fail when disabled for guest and no redirect</li>
+            <li class="success">As guest and redirect when disabled for all</li>
+            <li class="success">As guest and redirect when disabled for guest</li>
+            <li class="success">As guest and succeed</li>
+            <li class="success">As user and succeed</li>
+            <li class="success">As support and fail when disabled for all</li>
+            <li class="success">As user and fail when disabled for all and no redirect</li>
+            <li class="success">As admin and succeed</li>
+            <li class="success">As user and succeed with package sitemaps</li>
+        </ul>
+        <h2>Registration Route (Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\RegistrationRoute)</h2>
+        <ul>
+            <li class="success">Registration screen can be rendered</li>
+            <li class="success">New users can register</li>
+        </ul>
+        <h2>Registration Route (Tests\Feature\Playground\Login\Blade\Http\Controllers\Playground\RegistrationRoute)</h2>
+        <ul>
+            <li class="success">Registration screen can be rendered</li>
+            <li class="success">New users can register</li>
+        </ul>
+        <h2>Theme Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\ThemeRoute)</h2>
+        <ul>
+            <li class="success">As guest and succeed</li>
+            <li class="success">As guest with preview and succeed</li>
+            <li class="success">As user and succeed</li>
+            <li class="success">As admin and succeed with theme and redirect</li>
+        </ul>
+        <h2>Theme Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\ThemeRoute)</h2>
+        <ul>
+            <li class="success">As guest and succeed</li>
+            <li class="success">As guest with preview and succeed</li>
+            <li class="success">As user and succeed</li>
+            <li class="success">As admin and succeed with theme and redirect</li>
         </ul>
         <h2>Trait (Tests\Unit\Playground\Auth\Policies\PolicyTrait\Trait)</h2>
         <ul>
@@ -410,25 +614,43 @@
             <li class="success">Has role</li>
             <li class="success">HasRole advanced role</li>
         </ul>
-        <h2>User Dashboard Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\UserDashboardRoute)</h2>
+        <h2>User Dashboard Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRoute)</h2>
         <ul>
-            <li class="success">Route dashboard as guest and fail when disabled for guest and no redirect with auth middleware</li>
-            <li class="success">Route dashboard as guest and redirect</li>
-            <li class="success">Route dashboard as guest and redirect when disabled for guest</li>
-            <li class="success">Route json dashboard as guest and fail</li>
-            <li class="success">Route dashboard as user and succeed</li>
-            <li class="success">Route dashboard as user and fail when disabled for all</li>
-            <li class="success">Route dashboard as user and fail when disabled for all and no redirect</li>
-            <li class="success">Route json dashboard as admin and succeed</li>
+            <li class="success">As guest and fail when disabled for guest and no redirect with auth middleware</li>
+            <li class="success">As guest and redirect</li>
+            <li class="success">As guest and redirect when disabled for guest</li>
+            <li class="success">As guest and fail</li>
+            <li class="success">As user and succeed</li>
+            <li class="success">As user and fail when disabled for all</li>
+            <li class="success">As user and fail when disabled for all and no redirect</li>
+            <li class="success">Json as admin and succeed</li>
         </ul>
-        <h2>User Home Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\UserHomeRoute)</h2>
+        <h2>User Dashboard Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserDashboardRoute)</h2>
+        <ul>
+            <li class="success">As guest and fail when disabled for guest and no redirect with auth middleware</li>
+            <li class="success">As guest and redirect</li>
+            <li class="success">As guest and redirect when disabled for guest</li>
+            <li class="success">As guest and fail</li>
+            <li class="success">As user and succeed</li>
+            <li class="success">As user and fail when disabled for all</li>
+            <li class="success">As user and fail when disabled for all and no redirect</li>
+            <li class="success">Json as admin and succeed</li>
+        </ul>
+        <h2>User Home Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserHomeRoute)</h2>
         <ul>
             <li class="success">Route home as guest and fail</li>
             <li class="success">Route json home as guest and fail</li>
             <li class="success">Route home as user admin and succeed</li>
             <li class="success">Route json home as admin and succeed</li>
         </ul>
-        <h2>User Sitemap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\UserSitemapRoute)</h2>
+        <h2>User Home Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserHomeRoute)</h2>
+        <ul>
+            <li class="success">Route home as guest and fail</li>
+            <li class="success">Route json home as guest and fail</li>
+            <li class="success">Route home as user admin and succeed</li>
+            <li class="success">Route json home as admin and succeed</li>
+        </ul>
+        <h2>User Sitemap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRoute)</h2>
         <ul>
             <li class="success">Route sitemap as guest and fail when disabled for guest and no redirect</li>
             <li class="success">Route sitemap as guest and redirect when disabled for all</li>
@@ -440,12 +662,31 @@
             <li class="success">Route json sitemap as admin and succeed</li>
             <li class="success">Route sitemap as user and succeed with package sitemaps</li>
         </ul>
-        <h2>Welcome Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\WelcomeRoute)</h2>
+        <h2>User Sitemap Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserSitemapRoute)</h2>
         <ul>
-            <li class="success">Route welcome as guest and succeed</li>
-            <li class="success">Route json welcome as guest and succeed</li>
-            <li class="success">Route welcome as user and succeed</li>
-            <li class="success">Route json welcome as manager admin and succeed</li>
+            <li class="success">Route sitemap as guest and fail when disabled for guest and no redirect</li>
+            <li class="success">Route sitemap as guest and redirect when disabled for all</li>
+            <li class="success">Route sitemap as guest and redirect when disabled for guest</li>
+            <li class="success">Route json sitemap as guest and fail</li>
+            <li class="success">Route sitemap as user and succeed</li>
+            <li class="success">Route sitemap as support and fail when disabled for all</li>
+            <li class="success">Route sitemap as user and fail when disabled for all and no redirect</li>
+            <li class="success">Route json sitemap as admin and succeed</li>
+            <li class="success">Route sitemap as user and succeed with package sitemaps</li>
+        </ul>
+        <h2>Welcome Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\WelcomeRoute)</h2>
+        <ul>
+            <li class="success">As guest and succeed</li>
+            <li class="success">Json as guest and succeed</li>
+            <li class="success">As user and succeed</li>
+            <li class="success">Json as manager admin and succeed</li>
+        </ul>
+        <h2>Welcome Route (Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\WelcomeRoute)</h2>
+        <ul>
+            <li class="success">As guest and succeed</li>
+            <li class="success">Json as guest and succeed</li>
+            <li class="success">As user and succeed</li>
+            <li class="success">Json as manager admin and succeed</li>
         </ul>
     </body>
 </html>
