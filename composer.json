@@ -1,27 +1,40 @@
 {
-    "name": "laravel/laravel",
+    "name": "gammamatrix/site-laravel",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
-    "keywords": ["laravel", "framework"],
+    "description": "Playground: This package provides a Laravel site using Sanctum for authentication and authorization and utilizes Blade for the UI.",
+    "keywords": [
+        "blade",
+        "gammamatrix",
+        "playground",
+        "laravel",
+        "login",
+        "auth",
+        "site",
+        "sanctum",
+        "cms",
+        "matrix",
+        "playground-blade"
+    ],
+    "homepage": "https://gammamatrix-playground.readthedocs.io/en/latest/applications/site-laravel.html",
     "license": "MIT",
     "require": {
-        "php": "^8.1",
-        "gammamatrix/playground-site-blade": "dev-develop|dev-master|^73.0",
-        "guzzlehttp/guzzle": "^7.2",
-        "laravel/framework": "^10.10",
-        "laravel/sanctum": "^3.3",
-        "laravel/tinker": "^2.8"
+        "php": "^8.2",
+        "gammamatrix/playground-admin-resource": "^73.0@dev",
+        "gammamatrix/playground-login-blade": "^73.0@dev",
+        "gammamatrix/playground-site-blade": "^73.0@dev",
+        "laravel/framework": "^11.0",
+        "laravel/sanctum": "^4.0",
+        "laravel/tinker": "^2.9"
     },
     "require-dev": {
-        "fakerphp/faker": "^1.9.1",
-        "gammamatrix/playground-test": "dev-develop|dev-master|^73.0",
-        "laravel/pint": "^1.0",
-        "laravel/sail": "^1.18",
-        "mockery/mockery": "^1.4.4",
-        "nunomaduro/collision": "^7.0",
-        "phpunit/phpunit": "^10.5",
-        "spatie/laravel-ignition": "^2.0",
-        "tomasvotruba/bladestan": "^0.5.0"
+        "fakerphp/faker": "^1.23",
+        "gammamatrix/playground-test": "dev-develop",
+        "laravel/pint": "^1.13",
+        "laravel/sail": "^1.26",
+        "mockery/mockery": "^1.6",
+        "nunomaduro/collision": "^8.0",
+        "phpunit/phpunit": "^11.0",
+        "spatie/laravel-ignition": "^2.4"
     },
     "autoload": {
         "psr-4": {
@@ -35,10 +48,17 @@
             "Tests\\": "tests/",
             "Tests\\Feature\\Playground\\": "vendor/gammamatrix/playground/tests/Feature/",
             "Tests\\Unit\\Playground\\": "vendor/gammamatrix/playground/tests/Unit/",
+            "Tests\\Feature\\Playground\\Admin\\": "vendor/gammamatrix/playground-admin/tests/Feature/",
+            "Tests\\Unit\\Playground\\Admin\\": "vendor/gammamatrix/playground-admin/tests/Unit/",
+            "Tests\\Feature\\Playground\\Admin\\Resource\\": "vendor/gammamatrix/playground-admin-resource/tests/Feature/",
+            "Tests\\Unit\\Playground\\Admin\\Resource\\": "vendor/gammamatrix/playground-admin-resource/tests/Unit/",
             "Tests\\Feature\\Playground\\Auth\\": "vendor/gammamatrix/playground-auth/tests/Feature/",
             "Tests\\Unit\\Playground\\Auth\\": "vendor/gammamatrix/playground-auth/tests/Unit/",
             "Tests\\Feature\\Playground\\Blade\\": "vendor/gammamatrix/playground-blade/tests/Feature/",
             "Tests\\Unit\\Playground\\Blade\\": "vendor/gammamatrix/playground-blade/tests/Unit/",
+            "Tests\\Feature\\Playground\\Cms\\Resource\\": "vendor/gammamatrix/playground-cms-resource/tests/Feature/",
+            "Tests\\Unit\\Playground\\Cms\\Resource\\": "vendor/gammamatrix/playground-cms-resource/tests/Unit/",
+            "Tests\\Feature\\Playground\\Http\\": "vendor/gammamatrix/playground-http/tests/Feature/",
             "Tests\\Feature\\Playground\\Login\\Blade\\": "vendor/gammamatrix/playground-login-blade/tests/Feature/",
             "Tests\\Feature\\Playground\\Site\\Blade\\": "vendor/gammamatrix/playground-site-blade/tests/Feature/",
             "Tests\\Feature\\Playground\\Test\\": "vendor/gammamatrix/playground-test/tests/Feature/",
@@ -57,13 +77,18 @@
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
         "post-create-project-cmd": [
-            "@php artisan key:generate --ansi"
+            "@php artisan key:generate --ansi",
+            "@php -r \"file_exists('database/database.sqlite') || touch('database/database.sqlite');\"",
+            "@php artisan migrate --graceful --ansi"
         ],
         "test": "vendor/bin/phpunit",
         "format": "vendor/bin/php-cs-fixer fix",
         "analyse": "vendor/bin/phpstan analyse --verbose --debug --level max"
     },
     "extra": {
+        "branch-alias": {
+            "dev-develop": "73.x-dev"
+        },
         "laravel": {
             "dont-discover": []
         }
