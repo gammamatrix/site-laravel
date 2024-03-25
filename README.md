@@ -65,7 +65,7 @@ NOTE: Disable default Laravel welcome route.
 ## Testing
 
 This application supports running integration tests with the installed Playground packages.
-- Currently, over [400 Unit and Feature tests are run.](https://raw.githubusercontent.com/gammamatrix/site-laravel/testing/develop/testdox.txt)
+- Currently, over [800 Unit and Feature tests are run.](https://raw.githubusercontent.com/gammamatrix/site-laravel/testing/develop/testdox.txt)
 
 ```xml
 <testsuites>
