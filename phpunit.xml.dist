@@ -84,6 +84,8 @@
         <env name="LOG_CHANNEL" value="stderr" />
         <env name="AUTH_PROVIDERS_USERS_MODEL" value="\Playground\Models\User" />
         <env name="MAIL_MAILER" value="log" />
+        <env name="PLAYGROUND_SITE_BLADE_CMS_ENABLE" value="false" />
+        <env name="PLAYGROUND_SITE_BLADE_ROUTES_PAGE" value="false" />
         <env name="PULSE_ENABLED" value="false" />
         <env name="QUEUE_CONNECTION" value="sync" />
         <env name="SESSION_DRIVER" value="array" />
