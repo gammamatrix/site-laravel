@@ -1,0 +1,2264 @@
+<?xml version="1.0"?>
+<phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
+  <file name="ModelCase.php" path="/vendor/gammamatrix/playground-test/src/Unit/Models">
+    <totals>
+      <lines total="306" comments="123" code="183" executable="69" executed="46" percent="66.67"/>
+      <methods count="8" tested="5" percent="62.50"/>
+      <functions count="0" tested="0" percent="0"/>
+      <classes count="1" tested="0" percent="0.00"/>
+      <traits count="0" tested="0" percent="0"/>
+    </totals>
+    <class name="Playground\Test\Unit\Models\ModelCase" start="23" executable="69" executed="46" crap="45.33">
+      <namespace name="Playground\Test\Unit\Models"/>
+      <method name="getEnvironmentSetUp" signature="getEnvironmentSetUp($app)" start="88" end="93" crap="2" executable="3" executed="0" coverage="0"/>
+      <method name="getModel" signature="getModel(): Illuminate\Database\Eloquent\Model" start="95" end="100" crap="1" executable="2" executed="2" coverage="100"/>
+      <method name="getModelClass" signature="getModelClass(): string" start="107" end="110" crap="1" executable="1" executed="1" coverage="100"/>
+      <method name="test_model_instance" signature="test_model_instance(): void" start="114" end="121" crap="1" executable="3" executed="3" coverage="100"/>
+      <method name="verifyRelationship" signature="verifyRelationship(string $relationshipType, string $accessor): bool" start="128" end="210" crap="17.57" executable="26" executed="15" coverage="57.692307692308"/>
+      <method name="verifyRelationships" signature="verifyRelationships(): array" start="217" end="268" crap="9.29" executable="25" executed="16" coverage="64"/>
+      <method name="test_verify_model_relationships" signature="test_verify_model_relationships(): void" start="275" end="289" crap="1" executable="2" executed="2" coverage="100"/>
+      <method name="test_model_factory_make" signature="test_model_factory_make(): void" start="291" end="304" crap="2" executable="7" executed="7" coverage="100"/>
+    </class>
+    <coverage>
+      <line nr="97">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_model_instance"/>
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_model_instance"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_model_instance"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_model_instance"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_model_instance"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+      </line>
+      <line nr="99">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_model_instance"/>
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_model_instance"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_model_instance"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_model_instance"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_model_instance"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+      </line>
+      <line nr="109">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_model_instance"/>
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_model_factory_make"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_model_instance"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_model_factory_make"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_model_instance"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_model_factory_make"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_model_instance"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_model_factory_make"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_model_instance"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_model_factory_make"/>
+      </line>
+      <line nr="116">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_model_instance"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_model_instance"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_model_instance"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_model_instance"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_model_instance"/>
+      </line>
+      <line nr="118">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_model_instance"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_model_instance"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_model_instance"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_model_instance"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_model_instance"/>
+      </line>
+      <line nr="120">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_model_instance"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_model_instance"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_model_instance"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_model_instance"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_model_instance"/>
+      </line>
+      <line nr="130">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+      </line>
+      <line nr="131">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+      </line>
+      <line nr="132">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+      </line>
+      <line nr="133">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+      </line>
+      <line nr="159">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+      </line>
+      <line nr="174">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+      </line>
+      <line nr="175">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+      </line>
+      <line nr="177">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+      </line>
+      <line nr="179">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+      </line>
+      <line nr="180">
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+      </line>
+      <line nr="181">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+      </line>
+      <line nr="182">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+      </line>
+      <line nr="187">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+      </line>
+      <line nr="188">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+      </line>
+      <line nr="209">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+      </line>
+      <line nr="219">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+      </line>
+      <line nr="236">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+      </line>
+      <line nr="247">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+      </line>
+      <line nr="251">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+      </line>
+      <line nr="255">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+      </line>
+      <line nr="256">
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+      </line>
+      <line nr="259">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+      </line>
+      <line nr="260">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+      </line>
+      <line nr="263">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+      </line>
+      <line nr="267">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+      </line>
+      <line nr="277">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+      </line>
+      <line nr="279">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+      </line>
+      <line nr="293">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_model_factory_make"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_model_factory_make"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_model_factory_make"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_model_factory_make"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_model_factory_make"/>
+      </line>
+      <line nr="295">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_model_factory_make"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_model_factory_make"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_model_factory_make"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_model_factory_make"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_model_factory_make"/>
+      </line>
+      <line nr="296">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_model_factory_make"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_model_factory_make"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_model_factory_make"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_model_factory_make"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_model_factory_make"/>
+      </line>
+      <line nr="298">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_model_factory_make"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_model_factory_make"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_model_factory_make"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_model_factory_make"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_model_factory_make"/>
+      </line>
+      <line nr="299">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_model_factory_make"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_model_factory_make"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_model_factory_make"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_model_factory_make"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_model_factory_make"/>
+      </line>
+      <line nr="302">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_model_factory_make"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_model_factory_make"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_model_factory_make"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_model_factory_make"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_model_factory_make"/>
+      </line>
+      <line nr="303">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_model_factory_make"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_model_factory_make"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_model_factory_make"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_model_factory_make"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_model_factory_make"/>
+      </line>
+      <line nr="220">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+      </line>
+      <line nr="221">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+      </line>
+      <line nr="222">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+      </line>
+      <line nr="223">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+      </line>
+      <line nr="224">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+      </line>
+      <line nr="225">
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+      </line>
+    </coverage>
+    <source>
+      <line no="1">
+        <token name="T_OPEN_TAG">&lt;?php</token>
+      </line>
+      <line no="2"/>
+      <line no="3">
+        <token name="T_DECLARE">declare</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">strict_types</token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_LNUMBER">1</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="4">
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="5">
+        <token name="T_DOC_COMMENT"> * Playground</token>
+      </line>
+      <line no="6">
+        <token name="T_DOC_COMMENT"> */</token>
+      </line>
+      <line no="7">
+        <token name="T_NAMESPACE">namespace</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Playground\Test\Unit\Models</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="8"/>
+      <line no="9">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Illuminate\Database\Eloquent\Model</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="10">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Illuminate\Database\Eloquent\Relations\BelongsTo</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="11">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Illuminate\Database\Eloquent\Relations\BelongsToMany</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="12">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Illuminate\Database\Eloquent\Relations\HasMany</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="13">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Illuminate\Database\Eloquent\Relations\HasOne</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="14">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Illuminate\Database\Eloquent\Relations\MorphToMany</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="15">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Illuminate\Support\Facades\Log</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="16">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Playground\Test\OrchestraTestCase</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="17"/>
+      <line no="18">
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="19">
+        <token name="T_DOC_COMMENT"> * \Playground\Test\Unit\Models\ModelCase</token>
+      </line>
+      <line no="20">
+        <token name="T_DOC_COMMENT"> *</token>
+      </line>
+      <line no="21">
+        <token name="T_DOC_COMMENT"> * NOTE Set the model: protected string $modelClass = Model::class;</token>
+      </line>
+      <line no="22">
+        <token name="T_DOC_COMMENT"> */</token>
+      </line>
+      <line no="23">
+        <token name="T_ABSTRACT">abstract</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CLASS">class</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">ModelCase</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EXTENDS">extends</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">OrchestraTestCase</token>
+      </line>
+      <line no="24">
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="25">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="26">
+        <token name="T_DOC_COMMENT">     * @var bool A model must be marked as not having relationships.</token>
+      </line>
+      <line no="27">
+        <token name="T_DOC_COMMENT">     *</token>
+      </line>
+      <line no="28">
+        <token name="T_DOC_COMMENT">     * @see testVerifyRelationships()</token>
+      </line>
+      <line no="29">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="30">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">bool</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$hasRelationships</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">true</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="31"/>
+      <line no="32">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="33">
+        <token name="T_DOC_COMMENT">     * @var array&lt;int, string&gt; Test belongsTo relationships.</token>
+      </line>
+      <line no="34">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="35">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_ARRAY">array</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$belongsTo</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+      </line>
+      <line no="36">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">// 'item',</token>
+      </line>
+      <line no="37">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="38"/>
+      <line no="39">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="40">
+        <token name="T_DOC_COMMENT">     * @var array&lt;int, string&gt; Test belongsToMany relationships.</token>
+      </line>
+      <line no="41">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="42">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_ARRAY">array</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$belongsToMany</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+      </line>
+      <line no="43">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">// 'items',</token>
+      </line>
+      <line no="44">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="45"/>
+      <line no="46">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="47">
+        <token name="T_DOC_COMMENT">     * @var array&lt;int, string&gt; Test hasMany relationships.</token>
+      </line>
+      <line no="48">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="49">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_ARRAY">array</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$hasMany</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+      </line>
+      <line no="50">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">// 'items',</token>
+      </line>
+      <line no="51">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="52"/>
+      <line no="53">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="54">
+        <token name="T_DOC_COMMENT">     * @var array&lt;int, string&gt; Test hasOne relationships.</token>
+      </line>
+      <line no="55">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="56">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_ARRAY">array</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$hasOne</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+      </line>
+      <line no="57">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">// 'item',</token>
+      </line>
+      <line no="58">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="59"/>
+      <line no="60">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="61">
+        <token name="T_DOC_COMMENT">     * @var array&lt;int, string&gt; Test morphToMany relationships.</token>
+      </line>
+      <line no="62">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="63">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_ARRAY">array</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$morphToMany</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+      </line>
+      <line no="64">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">// 'items',</token>
+      </line>
+      <line no="65">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="66"/>
+      <line no="67">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="68">
+        <token name="T_DOC_COMMENT">     * @var class-string&lt;Model&gt;</token>
+      </line>
+      <line no="69">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="70">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">string</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$modelClass</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">Model</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_CLASS">class</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="71"/>
+      <line no="72">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="73">
+        <token name="T_DOC_COMMENT">     * @var array&lt;string, mixed&gt; The relationship types for testing.</token>
+      </line>
+      <line no="74">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="75">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_ARRAY">array</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$relationshipTypes</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+      </line>
+      <line no="76">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'belongsTo'</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_DOUBLE_ARROW">=&gt;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="77">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'belongsToMany'</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_DOUBLE_ARROW">=&gt;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="78">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'hasMany'</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_DOUBLE_ARROW">=&gt;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="79">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'hasOne'</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_DOUBLE_ARROW">=&gt;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="80">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'morphToMany'</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_DOUBLE_ARROW">=&gt;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="81">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="82"/>
+      <line no="83">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="84">
+        <token name="T_DOC_COMMENT">     * Set up the environment.</token>
+      </line>
+      <line no="85">
+        <token name="T_DOC_COMMENT">     *</token>
+      </line>
+      <line no="86">
+        <token name="T_DOC_COMMENT">     * @param  \Illuminate\Foundation\Application  $app</token>
+      </line>
+      <line no="87">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="88">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">getEnvironmentSetUp</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$app</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+      </line>
+      <line no="89">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="90">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$app</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'config'</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">set</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'auth.providers.users.model'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'Playground\\Test\\Models\\User'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="91">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$app</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'config'</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">set</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'auth.testing.password'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'password'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="92">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$app</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'config'</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">set</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'auth.testing.hashed'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">false</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="93">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="94"/>
+      <line no="95">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">getModel</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">Model</token>
+      </line>
+      <line no="96">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="97">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$modelClass</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">getModelClass</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="98"/>
+      <line no="99">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NEW">new</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$modelClass</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="100">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="101"/>
+      <line no="102">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="103">
+        <token name="T_DOC_COMMENT">     * Get the FQDN of the model class.</token>
+      </line>
+      <line no="104">
+        <token name="T_DOC_COMMENT">     *</token>
+      </line>
+      <line no="105">
+        <token name="T_DOC_COMMENT">     * @return class-string&lt;Model&gt; Returns the FQDN to the model class.</token>
+      </line>
+      <line no="106">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="107">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">getModelClass</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">string</token>
+      </line>
+      <line no="108">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="109">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">modelClass</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="110">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="111"/>
+      <line no="112">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_COMMENT">// Verify: instance</token>
+      </line>
+      <line no="113"/>
+      <line no="114">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">test_model_instance</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">void</token>
+      </line>
+      <line no="115">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="116">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$instance</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">getModel</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="117"/>
+      <line no="118">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$modelClass</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">getModelClass</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="119"/>
+      <line no="120">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">assertInstanceOf</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$modelClass</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$instance</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="121">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="122"/>
+      <line no="123">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_COMMENT">// Verify: relationships</token>
+      </line>
+      <line no="124"/>
+      <line no="125">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="126">
+        <token name="T_DOC_COMMENT">     * Verify a model relationship.</token>
+      </line>
+      <line no="127">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="128">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">verifyRelationship</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">string</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$relationshipType</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">string</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$accessor</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">bool</token>
+      </line>
+      <line no="129">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="130">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$hasRelationshipType</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">is_string</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$relationshipType</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+      </line>
+      <line no="131">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_BOOLEAN_AND">&amp;&amp;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_ISSET">isset</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">relationshipTypes</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_VARIABLE">$relationshipType</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+      </line>
+      <line no="132">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_BOOLEAN_AND">&amp;&amp;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EXCLAMATION_MARK">!</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EMPTY">empty</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_OPEN_CURLY">{</token>
+        <token name="T_VARIABLE">$relationshipType</token>
+        <token name="T_CLOSE_CURLY">}</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+      </line>
+      <line no="133">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_BOOLEAN_AND">&amp;&amp;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">in_array</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$accessor</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_OPEN_CURLY">{</token>
+        <token name="T_VARIABLE">$relationshipType</token>
+        <token name="T_CLOSE_CURLY">}</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="134">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">// dump([</token>
+      </line>
+      <line no="135">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     '__METHOD__' =&gt; __METHOD__,</token>
+      </line>
+      <line no="136">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     '__FILE__' =&gt; __FILE__,</token>
+      </line>
+      <line no="137">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     '__LINE__' =&gt; __LINE__,</token>
+      </line>
+      <line no="138">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     'class' =&gt; get_called_class(),</token>
+      </line>
+      <line no="139">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     '$this-&gt;modelClass' =&gt; $this-&gt;modelClass,</token>
+      </line>
+      <line no="140">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     '$hasRelationshipType' =&gt; $hasRelationshipType,</token>
+      </line>
+      <line no="141">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">// ]);</token>
+      </line>
+      <line no="142"/>
+      <line no="143">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">// dump([</token>
+      </line>
+      <line no="144">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     '__METHOD__' =&gt; __METHOD__,</token>
+      </line>
+      <line no="145">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     '__FILE__' =&gt; __FILE__,</token>
+      </line>
+      <line no="146">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     '__LINE__' =&gt; __LINE__,</token>
+      </line>
+      <line no="147">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     '$modelClass' =&gt; $this-&gt;getModelClass(),</token>
+      </line>
+      <line no="148">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     // '$model' =&gt; $this-&gt;getModel(),</token>
+      </line>
+      <line no="149">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     '$relationshipType' =&gt; $relationshipType,</token>
+      </line>
+      <line no="150">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     '$accessor' =&gt; $accessor,</token>
+      </line>
+      <line no="151">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     '$hasRelationshipType' =&gt; $hasRelationshipType,</token>
+      </line>
+      <line no="152">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     'belongsTo' =&gt; $this-&gt;belongsTo,</token>
+      </line>
+      <line no="153">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     'belongsToMany' =&gt; $this-&gt;belongsToMany,</token>
+      </line>
+      <line no="154">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     'relationshipTypes' =&gt; $this-&gt;relationshipTypes,</token>
+      </line>
+      <line no="155">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     'hasMany' =&gt; $this-&gt;hasMany,</token>
+      </line>
+      <line no="156">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     'hasOne' =&gt; $this-&gt;hasOne,</token>
+      </line>
+      <line no="157">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">// ]);</token>
+      </line>
+      <line no="158"/>
+      <line no="159">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_EXCLAMATION_MARK">!</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$hasRelationshipType</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="160">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$error</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">sprintf</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'Invalid relationship: %1$s'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">json_encode</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_OPEN_SQUARE">[</token>
+      </line>
+      <line no="161">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'$modelClass'</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_DOUBLE_ARROW">=&gt;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">getModelClass</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="162">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'$relationshipType'</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_DOUBLE_ARROW">=&gt;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$relationshipType</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="163">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'$accessor'</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_DOUBLE_ARROW">=&gt;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$accessor</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="164">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="165">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_STRING">Log</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_STRING">error</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$error</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="166"/>
+      <line no="167">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_COMMENT">// Unable to continue testing this model.</token>
+      </line>
+      <line no="168">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">false</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="169">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="170"/>
+      <line no="171">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="172">
+        <token name="T_DOC_COMMENT">         * @var class-string&lt;BelongsTo|BelongsToMany|HasMany|HasOne|MorphToMany&gt;</token>
+      </line>
+      <line no="173">
+        <token name="T_DOC_COMMENT">         */</token>
+      </line>
+      <line no="174">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$relationshipTypeClass</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">null</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="175">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$relationshipType</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_IS_IDENTICAL">===</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'belongsTo'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="176">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$relationshipTypeClass</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">BelongsTo</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_CLASS">class</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="177">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_ELSEIF">elseif</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$relationshipType</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_IS_IDENTICAL">===</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'belongsToMany'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="178">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$relationshipTypeClass</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">BelongsToMany</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_CLASS">class</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="179">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_ELSEIF">elseif</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$relationshipType</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_IS_IDENTICAL">===</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'hasMany'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="180">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$relationshipTypeClass</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">HasMany</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_CLASS">class</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="181">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_ELSEIF">elseif</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$relationshipType</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_IS_IDENTICAL">===</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'hasOne'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="182">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$relationshipTypeClass</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">HasOne</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_CLASS">class</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="183">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_ELSEIF">elseif</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$relationshipType</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_IS_IDENTICAL">===</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'morphToMany'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="184">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$relationshipTypeClass</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">MorphToMany</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_CLASS">class</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="185">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="186"/>
+      <line no="187">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$relationship</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">getModel</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_OPEN_CURLY">{</token>
+        <token name="T_VARIABLE">$accessor</token>
+        <token name="T_CLOSE_CURLY">}</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="188">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">assertInstanceOf</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$relationshipTypeClass</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$relationship</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="189"/>
+      <line no="190">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">// dump([</token>
+      </line>
+      <line no="191">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     '__METHOD__' =&gt; __METHOD__,</token>
+      </line>
+      <line no="192">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     '__FILE__' =&gt; __FILE__,</token>
+      </line>
+      <line no="193">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     '__LINE__' =&gt; __LINE__,</token>
+      </line>
+      <line no="194">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     '$modelClass' =&gt; $this-&gt;getModelClass(),</token>
+      </line>
+      <line no="195">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     // '$model' =&gt; $this-&gt;getModel(),</token>
+      </line>
+      <line no="196">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     '$relationship' =&gt; get_class($relationship),</token>
+      </line>
+      <line no="197">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     // '$relationship' =&gt; $relationship,</token>
+      </line>
+      <line no="198">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     // '$relationship' =&gt; get_class_methods($relationship),</token>
+      </line>
+      <line no="199">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     '$relationshipType' =&gt; $relationshipType,</token>
+      </line>
+      <line no="200">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     '$relationshipTypeClass' =&gt; $relationshipTypeClass,</token>
+      </line>
+      <line no="201">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     '$accessor' =&gt; $accessor,</token>
+      </line>
+      <line no="202">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     '$hasRelationshipType' =&gt; $hasRelationshipType,</token>
+      </line>
+      <line no="203">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     'belongsTo' =&gt; $this-&gt;belongsTo,</token>
+      </line>
+      <line no="204">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     'relationshipTypes' =&gt; $this-&gt;relationshipTypes,</token>
+      </line>
+      <line no="205">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     'belongsToMany' =&gt; $this-&gt;belongsToMany,</token>
+      </line>
+      <line no="206">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     'relationshipTypes' =&gt; $this-&gt;relationshipTypes,</token>
+      </line>
+      <line no="207">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     'hasMany' =&gt; $this-&gt;hasMany,</token>
+      </line>
+      <line no="208">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">// ]);</token>
+      </line>
+      <line no="209">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">true</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="210">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="211"/>
+      <line no="212">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="213">
+        <token name="T_DOC_COMMENT">     * Verify a model relationship.</token>
+      </line>
+      <line no="214">
+        <token name="T_DOC_COMMENT">     *</token>
+      </line>
+      <line no="215">
+        <token name="T_DOC_COMMENT">     * @return array&lt;string, mixed&gt; Returns an array of boolean results for the relationship types.</token>
+      </line>
+      <line no="216">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="217">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">verifyRelationships</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_ARRAY">array</token>
+      </line>
+      <line no="218">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="219">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$results</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+      </line>
+      <line no="220">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'belongsTo'</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_DOUBLE_ARROW">=&gt;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="221">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'belongsToMany'</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_DOUBLE_ARROW">=&gt;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="222">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'hasMany'</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_DOUBLE_ARROW">=&gt;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="223">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'hasOne'</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_DOUBLE_ARROW">=&gt;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="224">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'morphToMany'</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_DOUBLE_ARROW">=&gt;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="225">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="226">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">// dump([</token>
+      </line>
+      <line no="227">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     '__METHOD__' =&gt; __METHOD__,</token>
+      </line>
+      <line no="228">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     '__FILE__' =&gt; __FILE__,</token>
+      </line>
+      <line no="229">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     '__LINE__' =&gt; __LINE__,</token>
+      </line>
+      <line no="230">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     'class' =&gt; get_called_class(),</token>
+      </line>
+      <line no="231">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     '$this-&gt;modelClass' =&gt; $this-&gt;modelClass,</token>
+      </line>
+      <line no="232">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     '$this-&gt;hasOne' =&gt; $this-&gt;hasOne,</token>
+      </line>
+      <line no="233">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     // '$this' =&gt; $this,</token>
+      </line>
+      <line no="234">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">// ]);</token>
+      </line>
+      <line no="235"/>
+      <line no="236">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_EXCLAMATION_MARK">!</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">hasRelationships</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="237">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_COMMENT">// At least one test must be completed.</token>
+      </line>
+      <line no="238">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">assertEmpty</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">belongsTo</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'Expecting belongsTo to be empty.'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="239">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">assertEmpty</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">belongsToMany</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'Expecting belongsToMany to be empty.'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="240">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">assertEmpty</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">hasMany</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'Expecting hasMany to be empty.'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="241">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">assertEmpty</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">hasOne</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'Expecting hasOne to be empty.'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="242">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">assertEmpty</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">morphToMany</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'Expecting morphToMany to be empty.'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="243"/>
+      <line no="244">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$results</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="245">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="246"/>
+      <line no="247">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_FOREACH">foreach</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">belongsTo</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_AS">as</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$accessor</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="248">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$results</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'belongsTo'</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_VARIABLE">$accessor</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">verifyRelationship</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'belongsTo'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$accessor</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="249">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="250"/>
+      <line no="251">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_FOREACH">foreach</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">belongsToMany</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_AS">as</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$accessor</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="252">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$results</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'belongsToMany'</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_VARIABLE">$accessor</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">verifyRelationship</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'belongsToMany'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$accessor</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="253">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="254"/>
+      <line no="255">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_FOREACH">foreach</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">hasMany</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_AS">as</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$accessor</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="256">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$results</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'hasMany'</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_VARIABLE">$accessor</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">verifyRelationship</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'hasMany'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$accessor</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="257">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="258"/>
+      <line no="259">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_FOREACH">foreach</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">hasOne</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_AS">as</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$accessor</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="260">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$results</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'hasOne'</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_VARIABLE">$accessor</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">verifyRelationship</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'hasOne'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$accessor</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="261">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="262"/>
+      <line no="263">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_FOREACH">foreach</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">morphToMany</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_AS">as</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$accessor</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="264">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$results</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'morphToMany'</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_VARIABLE">$accessor</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">verifyRelationship</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'morphToMany'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$accessor</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="265">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="266"/>
+      <line no="267">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$results</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="268">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="269"/>
+      <line no="270">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_COMMENT">// Test: relationships</token>
+      </line>
+      <line no="271"/>
+      <line no="272">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="273">
+        <token name="T_DOC_COMMENT">     * Test the model relationships.</token>
+      </line>
+      <line no="274">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="275">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">test_verify_model_relationships</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">void</token>
+      </line>
+      <line no="276">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="277">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$modelClass</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">getModelClass</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="278"/>
+      <line no="279">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$results</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">verifyRelationships</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="280">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">// dump([</token>
+      </line>
+      <line no="281">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     '__METHOD__' =&gt; __METHOD__,</token>
+      </line>
+      <line no="282">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     '__FILE__' =&gt; __FILE__,</token>
+      </line>
+      <line no="283">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     '__LINE__' =&gt; __LINE__,</token>
+      </line>
+      <line no="284">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     'class' =&gt; get_called_class(),</token>
+      </line>
+      <line no="285">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     '$this-&gt;modelClass' =&gt; $this-&gt;modelClass,</token>
+      </line>
+      <line no="286">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     '$results' =&gt; $results,</token>
+      </line>
+      <line no="287">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     // '$this' =&gt; $this,</token>
+      </line>
+      <line no="288">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">// ]);</token>
+      </line>
+      <line no="289">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="290"/>
+      <line no="291">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">test_model_factory_make</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">void</token>
+      </line>
+      <line no="292">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="293">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$instance</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">null</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="294"/>
+      <line no="295">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$modelClass</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">getModelClass</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="296">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">assertNotEmpty</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$modelClass</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="297"/>
+      <line no="298">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">is_callable</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_VARIABLE">$modelClass</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'factory'</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="299">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$instance</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$modelClass</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_STRING">factory</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">make</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="300">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="301"/>
+      <line no="302">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">assertNotNull</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$instance</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="303">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">assertInstanceOf</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$modelClass</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$instance</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="304">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="305">
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="306"/>
+    </source>
+  </file>
+</phpunit>

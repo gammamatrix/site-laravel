@@ -1,0 +1,577 @@
+<?xml version="1.0"?>
+<phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
+  <file name="DefaultUser.php" path="/vendor/gammamatrix/playground-test/src/Models">
+    <totals>
+      <lines total="60" comments="26" code="34" executable="4" executed="4" percent="100.00"/>
+      <methods count="1" tested="1" percent="100.00"/>
+      <functions count="0" tested="0" percent="0"/>
+      <classes count="1" tested="1" percent="100.00"/>
+      <traits count="0" tested="0" percent="0"/>
+    </totals>
+    <class name="Playground\Test\Models\DefaultUser" start="20" executable="4" executed="4" crap="1">
+      <namespace name="Playground\Test\Models"/>
+      <method name="casts" signature="casts(): array" start="52" end="58" crap="1" executable="4" executed="4" coverage="100"/>
+    </class>
+    <coverage>
+      <line nr="55">
+        <covered by="Tests\Unit\Playground\Models\Model\ModelTest::test_WithCreator_creator_returns_HasOne"/>
+        <covered by="Tests\Unit\Playground\Models\Model\ModelTest::test_WithModifier_modifier_returns_HasOne"/>
+        <covered by="Tests\Unit\Playground\Models\Model\ModelTest::test_WithOwner_owner_returns_HasOne"/>
+        <covered by="Tests\Unit\Playground\ServiceProvider\InstanceTest::test_userPrimaryKeyType_with_incrementing_model"/>
+        <covered by="Tests\Unit\Playground\Auth\Policies\PolicyTrait\TraitTest::test_verify_does_not_log_when_app_debugging_is_disabled"/>
+        <covered by="Tests\Unit\Playground\Auth\Policies\PolicyTrait\TraitTest::test_verify_does_not_log_when_auth_debugging_is_disabled"/>
+        <covered by="Tests\Unit\Playground\Auth\Policies\PolicyTrait\TraitTest::test_verify_logs_with_debugging_enabled"/>
+        <covered by="Tests\Unit\Playground\Auth\Policies\PolicyTrait\TraitTest::test_verify_privileges"/>
+        <covered by="Tests\Unit\Playground\Auth\Policies\PolicyTrait\TraitTest::test_verify_roles"/>
+        <covered by="Tests\Unit\Playground\Auth\Policies\PolicyTrait\TraitTest::test_verify_user"/>
+        <covered by="Tests\Unit\Playground\Auth\Policies\RoleTrait\TraitTest::test_hasRole"/>
+        <covered by="Tests\Unit\Playground\Auth\Policies\RoleTrait\TraitTest::test_hasRole_advanced_role"/>
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Admin\Resource\Http\Requests\FormRequest\InstanceTest::test_userHasAdminPrivileges_with_default_laravel_user"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Resource\Http\Requests\FormRequest\InstanceTest::test_userHasAdminPrivileges_with_default_laravel_user"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\AuthenticationRouteTest::test_users_can_authenticate_using_the_login_screen_laravel"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\AuthenticationRouteTest::test_users_can_authenticate_using_json"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\AuthenticationRouteTest::test_users_cannot_authenticate_with_invalid_password"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\AuthenticationRouteTest::test_users_can_logout_on_get_request"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\AuthenticationRouteTest::test_users_can_logout_on_get_request_using_json"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\AuthenticationRouteTest::test_users_can_logout_on_post_request"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\AuthenticationRouteTest::test_login_repeat_under_rate_limit_and_clear"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\AuthenticationRouteTest::test_login_repeat_and_hit_rate_limit"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\EmailVerificationRouteTest::test_email_verification_screen_can_be_rendered"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\EmailVerificationRouteTest::test_email_verification_screen_is_not_rendered_if_already_verified"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\EmailVerificationRouteTest::test_send_email_verification_notification_as_user"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\EmailVerificationRouteTest::test_send_email_verification_notification_when_already_verified"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\EmailVerificationRouteTest::test_email_can_be_verified"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\EmailVerificationRouteTest::test_email_is_not_verified_with_invalid_hash"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\EmailVerificationRouteTest::test_email_is_not_verified_with_invalid_user_id"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\EmailVerificationRouteTest::test_email_verified_with_already_verified"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordConfirmationRouteTest::test_confirm_password_screen_can_be_rendered"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordConfirmationRouteTest::test_password_can_be_confirmed"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordConfirmationRouteTest::test_password_is_not_confirmed_with_invalid_password"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordResetRouteTest::test_reset_password_link_can_be_requested"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordResetRouteTest::test_reset_password_screen_can_be_rendered"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordResetRouteTest::test_password_can_be_reset_with_valid_token"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordResetRouteTest::test_password_reset_with_invalid_token"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordResetRouteTest::test_password_reset_with_invalid_user"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\RegistrationRouteTest::test_new_users_can_register"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\AboutRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\AboutRouteTest::test_json_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\BootstrapRouteTest::test_as_wheel_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\BootstrapRouteTest::test_json_as_wheel_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicHomeRouteTest::test_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicHomeRouteTest::test_json_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_support_and_fail_when_disabled_for_all"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_user_and_fail_when_disabled_for_all_and_no_redirect"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\ThemeRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\ThemeRouteTest::test_as_admin_and_succeed_with_theme_and_redirect"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRouteTest::test_as_user_and_fail_when_disabled_for_all"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRouteTest::test_as_user_and_fail_when_disabled_for_all_and_no_redirect"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRouteTest::test_json_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserHomeRouteTest::test_route_home_as_user_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserHomeRouteTest::test_route_json_home_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_sitemap_as_support_and_fail_when_disabled_for_all"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_sitemap_as_user_and_fail_when_disabled_for_all_and_no_redirect"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_json_sitemap_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\WelcomeRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\WelcomeRouteTest::test_json_as_manager_admin_and_succeed"/>
+      </line>
+      <line nr="54">
+        <covered by="Tests\Unit\Playground\Models\Model\ModelTest::test_WithCreator_creator_returns_HasOne"/>
+        <covered by="Tests\Unit\Playground\Models\Model\ModelTest::test_WithModifier_modifier_returns_HasOne"/>
+        <covered by="Tests\Unit\Playground\Models\Model\ModelTest::test_WithOwner_owner_returns_HasOne"/>
+        <covered by="Tests\Unit\Playground\ServiceProvider\InstanceTest::test_userPrimaryKeyType_with_incrementing_model"/>
+        <covered by="Tests\Unit\Playground\Auth\Policies\PolicyTrait\TraitTest::test_verify_does_not_log_when_app_debugging_is_disabled"/>
+        <covered by="Tests\Unit\Playground\Auth\Policies\PolicyTrait\TraitTest::test_verify_does_not_log_when_auth_debugging_is_disabled"/>
+        <covered by="Tests\Unit\Playground\Auth\Policies\PolicyTrait\TraitTest::test_verify_logs_with_debugging_enabled"/>
+        <covered by="Tests\Unit\Playground\Auth\Policies\PolicyTrait\TraitTest::test_verify_privileges"/>
+        <covered by="Tests\Unit\Playground\Auth\Policies\PolicyTrait\TraitTest::test_verify_roles"/>
+        <covered by="Tests\Unit\Playground\Auth\Policies\PolicyTrait\TraitTest::test_verify_user"/>
+        <covered by="Tests\Unit\Playground\Auth\Policies\RoleTrait\TraitTest::test_hasRole"/>
+        <covered by="Tests\Unit\Playground\Auth\Policies\RoleTrait\TraitTest::test_hasRole_advanced_role"/>
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Admin\Resource\Http\Requests\FormRequest\InstanceTest::test_userHasAdminPrivileges_with_default_laravel_user"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Resource\Http\Requests\FormRequest\InstanceTest::test_userHasAdminPrivileges_with_default_laravel_user"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\AuthenticationRouteTest::test_users_can_authenticate_using_the_login_screen_laravel"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\AuthenticationRouteTest::test_users_can_authenticate_using_json"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\AuthenticationRouteTest::test_users_cannot_authenticate_with_invalid_password"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\AuthenticationRouteTest::test_users_can_logout_on_get_request"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\AuthenticationRouteTest::test_users_can_logout_on_get_request_using_json"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\AuthenticationRouteTest::test_users_can_logout_on_post_request"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\AuthenticationRouteTest::test_login_repeat_under_rate_limit_and_clear"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\AuthenticationRouteTest::test_login_repeat_and_hit_rate_limit"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\EmailVerificationRouteTest::test_email_verification_screen_can_be_rendered"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\EmailVerificationRouteTest::test_email_verification_screen_is_not_rendered_if_already_verified"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\EmailVerificationRouteTest::test_send_email_verification_notification_as_user"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\EmailVerificationRouteTest::test_send_email_verification_notification_when_already_verified"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\EmailVerificationRouteTest::test_email_can_be_verified"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\EmailVerificationRouteTest::test_email_is_not_verified_with_invalid_hash"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\EmailVerificationRouteTest::test_email_is_not_verified_with_invalid_user_id"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\EmailVerificationRouteTest::test_email_verified_with_already_verified"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordConfirmationRouteTest::test_confirm_password_screen_can_be_rendered"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordConfirmationRouteTest::test_password_can_be_confirmed"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordConfirmationRouteTest::test_password_is_not_confirmed_with_invalid_password"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordResetRouteTest::test_reset_password_link_can_be_requested"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordResetRouteTest::test_reset_password_screen_can_be_rendered"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordResetRouteTest::test_password_can_be_reset_with_valid_token"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordResetRouteTest::test_password_reset_with_invalid_token"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordResetRouteTest::test_password_reset_with_invalid_user"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\RegistrationRouteTest::test_new_users_can_register"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\AboutRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\AboutRouteTest::test_json_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\BootstrapRouteTest::test_as_wheel_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\BootstrapRouteTest::test_json_as_wheel_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicHomeRouteTest::test_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicHomeRouteTest::test_json_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_support_and_fail_when_disabled_for_all"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_user_and_fail_when_disabled_for_all_and_no_redirect"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\ThemeRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\ThemeRouteTest::test_as_admin_and_succeed_with_theme_and_redirect"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRouteTest::test_as_user_and_fail_when_disabled_for_all"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRouteTest::test_as_user_and_fail_when_disabled_for_all_and_no_redirect"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRouteTest::test_json_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserHomeRouteTest::test_route_home_as_user_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserHomeRouteTest::test_route_json_home_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_sitemap_as_support_and_fail_when_disabled_for_all"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_sitemap_as_user_and_fail_when_disabled_for_all_and_no_redirect"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_json_sitemap_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\WelcomeRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\WelcomeRouteTest::test_json_as_manager_admin_and_succeed"/>
+      </line>
+      <line nr="56">
+        <covered by="Tests\Unit\Playground\Models\Model\ModelTest::test_WithCreator_creator_returns_HasOne"/>
+        <covered by="Tests\Unit\Playground\Models\Model\ModelTest::test_WithModifier_modifier_returns_HasOne"/>
+        <covered by="Tests\Unit\Playground\Models\Model\ModelTest::test_WithOwner_owner_returns_HasOne"/>
+        <covered by="Tests\Unit\Playground\ServiceProvider\InstanceTest::test_userPrimaryKeyType_with_incrementing_model"/>
+        <covered by="Tests\Unit\Playground\Auth\Policies\PolicyTrait\TraitTest::test_verify_does_not_log_when_app_debugging_is_disabled"/>
+        <covered by="Tests\Unit\Playground\Auth\Policies\PolicyTrait\TraitTest::test_verify_does_not_log_when_auth_debugging_is_disabled"/>
+        <covered by="Tests\Unit\Playground\Auth\Policies\PolicyTrait\TraitTest::test_verify_logs_with_debugging_enabled"/>
+        <covered by="Tests\Unit\Playground\Auth\Policies\PolicyTrait\TraitTest::test_verify_privileges"/>
+        <covered by="Tests\Unit\Playground\Auth\Policies\PolicyTrait\TraitTest::test_verify_roles"/>
+        <covered by="Tests\Unit\Playground\Auth\Policies\PolicyTrait\TraitTest::test_verify_user"/>
+        <covered by="Tests\Unit\Playground\Auth\Policies\RoleTrait\TraitTest::test_hasRole"/>
+        <covered by="Tests\Unit\Playground\Auth\Policies\RoleTrait\TraitTest::test_hasRole_advanced_role"/>
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Admin\Resource\Http\Requests\FormRequest\InstanceTest::test_userHasAdminPrivileges_with_default_laravel_user"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Resource\Http\Requests\FormRequest\InstanceTest::test_userHasAdminPrivileges_with_default_laravel_user"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\AuthenticationRouteTest::test_users_can_authenticate_using_the_login_screen_laravel"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\AuthenticationRouteTest::test_users_can_authenticate_using_json"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\AuthenticationRouteTest::test_users_cannot_authenticate_with_invalid_password"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\AuthenticationRouteTest::test_users_can_logout_on_get_request"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\AuthenticationRouteTest::test_users_can_logout_on_get_request_using_json"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\AuthenticationRouteTest::test_users_can_logout_on_post_request"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\AuthenticationRouteTest::test_login_repeat_under_rate_limit_and_clear"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\AuthenticationRouteTest::test_login_repeat_and_hit_rate_limit"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\EmailVerificationRouteTest::test_email_verification_screen_can_be_rendered"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\EmailVerificationRouteTest::test_email_verification_screen_is_not_rendered_if_already_verified"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\EmailVerificationRouteTest::test_send_email_verification_notification_as_user"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\EmailVerificationRouteTest::test_send_email_verification_notification_when_already_verified"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\EmailVerificationRouteTest::test_email_can_be_verified"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\EmailVerificationRouteTest::test_email_is_not_verified_with_invalid_hash"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\EmailVerificationRouteTest::test_email_is_not_verified_with_invalid_user_id"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\EmailVerificationRouteTest::test_email_verified_with_already_verified"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordConfirmationRouteTest::test_confirm_password_screen_can_be_rendered"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordConfirmationRouteTest::test_password_can_be_confirmed"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordConfirmationRouteTest::test_password_is_not_confirmed_with_invalid_password"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordResetRouteTest::test_reset_password_link_can_be_requested"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordResetRouteTest::test_reset_password_screen_can_be_rendered"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordResetRouteTest::test_password_can_be_reset_with_valid_token"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordResetRouteTest::test_password_reset_with_invalid_token"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordResetRouteTest::test_password_reset_with_invalid_user"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\RegistrationRouteTest::test_new_users_can_register"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\AboutRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\AboutRouteTest::test_json_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\BootstrapRouteTest::test_as_wheel_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\BootstrapRouteTest::test_json_as_wheel_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicHomeRouteTest::test_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicHomeRouteTest::test_json_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_support_and_fail_when_disabled_for_all"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_user_and_fail_when_disabled_for_all_and_no_redirect"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\ThemeRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\ThemeRouteTest::test_as_admin_and_succeed_with_theme_and_redirect"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRouteTest::test_as_user_and_fail_when_disabled_for_all"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRouteTest::test_as_user_and_fail_when_disabled_for_all_and_no_redirect"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRouteTest::test_json_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserHomeRouteTest::test_route_home_as_user_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserHomeRouteTest::test_route_json_home_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_sitemap_as_support_and_fail_when_disabled_for_all"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_sitemap_as_user_and_fail_when_disabled_for_all_and_no_redirect"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_json_sitemap_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\WelcomeRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\WelcomeRouteTest::test_json_as_manager_admin_and_succeed"/>
+      </line>
+      <line nr="57">
+        <covered by="Tests\Unit\Playground\Models\Model\ModelTest::test_WithCreator_creator_returns_HasOne"/>
+        <covered by="Tests\Unit\Playground\Models\Model\ModelTest::test_WithModifier_modifier_returns_HasOne"/>
+        <covered by="Tests\Unit\Playground\Models\Model\ModelTest::test_WithOwner_owner_returns_HasOne"/>
+        <covered by="Tests\Unit\Playground\ServiceProvider\InstanceTest::test_userPrimaryKeyType_with_incrementing_model"/>
+        <covered by="Tests\Unit\Playground\Auth\Policies\PolicyTrait\TraitTest::test_verify_does_not_log_when_app_debugging_is_disabled"/>
+        <covered by="Tests\Unit\Playground\Auth\Policies\PolicyTrait\TraitTest::test_verify_does_not_log_when_auth_debugging_is_disabled"/>
+        <covered by="Tests\Unit\Playground\Auth\Policies\PolicyTrait\TraitTest::test_verify_logs_with_debugging_enabled"/>
+        <covered by="Tests\Unit\Playground\Auth\Policies\PolicyTrait\TraitTest::test_verify_privileges"/>
+        <covered by="Tests\Unit\Playground\Auth\Policies\PolicyTrait\TraitTest::test_verify_roles"/>
+        <covered by="Tests\Unit\Playground\Auth\Policies\PolicyTrait\TraitTest::test_verify_user"/>
+        <covered by="Tests\Unit\Playground\Auth\Policies\RoleTrait\TraitTest::test_hasRole"/>
+        <covered by="Tests\Unit\Playground\Auth\Policies\RoleTrait\TraitTest::test_hasRole_advanced_role"/>
+        <covered by="Tests\Unit\Playground\Admin\Models\Setting\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Admin\Resource\Http\Requests\FormRequest\InstanceTest::test_userHasAdminPrivileges_with_default_laravel_user"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Page\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\PageRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\Snippet\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Models\SnippetRevision\ModelTest::test_verify_model_relationships"/>
+        <covered by="Tests\Unit\Playground\Cms\Resource\Http\Requests\FormRequest\InstanceTest::test_userHasAdminPrivileges_with_default_laravel_user"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\AuthenticationRouteTest::test_users_can_authenticate_using_the_login_screen_laravel"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\AuthenticationRouteTest::test_users_can_authenticate_using_json"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\AuthenticationRouteTest::test_users_cannot_authenticate_with_invalid_password"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\AuthenticationRouteTest::test_users_can_logout_on_get_request"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\AuthenticationRouteTest::test_users_can_logout_on_get_request_using_json"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\AuthenticationRouteTest::test_users_can_logout_on_post_request"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\AuthenticationRouteTest::test_login_repeat_under_rate_limit_and_clear"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\AuthenticationRouteTest::test_login_repeat_and_hit_rate_limit"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\EmailVerificationRouteTest::test_email_verification_screen_can_be_rendered"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\EmailVerificationRouteTest::test_email_verification_screen_is_not_rendered_if_already_verified"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\EmailVerificationRouteTest::test_send_email_verification_notification_as_user"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\EmailVerificationRouteTest::test_send_email_verification_notification_when_already_verified"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\EmailVerificationRouteTest::test_email_can_be_verified"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\EmailVerificationRouteTest::test_email_is_not_verified_with_invalid_hash"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\EmailVerificationRouteTest::test_email_is_not_verified_with_invalid_user_id"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\EmailVerificationRouteTest::test_email_verified_with_already_verified"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordConfirmationRouteTest::test_confirm_password_screen_can_be_rendered"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordConfirmationRouteTest::test_password_can_be_confirmed"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordConfirmationRouteTest::test_password_is_not_confirmed_with_invalid_password"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordResetRouteTest::test_reset_password_link_can_be_requested"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordResetRouteTest::test_reset_password_screen_can_be_rendered"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordResetRouteTest::test_password_can_be_reset_with_valid_token"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordResetRouteTest::test_password_reset_with_invalid_token"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\PasswordResetRouteTest::test_password_reset_with_invalid_user"/>
+        <covered by="Tests\Feature\Playground\Login\Blade\Http\Controllers\Laravel\RegistrationRouteTest::test_new_users_can_register"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\AboutRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\AboutRouteTest::test_json_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\BootstrapRouteTest::test_as_wheel_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\BootstrapRouteTest::test_json_as_wheel_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicHomeRouteTest::test_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicHomeRouteTest::test_json_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_support_and_fail_when_disabled_for_all"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_user_and_fail_when_disabled_for_all_and_no_redirect"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\ThemeRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\ThemeRouteTest::test_as_admin_and_succeed_with_theme_and_redirect"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRouteTest::test_as_user_and_fail_when_disabled_for_all"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRouteTest::test_as_user_and_fail_when_disabled_for_all_and_no_redirect"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRouteTest::test_json_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserHomeRouteTest::test_route_home_as_user_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserHomeRouteTest::test_route_json_home_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_sitemap_as_support_and_fail_when_disabled_for_all"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_sitemap_as_user_and_fail_when_disabled_for_all_and_no_redirect"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_json_sitemap_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\WelcomeRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\WelcomeRouteTest::test_json_as_manager_admin_and_succeed"/>
+      </line>
+    </coverage>
+    <source>
+      <line no="1">
+        <token name="T_OPEN_TAG">&lt;?php</token>
+      </line>
+      <line no="2">
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="3">
+        <token name="T_DOC_COMMENT"> * Playground</token>
+      </line>
+      <line no="4">
+        <token name="T_DOC_COMMENT"> */</token>
+      </line>
+      <line no="5">
+        <token name="T_DECLARE">declare</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">strict_types</token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_LNUMBER">1</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="6">
+        <token name="T_NAMESPACE">namespace</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Playground\Test\Models</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="7"/>
+      <line no="8">
+        <token name="T_COMMENT">// use Illuminate\Contracts\Auth\MustVerifyEmail;</token>
+      </line>
+      <line no="9">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Illuminate\Database\Eloquent\Factories\HasFactory</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="10">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Illuminate\Foundation\Auth\User</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_AS">as</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">Authenticatable</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="11">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Illuminate\Notifications\Notifiable</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="12"/>
+      <line no="13">
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="14">
+        <token name="T_DOC_COMMENT"> * \Playground\Test\Models\DefaultUser</token>
+      </line>
+      <line no="15">
+        <token name="T_DOC_COMMENT"> *</token>
+      </line>
+      <line no="16">
+        <token name="T_DOC_COMMENT"> * NOTE: The default user should match what is installed by Laravel.</token>
+      </line>
+      <line no="17">
+        <token name="T_DOC_COMMENT"> *</token>
+      </line>
+      <line no="18">
+        <token name="T_DOC_COMMENT"> * @see Authenticatable</token>
+      </line>
+      <line no="19">
+        <token name="T_DOC_COMMENT"> */</token>
+      </line>
+      <line no="20">
+        <token name="T_CLASS">class</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">DefaultUser</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EXTENDS">extends</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">Authenticatable</token>
+      </line>
+      <line no="21">
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="22">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">HasFactory</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">Notifiable</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="23"/>
+      <line no="24">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="25">
+        <token name="T_DOC_COMMENT">     * The attributes that are mass assignable.</token>
+      </line>
+      <line no="26">
+        <token name="T_DOC_COMMENT">     *</token>
+      </line>
+      <line no="27">
+        <token name="T_DOC_COMMENT">     * @var array&lt;int, string&gt;</token>
+      </line>
+      <line no="28">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="29">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$fillable</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+      </line>
+      <line no="30">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'name'</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="31">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'email'</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="32">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'password'</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="33">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="34"/>
+      <line no="35">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="36">
+        <token name="T_DOC_COMMENT">     * The attributes that should be hidden for serialization.</token>
+      </line>
+      <line no="37">
+        <token name="T_DOC_COMMENT">     *</token>
+      </line>
+      <line no="38">
+        <token name="T_DOC_COMMENT">     * @var array&lt;int, string&gt;</token>
+      </line>
+      <line no="39">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="40">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$hidden</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+      </line>
+      <line no="41">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'password'</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="42">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'remember_token'</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="43">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="44"/>
+      <line no="45">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$table</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'users'</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="46"/>
+      <line no="47">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="48">
+        <token name="T_DOC_COMMENT">     * Get the attributes that should be cast.</token>
+      </line>
+      <line no="49">
+        <token name="T_DOC_COMMENT">     *</token>
+      </line>
+      <line no="50">
+        <token name="T_DOC_COMMENT">     * @return array&lt;string, string&gt;</token>
+      </line>
+      <line no="51">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="52">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">casts</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_ARRAY">array</token>
+      </line>
+      <line no="53">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="54">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+      </line>
+      <line no="55">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'email_verified_at'</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_DOUBLE_ARROW">=&gt;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'datetime'</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="56">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'password'</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_DOUBLE_ARROW">=&gt;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'hashed'</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="57">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="58">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="59">
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="60"/>
+    </source>
+  </file>
+</phpunit>

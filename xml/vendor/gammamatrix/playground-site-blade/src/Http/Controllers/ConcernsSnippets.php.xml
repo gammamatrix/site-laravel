@@ -1,0 +1,2256 @@
+<?xml version="1.0"?>
+<phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
+  <file name="ConcernsSnippets.php" path="/vendor/gammamatrix/playground-site-blade/src/Http/Controllers">
+    <totals>
+      <lines total="262" comments="44" code="218" executable="94" executed="4" percent="4.26"/>
+      <methods count="8" tested="0" percent="0.00"/>
+      <functions count="0" tested="0" percent="0"/>
+      <classes count="0" tested="0" percent="0"/>
+      <traits count="1" tested="0" percent="0.00"/>
+    </totals>
+    <trait name="Playground\Site\Blade\Http\Controllers\ConcernsSnippets" start="17" executable="94" executed="4" crap="1516.41">
+      <namespace name="Playground\Site\Blade\Http\Controllers"/>
+      <method name="snippetsForRoute" signature="snippetsForRoute(Illuminate\Http\Request $request, array $options): array" start="41" end="60" crap="17.80" executable="10" executed="2" coverage="20"/>
+      <method name="snippet_slug_key" signature="snippet_slug_key(string $route): string" start="62" end="65" crap="6" executable="1" executed="0" coverage="0"/>
+      <method name="snippets_available" signature="snippets_available(array $options): bool" start="70" end="132" crap="244.31" executable="26" executed="2" coverage="7.6923076923077"/>
+      <method name="snippets_query" signature="snippets_query(string $slug): Illuminate\Database\Eloquent\Builder" start="134" end="145" crap="12" executable="7" executed="0" coverage="0"/>
+      <method name="snippets_query_user" signature="snippets_query_user(Illuminate\Database\Eloquent\Builder $query): void" start="147" end="156" crap="12" executable="4" executed="0" coverage="0"/>
+      <method name="snippetsBySlugForUser" signature="snippetsBySlugForUser(string $slug): array" start="161" end="179" crap="2" executable="8" executed="0" coverage="0"/>
+      <method name="snippetsBySlugForGuest" signature="snippetsBySlugForGuest(string $slug): array" start="184" end="204" crap="2" executable="10" executed="0" coverage="0"/>
+      <method name="snippetsBySlug" signature="snippetsBySlug(string $slug, Illuminate\Http\Request $request): array" start="209" end="260" crap="90" executable="28" executed="0" coverage="0"/>
+    </trait>
+    <coverage>
+      <line nr="43">
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\AboutRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\AboutRouteTest::test_json_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\AboutRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\AboutRouteTest::test_json_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\BootstrapRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\BootstrapRouteTest::test_json_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\BootstrapRouteTest::test_as_wheel_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\BootstrapRouteTest::test_json_as_wheel_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicDashboardRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicHomeRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicHomeRouteTest::test_json_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicHomeRouteTest::test_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicHomeRouteTest::test_json_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\ThemeRouteTest::test_as_guest_with_preview_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRouteTest::test_json_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserHomeRouteTest::test_route_home_as_user_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserHomeRouteTest::test_route_json_home_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_json_sitemap_as_guest_and_fail"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_json_sitemap_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\WelcomeRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\WelcomeRouteTest::test_json_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\WelcomeRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\WelcomeRouteTest::test_json_as_manager_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_json_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_json_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_as_client_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_json_as_client_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_as_manager_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_json_as_manager_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_json_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\BootstrapRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\BootstrapRouteTest::test_json_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\BootstrapRouteTest::test_as_wheel_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\BootstrapRouteTest::test_json_as_wheel_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicDashboardRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicHomeRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicHomeRouteTest::test_json_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicHomeRouteTest::test_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicHomeRouteTest::test_json_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicSitemapRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicSitemapRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicSitemapRouteTest::test_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicSitemapRouteTest::test_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\ThemeRouteTest::test_as_guest_with_preview_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserDashboardRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserDashboardRouteTest::test_json_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserHomeRouteTest::test_route_home_as_user_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserHomeRouteTest::test_route_json_home_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserSitemapRouteTest::test_route_json_sitemap_as_guest_and_fail"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserSitemapRouteTest::test_route_json_sitemap_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\WelcomeRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\WelcomeRouteTest::test_json_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\WelcomeRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\WelcomeRouteTest::test_json_as_manager_admin_and_succeed"/>
+      </line>
+      <line nr="44">
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\AboutRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\AboutRouteTest::test_json_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\AboutRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\AboutRouteTest::test_json_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\BootstrapRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\BootstrapRouteTest::test_json_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\BootstrapRouteTest::test_as_wheel_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\BootstrapRouteTest::test_json_as_wheel_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicDashboardRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicHomeRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicHomeRouteTest::test_json_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicHomeRouteTest::test_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicHomeRouteTest::test_json_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\ThemeRouteTest::test_as_guest_with_preview_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRouteTest::test_json_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserHomeRouteTest::test_route_home_as_user_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserHomeRouteTest::test_route_json_home_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_json_sitemap_as_guest_and_fail"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_json_sitemap_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\WelcomeRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\WelcomeRouteTest::test_json_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\WelcomeRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\WelcomeRouteTest::test_json_as_manager_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_json_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_json_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_as_client_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_json_as_client_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_as_manager_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_json_as_manager_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_json_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\BootstrapRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\BootstrapRouteTest::test_json_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\BootstrapRouteTest::test_as_wheel_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\BootstrapRouteTest::test_json_as_wheel_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicDashboardRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicHomeRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicHomeRouteTest::test_json_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicHomeRouteTest::test_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicHomeRouteTest::test_json_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicSitemapRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicSitemapRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicSitemapRouteTest::test_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicSitemapRouteTest::test_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\ThemeRouteTest::test_as_guest_with_preview_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserDashboardRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserDashboardRouteTest::test_json_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserHomeRouteTest::test_route_home_as_user_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserHomeRouteTest::test_route_json_home_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserSitemapRouteTest::test_route_json_sitemap_as_guest_and_fail"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserSitemapRouteTest::test_route_json_sitemap_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\WelcomeRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\WelcomeRouteTest::test_json_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\WelcomeRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\WelcomeRouteTest::test_json_as_manager_admin_and_succeed"/>
+      </line>
+      <line nr="76">
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\AboutRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\AboutRouteTest::test_json_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\AboutRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\AboutRouteTest::test_json_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\BootstrapRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\BootstrapRouteTest::test_json_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\BootstrapRouteTest::test_as_wheel_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\BootstrapRouteTest::test_json_as_wheel_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicDashboardRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicHomeRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicHomeRouteTest::test_json_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicHomeRouteTest::test_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicHomeRouteTest::test_json_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\ThemeRouteTest::test_as_guest_with_preview_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRouteTest::test_json_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserHomeRouteTest::test_route_home_as_user_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserHomeRouteTest::test_route_json_home_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_json_sitemap_as_guest_and_fail"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_json_sitemap_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\WelcomeRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\WelcomeRouteTest::test_json_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\WelcomeRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\WelcomeRouteTest::test_json_as_manager_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_json_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_json_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_as_client_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_json_as_client_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_as_manager_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_json_as_manager_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_json_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\BootstrapRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\BootstrapRouteTest::test_json_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\BootstrapRouteTest::test_as_wheel_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\BootstrapRouteTest::test_json_as_wheel_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicDashboardRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicHomeRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicHomeRouteTest::test_json_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicHomeRouteTest::test_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicHomeRouteTest::test_json_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicSitemapRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicSitemapRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicSitemapRouteTest::test_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicSitemapRouteTest::test_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\ThemeRouteTest::test_as_guest_with_preview_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserDashboardRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserDashboardRouteTest::test_json_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserHomeRouteTest::test_route_home_as_user_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserHomeRouteTest::test_route_json_home_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserSitemapRouteTest::test_route_json_sitemap_as_guest_and_fail"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserSitemapRouteTest::test_route_json_sitemap_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\WelcomeRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\WelcomeRouteTest::test_json_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\WelcomeRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\WelcomeRouteTest::test_json_as_manager_admin_and_succeed"/>
+      </line>
+      <line nr="77">
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\AboutRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\AboutRouteTest::test_json_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\AboutRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\AboutRouteTest::test_json_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\BootstrapRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\BootstrapRouteTest::test_json_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\BootstrapRouteTest::test_as_wheel_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\BootstrapRouteTest::test_json_as_wheel_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicDashboardRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicHomeRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicHomeRouteTest::test_json_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicHomeRouteTest::test_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicHomeRouteTest::test_json_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\PublicSitemapRouteTest::test_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\ThemeRouteTest::test_as_guest_with_preview_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserDashboardRouteTest::test_json_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserHomeRouteTest::test_route_home_as_user_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserHomeRouteTest::test_route_json_home_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_json_sitemap_as_guest_and_fail"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_json_sitemap_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\WelcomeRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\WelcomeRouteTest::test_json_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\WelcomeRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Laravel\WelcomeRouteTest::test_json_as_manager_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_json_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_json_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_as_client_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_json_as_client_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_as_manager_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_json_as_manager_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\AboutRouteTest::test_json_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\BootstrapRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\BootstrapRouteTest::test_json_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\BootstrapRouteTest::test_as_wheel_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\BootstrapRouteTest::test_json_as_wheel_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicDashboardRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicHomeRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicHomeRouteTest::test_json_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicHomeRouteTest::test_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicHomeRouteTest::test_json_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicSitemapRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicSitemapRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicSitemapRouteTest::test_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\PublicSitemapRouteTest::test_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\ThemeRouteTest::test_as_guest_with_preview_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserDashboardRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserDashboardRouteTest::test_json_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserHomeRouteTest::test_route_home_as_user_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserHomeRouteTest::test_route_json_home_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserSitemapRouteTest::test_route_json_sitemap_as_guest_and_fail"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserSitemapRouteTest::test_route_json_sitemap_as_admin_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\UserSitemapRouteTest::test_route_sitemap_as_user_and_succeed_with_package_sitemaps"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\WelcomeRouteTest::test_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\WelcomeRouteTest::test_json_as_guest_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\WelcomeRouteTest::test_as_user_and_succeed"/>
+        <covered by="Tests\Feature\Playground\Site\Blade\Http\Controllers\Playground\WelcomeRouteTest::test_json_as_manager_admin_and_succeed"/>
+      </line>
+    </coverage>
+    <source>
+      <line no="1">
+        <token name="T_OPEN_TAG">&lt;?php</token>
+      </line>
+      <line no="2"/>
+      <line no="3">
+        <token name="T_DECLARE">declare</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">strict_types</token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_LNUMBER">1</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="4">
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="5">
+        <token name="T_DOC_COMMENT"> * Playground</token>
+      </line>
+      <line no="6">
+        <token name="T_DOC_COMMENT"> */</token>
+      </line>
+      <line no="7">
+        <token name="T_NAMESPACE">namespace</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Playground\Site\Blade\Http\Controllers</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="8"/>
+      <line no="9">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Illuminate\Database\Eloquent\Builder</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="10">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Illuminate\Http\Request</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="11">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Illuminate\Support\Facades\Cache</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="12">
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_NAME_QUALIFIED">Playground\Cms\Models\Snippet</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="13"/>
+      <line no="14">
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="15">
+        <token name="T_DOC_COMMENT"> * \Playground\Site\Blade\Http\Controllers\ConcernsSnippets</token>
+      </line>
+      <line no="16">
+        <token name="T_DOC_COMMENT"> */</token>
+      </line>
+      <line no="17">
+        <token name="T_TRAIT">trait</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">ConcernsSnippets</token>
+      </line>
+      <line no="18">
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="19">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">string</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$snippet_slug</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">''</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="20"/>
+      <line no="21">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_QUESTION_MARK">?</token>
+        <token name="T_STRING">string</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$snippet_slug_domain</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">null</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="22"/>
+      <line no="23">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">string</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$snippet_domain_default</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'www'</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="24"/>
+      <line no="25">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">mixed</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$snippet_owned_by_id</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">null</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="26"/>
+      <line no="27">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">string</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$snippet_slug_domain_key</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">''</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="28"/>
+      <line no="29">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">bool</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$snippets_available</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">false</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="30"/>
+      <line no="31">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">bool</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$snippets_wildcard</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">true</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="32"/>
+      <line no="33">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">bool</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$snippets_cache</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">false</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="34"/>
+      <line no="35">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">int</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$snippets_cache_ttl</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_LNUMBER">0</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="36"/>
+      <line no="37">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="38">
+        <token name="T_DOC_COMMENT">     * @param array&lt;string, mixed&gt; $options</token>
+      </line>
+      <line no="39">
+        <token name="T_DOC_COMMENT">     * @return array&lt;int, array&lt;string, mixed&gt;&gt;</token>
+      </line>
+      <line no="40">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="41">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PUBLIC">public</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">snippetsForRoute</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">Request</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$request</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_ARRAY">array</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$options</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_ARRAY">array</token>
+      </line>
+      <line no="42">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="43">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_EXCLAMATION_MARK">!</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippets_available</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$options</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="44">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="45">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="46"/>
+      <line no="47">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippet_slug_domain</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">null</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="48">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippet_slug_domain_key</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="49">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$snippet_slug_domain</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$request</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">input</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippet_slug_domain_key</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="50">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">is_string</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$snippet_slug_domain</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_BOOLEAN_AND">&amp;&amp;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$snippet_slug_domain</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="51">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippet_slug_domain</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$snippet_slug_domain</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="52">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="53">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="54"/>
+      <line no="55">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$route</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$request</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">route</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_NULLSAFE_OBJECT_OPERATOR">?-&gt;</token>
+        <token name="T_STRING">getName</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="56"/>
+      <line no="57">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippet_slug</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippet_slug_key</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$route</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_COALESCE">??</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">''</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="58"/>
+      <line no="59">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippetsBySlug</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippet_slug</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$request</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="60">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="61"/>
+      <line no="62">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">snippet_slug_key</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">string</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$route</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">string</token>
+      </line>
+      <line no="63">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="64">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EXCLAMATION_MARK">!</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippet_slug</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_QUESTION_MARK">?</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">''</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">sprintf</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'%1$s:%2$s'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippet_slug</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$route</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="65">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="66"/>
+      <line no="67">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="68">
+        <token name="T_DOC_COMMENT">     * @param array&lt;string, mixed&gt; $options</token>
+      </line>
+      <line no="69">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="70">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">snippets_available</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_ARRAY">array</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$options</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">bool</token>
+      </line>
+      <line no="71">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="72">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">// dump([</token>
+      </line>
+      <line no="73">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     '__METHOD__' =&gt; __METHOD__,</token>
+      </line>
+      <line no="74">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     'config' =&gt; config('playground-site-blade'),</token>
+      </line>
+      <line no="75">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">// ]);</token>
+      </line>
+      <line no="76">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_EMPTY">empty</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">config</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'playground-site-blade.cms.enable'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="77">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">false</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="78">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="79"/>
+      <line no="80">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="81">
+        <token name="T_DOC_COMMENT">         * @var class-string $snippet_class</token>
+      </line>
+      <line no="82">
+        <token name="T_DOC_COMMENT">         */</token>
+      </line>
+      <line no="83">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$snippet_class</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">config</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'playground-site-blade.cms.snippet'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="84"/>
+      <line no="85">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_EXCLAMATION_MARK">!</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">is_string</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$snippet_class</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_BOOLEAN_OR">||</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EXCLAMATION_MARK">!</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">class_exists</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$snippet_class</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="86">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">false</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="87">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="88"/>
+      <line no="89">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_EMPTY">empty</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">config</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'playground-site-blade.cms.snippets'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="90">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">false</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="91">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="92"/>
+      <line no="93">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_EXCLAMATION_MARK">!</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EMPTY">empty</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">config</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'playground-site-blade.domain.enable'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="94"/>
+      <line no="95">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$snippet_slug_domain_key</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">config</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'playground-site-blade.domain.key'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="96"/>
+      <line no="97">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">is_string</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$snippet_slug_domain_key</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+      </line>
+      <line no="98">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_BOOLEAN_AND">&amp;&amp;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$snippet_slug_domain_key</token>
+      </line>
+      <line no="99">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="100">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippet_slug_domain_key</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$snippet_slug_domain_key</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="101">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="102">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="103"/>
+      <line no="104">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_EXCLAMATION_MARK">!</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EMPTY">empty</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">config</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'playground-site-blade.domain.default'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+      </line>
+      <line no="105">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_BOOLEAN_AND">&amp;&amp;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">is_string</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">config</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'playground-site-blade.domain.default'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+      </line>
+      <line no="106">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="107"/>
+      <line no="108">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippet_domain_default</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">config</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'playground-site-blade.domain.default'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="109">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="110"/>
+      <line no="111">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_EXCLAMATION_MARK">!</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EMPTY">empty</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">config</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'playground-site-blade.cache.enable'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+      </line>
+      <line no="112">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_BOOLEAN_AND">&amp;&amp;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EXCLAMATION_MARK">!</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EMPTY">empty</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">config</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'playground-site-blade.cache.snippet'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+      </line>
+      <line no="113">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="114">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippets_cache</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">true</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="115">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="116"/>
+      <line no="117">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippets_cache</token>
+      </line>
+      <line no="118">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_BOOLEAN_AND">&amp;&amp;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EXCLAMATION_MARK">!</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EMPTY">empty</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">config</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'playground-site-blade.cache.snippet_ttl'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+      </line>
+      <line no="119">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_BOOLEAN_AND">&amp;&amp;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">is_numeric</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">config</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'playground-site-blade.cache.snippet_ttl'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+      </line>
+      <line no="120">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_BOOLEAN_AND">&amp;&amp;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">config</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'playground-site-blade.cache.snippet_ttl'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_GT">&gt;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_LNUMBER">0</token>
+      </line>
+      <line no="121">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="122">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippets_cache_ttl</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">intval</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">config</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'playground-site-blade.cache.snippet_ttl'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="123">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="124"/>
+      <line no="125">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">array_key_exists</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'wildcard'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$options</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="126">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippets_wildcard</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EXCLAMATION_MARK">!</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EMPTY">empty</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$options</token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'wildcard'</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="127">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="128"/>
+      <line no="129">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippets_available</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">true</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="130"/>
+      <line no="131">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippets_available</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="132">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="133"/>
+      <line no="134">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">snippets_query</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">string</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$slug</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">Builder</token>
+      </line>
+      <line no="135">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="136">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_EMPTY">empty</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippets_wildcard</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="137">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">Snippet</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_STRING">where</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'slug'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'LIKE'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$slug</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="138">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_ELSEIF">elseif</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_EMPTY">empty</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$slug</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="139">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">Snippet</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_STRING">where</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'slug'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'*'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="140">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="141"/>
+      <line no="142">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">Snippet</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_STRING">where</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">Builder</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$q</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$slug</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="143">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_VARIABLE">$q</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">where</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'slug'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'LIKE'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$slug</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">orWhere</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'slug'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'*'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="144">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="145">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="146"/>
+      <line no="147">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">snippets_query_user</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">Builder</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$query</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">void</token>
+      </line>
+      <line no="148">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="149">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_EXCLAMATION_MARK">!</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EMPTY">empty</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">config</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'playground-site-blade.cms.snippets_user'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="150">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_EMPTY">empty</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippet_owned_by_id</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="151">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_VARIABLE">$query</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">whereNull</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'owned_by_id'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="152">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CLOSE_CURLY">}</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_ELSE">else</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="153">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_VARIABLE">$query</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">where</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'owned_by_id'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippet_owned_by_id</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="154">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="155">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="156">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="157"/>
+      <line no="158">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="159">
+        <token name="T_DOC_COMMENT">     * @return array&lt;int, array&lt;string, mixed&gt;&gt;</token>
+      </line>
+      <line no="160">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="161">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">snippetsBySlugForUser</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">string</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$slug</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_ARRAY">array</token>
+      </line>
+      <line no="162">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="163">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$query</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippets_query</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$slug</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="164"/>
+      <line no="165">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$query</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">where</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'active'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">true</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="166">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$query</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">where</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'published'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">true</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="167">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$query</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">where</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'only_guest'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">false</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="168"/>
+      <line no="169">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippets_query_user</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$query</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="170"/>
+      <line no="171">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$query</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">orderBy</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'rank'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="172"/>
+      <line no="173">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="174">
+        <token name="T_DOC_COMMENT">         * @var array&lt;int, array&lt;string, mixed&gt;&gt; $snippets</token>
+      </line>
+      <line no="175">
+        <token name="T_DOC_COMMENT">         */</token>
+      </line>
+      <line no="176">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$snippets</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$query</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">get</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">toArray</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="177"/>
+      <line no="178">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$snippets</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="179">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="180"/>
+      <line no="181">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="182">
+        <token name="T_DOC_COMMENT">     * @return array&lt;int, array&lt;string, mixed&gt;&gt;</token>
+      </line>
+      <line no="183">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="184">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">snippetsBySlugForGuest</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">string</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$slug</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_ARRAY">array</token>
+      </line>
+      <line no="185">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="186">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$query</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippets_query</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$slug</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="187"/>
+      <line no="188">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$query</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">where</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'active'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">true</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="189">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$query</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">where</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'published'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">true</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="190">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$query</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">where</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'only_admin'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">false</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="191">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$query</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">where</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'only_user'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">false</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="192">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$query</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">where</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'allow_public'</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">true</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="193"/>
+      <line no="194">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippets_query_user</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$query</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="195"/>
+      <line no="196">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$query</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">orderBy</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'rank'</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="197"/>
+      <line no="198">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="199">
+        <token name="T_DOC_COMMENT">         * @var array&lt;int, array&lt;string, mixed&gt;&gt; $snippets</token>
+      </line>
+      <line no="200">
+        <token name="T_DOC_COMMENT">         */</token>
+      </line>
+      <line no="201">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$snippets</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$query</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">get</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">toArray</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="202"/>
+      <line no="203">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$snippets</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="204">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="205"/>
+      <line no="206">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="207">
+        <token name="T_DOC_COMMENT">     * @return array&lt;int, array&lt;string, mixed&gt;&gt;</token>
+      </line>
+      <line no="208">
+        <token name="T_DOC_COMMENT">     */</token>
+      </line>
+      <line no="209">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_PROTECTED">protected</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">snippetsBySlug</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_STRING">string</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$slug</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">Request</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$request</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_ARRAY">array</token>
+      </line>
+      <line no="210">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="211">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_DOC_COMMENT">/**</token>
+      </line>
+      <line no="212">
+        <token name="T_DOC_COMMENT">         * @var array&lt;int, array&lt;string, mixed&gt;&gt; $snippets</token>
+      </line>
+      <line no="213">
+        <token name="T_DOC_COMMENT">         */</token>
+      </line>
+      <line no="214">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$snippets</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_SQUARE">[</token>
+        <token name="T_CLOSE_SQUARE">]</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="215"/>
+      <line no="216">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">// Check if the CMS is enabled for the page.</token>
+      </line>
+      <line no="217">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_EXCLAMATION_MARK">!</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippets_available</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_BOOLEAN_OR">||</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+      </line>
+      <line no="218">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_EMPTY">empty</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippets_wildcard</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+      </line>
+      <line no="219">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_BOOLEAN_AND">&amp;&amp;</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EMPTY">empty</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$slug</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+      </line>
+      <line no="220">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="221">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$snippets</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="222">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="223"/>
+      <line no="224">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_VARIABLE">$user</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$request</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">user</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="225"/>
+      <line no="226">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$user</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="227">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippets_cache</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="228">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_VARIABLE">$key</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">sprintf</token>
+        <token name="T_OPEN_BRACKET">(</token>
+      </line>
+      <line no="229">
+        <token name="T_WHITESPACE">                    </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'snippets:%1$s:user:%2$s'</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="230">
+        <token name="T_WHITESPACE">                    </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippet_slug_domain</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_QUESTION_MARK">?</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippet_slug_domain</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippet_domain_default</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="231">
+        <token name="T_WHITESPACE">                    </token>
+        <token name="T_VARIABLE">$slug</token>
+      </line>
+      <line no="232">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="233">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_VARIABLE">$snippets</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">Cache</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_STRING">remember</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$key</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippets_cache_ttl</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$slug</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="234">
+        <token name="T_WHITESPACE">                    </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippetsBySlugForUser</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$slug</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="235">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_CLOSE_CURLY">}</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="236">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CLOSE_CURLY">}</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_ELSE">else</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="237">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_VARIABLE">$snippets</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippetsBySlugForUser</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$slug</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="238">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="239">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_ELSE">else</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="240">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_IF">if</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippets_cache</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="241">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_VARIABLE">$key</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">sprintf</token>
+        <token name="T_OPEN_BRACKET">(</token>
+      </line>
+      <line no="242">
+        <token name="T_WHITESPACE">                    </token>
+        <token name="T_CONSTANT_ENCAPSED_STRING">'snippets:%1$s:guest:%2$s'</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="243">
+        <token name="T_WHITESPACE">                    </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippet_slug_domain</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_QUESTION_MARK">?</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippet_slug_domain</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_COLON">:</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippet_domain_default</token>
+        <token name="T_COMMA">,</token>
+      </line>
+      <line no="244">
+        <token name="T_WHITESPACE">                    </token>
+        <token name="T_VARIABLE">$slug</token>
+      </line>
+      <line no="245">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="246">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_VARIABLE">$snippets</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_STRING">Cache</token>
+        <token name="T_DOUBLE_COLON">::</token>
+        <token name="T_STRING">remember</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$key</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippets_cache_ttl</token>
+        <token name="T_COMMA">,</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_FUNCTION">function</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_USE">use</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$slug</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="247">
+        <token name="T_WHITESPACE">                    </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippetsBySlugForGuest</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$slug</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="248">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_CLOSE_CURLY">}</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="249">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CLOSE_CURLY">}</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_ELSE">else</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_OPEN_CURLY">{</token>
+      </line>
+      <line no="250">
+        <token name="T_WHITESPACE">                </token>
+        <token name="T_VARIABLE">$snippets</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_EQUAL">=</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$this</token>
+        <token name="T_OBJECT_OPERATOR">-&gt;</token>
+        <token name="T_STRING">snippetsBySlugForGuest</token>
+        <token name="T_OPEN_BRACKET">(</token>
+        <token name="T_VARIABLE">$slug</token>
+        <token name="T_CLOSE_BRACKET">)</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="251">
+        <token name="T_WHITESPACE">            </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="252">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="253">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">// dd([</token>
+      </line>
+      <line no="254">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     '__METHOD__' =&gt; __METHOD__,</token>
+      </line>
+      <line no="255">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     'config' =&gt; config('playground-site-blade'),</token>
+      </line>
+      <line no="256">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">//     '$snippets' =&gt; $snippets,</token>
+      </line>
+      <line no="257">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_COMMENT">// ]);</token>
+      </line>
+      <line no="258"/>
+      <line no="259">
+        <token name="T_WHITESPACE">        </token>
+        <token name="T_RETURN">return</token>
+        <token name="T_WHITESPACE"> </token>
+        <token name="T_VARIABLE">$snippets</token>
+        <token name="T_SEMICOLON">;</token>
+      </line>
+      <line no="260">
+        <token name="T_WHITESPACE">    </token>
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="261">
+        <token name="T_CLOSE_CURLY">}</token>
+      </line>
+      <line no="262"/>
+    </source>
+  </file>
+</phpunit>
