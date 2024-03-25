@@ -20,6 +20,7 @@
     "require": {
         "php": "^8.2",
         "gammamatrix/playground-admin-resource": "dev-develop|dev-master|dev-feature/*|^73.0@dev|^73.0",
+        "gammamatrix/playground-cms-resource": "dev-develop|dev-master|dev-feature/*|^73.0@dev|^73.0",
         "gammamatrix/playground-login-blade": "dev-develop|dev-master|dev-feature/*|^73.0@dev|^73.0",
         "gammamatrix/playground-site-blade": "dev-develop|dev-master|dev-feature/*|^73.0@dev|^73.0",
         "laravel/framework": "^11.0",

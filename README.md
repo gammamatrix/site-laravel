@@ -13,7 +13,7 @@ Read more on using [Site: Laravel at Read the Docs: Playground Documentation.](h
 This package may be installed with `composer create-project`
 
 ```sh
-composer create-project gammamatrix/site-laravel site-example
+composer create-project gammamatrix/site-laravel site-example --stability dev
 ```
 - **NOTE** A stable version needs to be released for `create-project`
 
@@ -21,12 +21,22 @@ Installed Playground Packages
 
 | Package | Description|
 |---------|------------|
+| [playground-admin-resource](https://github.com/gammamatrix/playground-admin-resource) | Provide the Admin UI to manage users and settings. |
+| [playground-cms-resource](https://github.com/gammamatrix/playground-cms-resource) | Provide the CMS UI for the Playground Content Management System. |
+| [playground-login-blade](https://github.com/gammamatrix/playground-login-blade) | Provides endpoints a Blade UI for authentication, authorization, verification and credential management. |
+| [playground-site-blade](https://github.com/gammamatrix/playground-site-blade) | Provides a standard website with an index, dashboard, sitemap, theme handling and CMS integration. |
+
+Installed Support Playground Packages
+
+| Package | Description|
+|---------|------------|
 | [playground](https://github.com/gammamatrix/playground) | A base package for Laravel integration. |
-| [playground-auth](https://github.com/gammamatrix/playground-auth) | Provide authentication for Laravel applications. Allows using Sanctum. |
-| [playground-blade](https://github.com/gammamatrix/playground-blade) | Provides Blade UI handling. |
-| [playground-login-blade](https://github.com/gammamatrix/playground-login-blade) | Provides a Blade UI for authentication handling. |
-| [playground-site-blade](https://github.com/gammamatrix/playground-site-blade) | Provides Blade UI handling for standard website. |
-| [playground-test](https://github.com/gammamatrix/playground-test) | A test helper for Playground Laravel packages. |
+| [playground-admin](https://github.com/gammamatrix/playground-admin) | Provide the Settings models for `playground-admin-resource`. |
+| [playground-auth](https://github.com/gammamatrix/playground-auth) | Provide authentication and authorization handling for Laravel applications. Allows using Sanctum. |
+| [playground-blade](https://github.com/gammamatrix/playground-blade) | Provides Blade UI handling for login, resource and site packages. |
+| [playground-cms](https://github.com/gammamatrix/playground-cms) | Provide the CMS models for `playground-cms-resource`. |
+| [playground-http](https://github.com/gammamatrix/playground-http) | Provide HTTP content and filter handling for controllers and requests. |
+| [playground-test](https://github.com/gammamatrix/playground-test) | A test helper for Playground packages. |
 
 ```sh
 composer require --dev gammamatrix/playground-test
@@ -64,6 +74,10 @@ This application supports running integration tests with the installed Playgroun
     <directory>vendor/gammamatrix/playground/tests/Unit</directory>
     <directory>vendor/gammamatrix/playground-auth/tests/Unit</directory>
     <directory>vendor/gammamatrix/playground-blade/tests/Unit</directory>
+    <directory>vendor/gammamatrix/playground-admin/tests/Unit</directory>
+    <directory>vendor/gammamatrix/playground-admin-resource/tests/Unit</directory>
+    <directory>vendor/gammamatrix/playground-cms/tests/Unit</directory>
+    <directory>vendor/gammamatrix/playground-cms-resource/tests/Unit</directory>
     <directory>vendor/gammamatrix/playground-http/tests/Unit</directory>
     <directory>vendor/gammamatrix/playground-test/tests/Unit</directory>
   </testsuite>
@@ -72,6 +86,11 @@ This application supports running integration tests with the installed Playgroun
     <directory>vendor/gammamatrix/playground/tests/Feature</directory>
     <directory>vendor/gammamatrix/playground-auth/tests/Feature</directory>
     <directory>vendor/gammamatrix/playground-blade/tests/Feature</directory>
+    <directory>vendor/gammamatrix/playground-admin/tests/Feature</directory>
+    <directory>vendor/gammamatrix/playground-admin-resource/tests/Feature</directory>
+    <directory>vendor/gammamatrix/playground-cms/tests/Feature</directory>
+    <directory>vendor/gammamatrix/playground-cms-resource/tests/Feature</directory>
+    <directory>vendor/gammamatrix/playground-login-blade/tests/Feature</directory>
     <directory>vendor/gammamatrix/playground-http/tests/Feature</directory>
     <directory>vendor/gammamatrix/playground-site-blade/tests/Feature</directory>
     <directory>vendor/gammamatrix/playground-test/tests/Feature</directory>
@@ -84,8 +103,13 @@ This application supports running integration tests with the installed Playgroun
     <directory suffix=".php">vendor/gammamatrix/playground/src</directory>
     <directory suffix=".php">vendor/gammamatrix/playground-auth/src</directory>
     <directory suffix=".php">vendor/gammamatrix/playground-blade/src</directory>
-    <directory suffix=".php">vendor/gammamatrix/playground-http/src</directory>
+    <directory suffix=".php">vendor/gammamatrix/playground-admin/src</directory>
+    <directory suffix=".php">vendor/gammamatrix/playground-admin-resource/src</directory>
+    <directory suffix=".php">vendor/gammamatrix/playground-cms/src</directory>
+    <directory suffix=".php">vendor/gammamatrix/playground-cms-resource/src</directory>
+    <directory suffix=".php">vendor/gammamatrix/playground-login-blade/src</directory>
     <directory suffix=".php">vendor/gammamatrix/playground-site-blade/src</directory>
+    <directory suffix=".php">vendor/gammamatrix/playground-http/src</directory>
     <directory suffix=".php">vendor/gammamatrix/playground-test/src</directory>
   </include>
 </source>
