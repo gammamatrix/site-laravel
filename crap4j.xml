@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <crap_result>
   <project/>
-  <timestamp>2024-03-25 06:22:44</timestamp>
+  <timestamp>2024-03-25 06:29:07</timestamp>
   <stats>
     <name>Method Crap Stats</name>
-    <methodCount>459</methodCount>
-    <crapMethodCount>9</crapMethodCount>
-    <crapLoad>127</crapLoad>
-    <totalCrap>3156.79</totalCrap>
-    <crapMethodPercent>1.96</crapMethodPercent>
+    <methodCount>661</methodCount>
+    <crapMethodCount>10</crapMethodCount>
+    <crapLoad>146</crapLoad>
+    <totalCrap>4252.62</totalCrap>
+    <crapMethodPercent>1.51</crapMethodPercent>
   </stats>
   <methods>
     <method>
@@ -39,6 +39,655 @@
       <methodName>boot</methodName>
       <methodSignature>boot(): void</methodSignature>
       <fullMethod>boot(): void</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Controllers\Concerns</package>
+      <className>Playground\Admin\Resource\Http\Controllers\Concerns\UserProvider</className>
+      <methodName>getUserClass</methodName>
+      <methodSignature>getUserClass(): string</methodSignature>
+      <fullMethod>getUserClass(): string</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Controllers\Concerns</package>
+      <className>Playground\Admin\Resource\Http\Controllers\Concerns\UserProvider</className>
+      <methodName>getUserInstance</methodName>
+      <methodSignature>getUserInstance(array $data): Illuminate\Database\Eloquent\Model</methodSignature>
+      <fullMethod>getUserInstance(array $data): Illuminate\Database\Eloquent\Model</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Controllers\Concerns</package>
+      <className>Playground\Admin\Resource\Http\Controllers\Concerns\UserProvider</className>
+      <methodName>findUserOrFail</methodName>
+      <methodSignature>findUserOrFail(string|int $id, bool $withTrash): Illuminate\Database\Eloquent\Model</methodSignature>
+      <fullMethod>findUserOrFail(string|int $id, bool $withTrash): Illuminate\Database\Eloquent\Model</fullMethod>
+      <crap>3</crap>
+      <complexity>3</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Controllers</package>
+      <className>Playground\Admin\Resource\Http\Controllers\Controller</className>
+      <methodName>getViewPath</methodName>
+      <methodSignature>getViewPath(string $controller, string $view): string</methodSignature>
+      <fullMethod>getViewPath(string $controller, string $view): string</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Controllers</package>
+      <className>Playground\Admin\Resource\Http\Controllers\Controller</className>
+      <methodName>setPackageInfoValue</methodName>
+      <methodSignature>setPackageInfoValue(string $key, string $value): void</methodSignature>
+      <fullMethod>setPackageInfoValue(string $key, string $value): void</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Controllers</package>
+      <className>Playground\Admin\Resource\Http\Controllers\IndexController</className>
+      <methodName>index</methodName>
+      <methodSignature>index(): Illuminate\View\View</methodSignature>
+      <fullMethod>index(): Illuminate\View\View</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Controllers</package>
+      <className>Playground\Admin\Resource\Http\Controllers\SettingController</className>
+      <methodName>create</methodName>
+      <methodSignature>create(Playground\Admin\Resource\Http\Requests\Setting\CreateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View</methodSignature>
+      <fullMethod>create(Playground\Admin\Resource\Http\Requests\Setting\CreateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Controllers</package>
+      <className>Playground\Admin\Resource\Http\Controllers\SettingController</className>
+      <methodName>edit</methodName>
+      <methodSignature>edit(Playground\Admin\Models\Setting $setting, Playground\Admin\Resource\Http\Requests\Setting\EditRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View</methodSignature>
+      <fullMethod>edit(Playground\Admin\Models\Setting $setting, Playground\Admin\Resource\Http\Requests\Setting\EditRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View</fullMethod>
+      <crap>3</crap>
+      <complexity>3</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Controllers</package>
+      <className>Playground\Admin\Resource\Http\Controllers\SettingController</className>
+      <methodName>destroy</methodName>
+      <methodSignature>destroy(Playground\Admin\Models\Setting $setting, Playground\Admin\Resource\Http\Requests\Setting\DestroyRequest $request): \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse</methodSignature>
+      <fullMethod>destroy(Playground\Admin\Models\Setting $setting, Playground\Admin\Resource\Http\Requests\Setting\DestroyRequest $request): \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Controllers</package>
+      <className>Playground\Admin\Resource\Http\Controllers\SettingController</className>
+      <methodName>lock</methodName>
+      <methodSignature>lock(Playground\Admin\Models\Setting $setting, Playground\Admin\Resource\Http\Requests\Setting\LockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Admin\Resource\Http\Resources\Setting</methodSignature>
+      <fullMethod>lock(Playground\Admin\Models\Setting $setting, Playground\Admin\Resource\Http\Requests\Setting\LockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Admin\Resource\Http\Resources\Setting</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Controllers</package>
+      <className>Playground\Admin\Resource\Http\Controllers\SettingController</className>
+      <methodName>index</methodName>
+      <methodSignature>index(Playground\Admin\Resource\Http\Requests\Setting\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Admin\Resource\Http\Resources\SettingCollection</methodSignature>
+      <fullMethod>index(Playground\Admin\Resource\Http\Requests\Setting\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Admin\Resource\Http\Resources\SettingCollection</fullMethod>
+      <crap>6</crap>
+      <complexity>6</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Controllers</package>
+      <className>Playground\Admin\Resource\Http\Controllers\SettingController</className>
+      <methodName>restore</methodName>
+      <methodSignature>restore(Playground\Admin\Models\Setting $setting, Playground\Admin\Resource\Http\Requests\Setting\RestoreRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Admin\Resource\Http\Resources\Setting</methodSignature>
+      <fullMethod>restore(Playground\Admin\Models\Setting $setting, Playground\Admin\Resource\Http\Requests\Setting\RestoreRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Admin\Resource\Http\Resources\Setting</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Controllers</package>
+      <className>Playground\Admin\Resource\Http\Controllers\SettingController</className>
+      <methodName>show</methodName>
+      <methodSignature>show(Playground\Admin\Models\Setting $setting, Playground\Admin\Resource\Http\Requests\Setting\ShowRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Admin\Resource\Http\Resources\Setting</methodSignature>
+      <fullMethod>show(Playground\Admin\Models\Setting $setting, Playground\Admin\Resource\Http\Requests\Setting\ShowRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Admin\Resource\Http\Resources\Setting</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Controllers</package>
+      <className>Playground\Admin\Resource\Http\Controllers\SettingController</className>
+      <methodName>store</methodName>
+      <methodSignature>store(Playground\Admin\Resource\Http\Requests\Setting\StoreRequest $request): \Illuminate\Http\Response|\Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Admin\Resource\Http\Resources\Setting</methodSignature>
+      <fullMethod>store(Playground\Admin\Resource\Http\Requests\Setting\StoreRequest $request): \Illuminate\Http\Response|\Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Admin\Resource\Http\Resources\Setting</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Controllers</package>
+      <className>Playground\Admin\Resource\Http\Controllers\SettingController</className>
+      <methodName>unlock</methodName>
+      <methodSignature>unlock(Playground\Admin\Models\Setting $setting, Playground\Admin\Resource\Http\Requests\Setting\UnlockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Admin\Resource\Http\Resources\Setting</methodSignature>
+      <fullMethod>unlock(Playground\Admin\Models\Setting $setting, Playground\Admin\Resource\Http\Requests\Setting\UnlockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Admin\Resource\Http\Resources\Setting</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Controllers</package>
+      <className>Playground\Admin\Resource\Http\Controllers\SettingController</className>
+      <methodName>update</methodName>
+      <methodSignature>update(Playground\Admin\Models\Setting $setting, Playground\Admin\Resource\Http\Requests\Setting\UpdateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Admin\Resource\Http\Resources\Setting</methodSignature>
+      <fullMethod>update(Playground\Admin\Models\Setting $setting, Playground\Admin\Resource\Http\Requests\Setting\UpdateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Admin\Resource\Http\Resources\Setting</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Controllers</package>
+      <className>Playground\Admin\Resource\Http\Controllers\UserController</className>
+      <methodName>create</methodName>
+      <methodSignature>create(Playground\Admin\Resource\Http\Requests\User\CreateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View</methodSignature>
+      <fullMethod>create(Playground\Admin\Resource\Http\Requests\User\CreateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Controllers</package>
+      <className>Playground\Admin\Resource\Http\Controllers\UserController</className>
+      <methodName>edit</methodName>
+      <methodSignature>edit(string|int $id, Playground\Admin\Resource\Http\Requests\User\EditRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View</methodSignature>
+      <fullMethod>edit(string|int $id, Playground\Admin\Resource\Http\Requests\User\EditRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View</fullMethod>
+      <crap>3</crap>
+      <complexity>3</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Controllers</package>
+      <className>Playground\Admin\Resource\Http\Controllers\UserController</className>
+      <methodName>destroy</methodName>
+      <methodSignature>destroy(string|int $id, Playground\Admin\Resource\Http\Requests\User\DestroyRequest $request): \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse</methodSignature>
+      <fullMethod>destroy(string|int $id, Playground\Admin\Resource\Http\Requests\User\DestroyRequest $request): \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Controllers</package>
+      <className>Playground\Admin\Resource\Http\Controllers\UserController</className>
+      <methodName>lock</methodName>
+      <methodSignature>lock(string|int $id, Playground\Admin\Resource\Http\Requests\User\LockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Admin\Resource\Http\Resources\User</methodSignature>
+      <fullMethod>lock(string|int $id, Playground\Admin\Resource\Http\Requests\User\LockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Admin\Resource\Http\Resources\User</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Controllers</package>
+      <className>Playground\Admin\Resource\Http\Controllers\UserController</className>
+      <methodName>index</methodName>
+      <methodSignature>index(Playground\Admin\Resource\Http\Requests\User\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Admin\Resource\Http\Resources\UserCollection</methodSignature>
+      <fullMethod>index(Playground\Admin\Resource\Http\Requests\User\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Admin\Resource\Http\Resources\UserCollection</fullMethod>
+      <crap>12</crap>
+      <complexity>12</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Controllers</package>
+      <className>Playground\Admin\Resource\Http\Controllers\UserController</className>
+      <methodName>restore</methodName>
+      <methodSignature>restore(string|int $id, Playground\Admin\Resource\Http\Requests\User\RestoreRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Admin\Resource\Http\Resources\User</methodSignature>
+      <fullMethod>restore(string|int $id, Playground\Admin\Resource\Http\Requests\User\RestoreRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Admin\Resource\Http\Resources\User</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Controllers</package>
+      <className>Playground\Admin\Resource\Http\Controllers\UserController</className>
+      <methodName>show</methodName>
+      <methodSignature>show(string|int $id, Playground\Admin\Resource\Http\Requests\User\ShowRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Admin\Resource\Http\Resources\User</methodSignature>
+      <fullMethod>show(string|int $id, Playground\Admin\Resource\Http\Requests\User\ShowRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Admin\Resource\Http\Resources\User</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Controllers</package>
+      <className>Playground\Admin\Resource\Http\Controllers\UserController</className>
+      <methodName>store</methodName>
+      <methodSignature>store(Playground\Admin\Resource\Http\Requests\User\StoreRequest $request): \Illuminate\Http\Response|\Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Admin\Resource\Http\Resources\User</methodSignature>
+      <fullMethod>store(Playground\Admin\Resource\Http\Requests\User\StoreRequest $request): \Illuminate\Http\Response|\Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Admin\Resource\Http\Resources\User</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Controllers</package>
+      <className>Playground\Admin\Resource\Http\Controllers\UserController</className>
+      <methodName>unlock</methodName>
+      <methodSignature>unlock(string|int $id, Playground\Admin\Resource\Http\Requests\User\UnlockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Admin\Resource\Http\Resources\User</methodSignature>
+      <fullMethod>unlock(string|int $id, Playground\Admin\Resource\Http\Requests\User\UnlockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Admin\Resource\Http\Resources\User</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Controllers</package>
+      <className>Playground\Admin\Resource\Http\Controllers\UserController</className>
+      <methodName>update</methodName>
+      <methodSignature>update(string|int $id, Playground\Admin\Resource\Http\Requests\User\UpdateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Admin\Resource\Http\Resources\User</methodSignature>
+      <fullMethod>update(string|int $id, Playground\Admin\Resource\Http\Requests\User\UpdateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Admin\Resource\Http\Resources\User</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Requests</package>
+      <className>Playground\Admin\Resource\Http\Requests\FormRequest</className>
+      <methodName>authorize</methodName>
+      <methodSignature>authorize(): bool</methodSignature>
+      <fullMethod>authorize(): bool</fullMethod>
+      <crap>3</crap>
+      <complexity>3</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Requests</package>
+      <className>Playground\Admin\Resource\Http\Requests\FormRequest</className>
+      <methodName>rules</methodName>
+      <methodSignature>rules(): array</methodSignature>
+      <fullMethod>rules(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Requests</package>
+      <className>Playground\Admin\Resource\Http\Requests\FormRequest</className>
+      <methodName>userHasAdminPrivileges</methodName>
+      <methodSignature>userHasAdminPrivileges(Illuminate\Contracts\Auth\Authenticatable $user): bool</methodSignature>
+      <fullMethod>userHasAdminPrivileges(Illuminate\Contracts\Auth\Authenticatable $user): bool</fullMethod>
+      <crap>3</crap>
+      <complexity>3</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Requests\Setting</package>
+      <className>Playground\Admin\Resource\Http\Requests\Setting\DestroyRequest</className>
+      <methodName>rules</methodName>
+      <methodSignature>rules(): array</methodSignature>
+      <fullMethod>rules(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Requests\Setting</package>
+      <className>Playground\Admin\Resource\Http\Requests\Setting\StoreRequest</className>
+      <methodName>prepareForValidation</methodName>
+      <methodSignature>prepareForValidation()</methodSignature>
+      <fullMethod>prepareForValidation()</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Requests\Setting</package>
+      <className>Playground\Admin\Resource\Http\Requests\Setting\UpdateRequest</className>
+      <methodName>prepareForValidation</methodName>
+      <methodSignature>prepareForValidation()</methodSignature>
+      <fullMethod>prepareForValidation()</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Requests\User</package>
+      <className>Playground\Admin\Resource\Http\Requests\User\CreateRequest</className>
+      <methodName>rules</methodName>
+      <methodSignature>rules(): array</methodSignature>
+      <fullMethod>rules(): array</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Requests\User</package>
+      <className>Playground\Admin\Resource\Http\Requests\User\DestroyRequest</className>
+      <methodName>rules</methodName>
+      <methodSignature>rules(): array</methodSignature>
+      <fullMethod>rules(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Requests\User</package>
+      <className>Playground\Admin\Resource\Http\Requests\User\EditRequest</className>
+      <methodName>rules</methodName>
+      <methodSignature>rules(): array</methodSignature>
+      <fullMethod>rules(): array</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Requests\User</package>
+      <className>Playground\Admin\Resource\Http\Requests\User\StoreRequest</className>
+      <methodName>prepareForValidation</methodName>
+      <methodSignature>prepareForValidation()</methodSignature>
+      <fullMethod>prepareForValidation()</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Requests\User</package>
+      <className>Playground\Admin\Resource\Http\Requests\User\StoreRequest</className>
+      <methodName>rules</methodName>
+      <methodSignature>rules(): array</methodSignature>
+      <fullMethod>rules(): array</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Requests\User</package>
+      <className>Playground\Admin\Resource\Http\Requests\User\UpdateRequest</className>
+      <methodName>prepareForValidation</methodName>
+      <methodSignature>prepareForValidation()</methodSignature>
+      <fullMethod>prepareForValidation()</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Requests\User</package>
+      <className>Playground\Admin\Resource\Http\Requests\User\UpdateRequest</className>
+      <methodName>rules</methodName>
+      <methodSignature>rules(): array</methodSignature>
+      <fullMethod>rules(): array</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Resources</package>
+      <className>Playground\Admin\Resource\Http\Resources\Setting</className>
+      <methodName>toArray</methodName>
+      <methodSignature>toArray(Illuminate\Http\Request $request)</methodSignature>
+      <fullMethod>toArray(Illuminate\Http\Request $request)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Resources</package>
+      <className>Playground\Admin\Resource\Http\Resources\Setting</className>
+      <methodName>with</methodName>
+      <methodSignature>with(Illuminate\Http\Request $request): array</methodSignature>
+      <fullMethod>with(Illuminate\Http\Request $request): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Resources</package>
+      <className>Playground\Admin\Resource\Http\Resources\SettingCollection</className>
+      <methodName>toArray</methodName>
+      <methodSignature>toArray(Illuminate\Http\Request $request)</methodSignature>
+      <fullMethod>toArray(Illuminate\Http\Request $request)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Resources</package>
+      <className>Playground\Admin\Resource\Http\Resources\SettingCollection</className>
+      <methodName>with</methodName>
+      <methodSignature>with(Illuminate\Http\Request $request): array</methodSignature>
+      <fullMethod>with(Illuminate\Http\Request $request): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Resources</package>
+      <className>Playground\Admin\Resource\Http\Resources\User</className>
+      <methodName>toArray</methodName>
+      <methodSignature>toArray(Illuminate\Http\Request $request)</methodSignature>
+      <fullMethod>toArray(Illuminate\Http\Request $request)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Resources</package>
+      <className>Playground\Admin\Resource\Http\Resources\User</className>
+      <methodName>with</methodName>
+      <methodSignature>with(Illuminate\Http\Request $request): array</methodSignature>
+      <fullMethod>with(Illuminate\Http\Request $request): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Resources</package>
+      <className>Playground\Admin\Resource\Http\Resources\UserCollection</className>
+      <methodName>toArray</methodName>
+      <methodSignature>toArray(Illuminate\Http\Request $request)</methodSignature>
+      <fullMethod>toArray(Illuminate\Http\Request $request)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource\Http\Resources</package>
+      <className>Playground\Admin\Resource\Http\Resources\UserCollection</className>
+      <methodName>with</methodName>
+      <methodSignature>with(Illuminate\Http\Request $request): array</methodSignature>
+      <fullMethod>with(Illuminate\Http\Request $request): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource</package>
+      <className>Playground\Admin\Resource\ServiceProvider</className>
+      <methodName>boot</methodName>
+      <methodSignature>boot(): void</methodSignature>
+      <fullMethod>boot(): void</fullMethod>
+      <crap>12</crap>
+      <complexity>12</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource</package>
+      <className>Playground\Admin\Resource\ServiceProvider</className>
+      <methodName>register</methodName>
+      <methodSignature>register(): void</methodSignature>
+      <fullMethod>register(): void</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource</package>
+      <className>Playground\Admin\Resource\ServiceProvider</className>
+      <methodName>setPolicies</methodName>
+      <methodSignature>setPolicies(array $policies): void</methodSignature>
+      <fullMethod>setPolicies(array $policies): void</fullMethod>
+      <crap>10</crap>
+      <complexity>10</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource</package>
+      <className>Playground\Admin\Resource\ServiceProvider</className>
+      <methodName>routes</methodName>
+      <methodSignature>routes(array $config): void</methodSignature>
+      <fullMethod>routes(array $config): void</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource</package>
+      <className>Playground\Admin\Resource\ServiceProvider</className>
+      <methodName>about</methodName>
+      <methodSignature>about(): void</methodSignature>
+      <fullMethod>about(): void</fullMethod>
+      <crap>23</crap>
+      <complexity>23</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Resource</package>
+      <className>Playground\Admin\Resource\ServiceProvider</className>
+      <methodName>version</methodName>
+      <methodSignature>version(): string</methodSignature>
+      <fullMethod>version(): string</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin\Models</package>
+      <className>Playground\Admin\Models\Setting</className>
+      <methodName>casts</methodName>
+      <methodSignature>casts(): array</methodSignature>
+      <fullMethod>casts(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin</package>
+      <className>Playground\Admin\ServiceProvider</className>
+      <methodName>boot</methodName>
+      <methodSignature>boot()</methodSignature>
+      <fullMethod>boot()</fullMethod>
+      <crap>6</crap>
+      <complexity>6</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin</package>
+      <className>Playground\Admin\ServiceProvider</className>
+      <methodName>register</methodName>
+      <methodSignature>register(): void</methodSignature>
+      <fullMethod>register(): void</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin</package>
+      <className>Playground\Admin\ServiceProvider</className>
+      <methodName>publishMigrations</methodName>
+      <methodSignature>publishMigrations(): void</methodSignature>
+      <fullMethod>publishMigrations(): void</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin</package>
+      <className>Playground\Admin\ServiceProvider</className>
+      <methodName>about</methodName>
+      <methodSignature>about(): void</methodSignature>
+      <fullMethod>about(): void</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Admin</package>
+      <className>Playground\Admin\ServiceProvider</className>
+      <methodName>version</methodName>
+      <methodSignature>version(): string</methodSignature>
+      <fullMethod>version(): string</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -1746,6 +2395,1579 @@
       <fullMethod>render(): \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View</fullMethod>
       <crap>2</crap>
       <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Controllers</package>
+      <className>Playground\Cms\Resource\Http\Controllers\Controller</className>
+      <methodName>getViewPath</methodName>
+      <methodSignature>getViewPath(string $controller, string $view): string</methodSignature>
+      <fullMethod>getViewPath(string $controller, string $view): string</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Controllers</package>
+      <className>Playground\Cms\Resource\Http\Controllers\IndexController</className>
+      <methodName>index</methodName>
+      <methodSignature>index(): Illuminate\View\View</methodSignature>
+      <fullMethod>index(): Illuminate\View\View</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Controllers</package>
+      <className>Playground\Cms\Resource\Http\Controllers\PageController</className>
+      <methodName>create</methodName>
+      <methodSignature>create(Playground\Cms\Resource\Http\Requests\Page\CreateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View</methodSignature>
+      <fullMethod>create(Playground\Cms\Resource\Http\Requests\Page\CreateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Controllers</package>
+      <className>Playground\Cms\Resource\Http\Controllers\PageController</className>
+      <methodName>edit</methodName>
+      <methodSignature>edit(Playground\Cms\Models\Page $page, Playground\Cms\Resource\Http\Requests\Page\EditRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View</methodSignature>
+      <fullMethod>edit(Playground\Cms\Models\Page $page, Playground\Cms\Resource\Http\Requests\Page\EditRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View</fullMethod>
+      <crap>3</crap>
+      <complexity>3</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Controllers</package>
+      <className>Playground\Cms\Resource\Http\Controllers\PageController</className>
+      <methodName>destroy</methodName>
+      <methodSignature>destroy(Playground\Cms\Models\Page $page, Playground\Cms\Resource\Http\Requests\Page\DestroyRequest $request): \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse</methodSignature>
+      <fullMethod>destroy(Playground\Cms\Models\Page $page, Playground\Cms\Resource\Http\Requests\Page\DestroyRequest $request): \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Controllers</package>
+      <className>Playground\Cms\Resource\Http\Controllers\PageController</className>
+      <methodName>lock</methodName>
+      <methodSignature>lock(Playground\Cms\Models\Page $page, Playground\Cms\Resource\Http\Requests\Page\LockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Cms\Resource\Http\Resources\Page</methodSignature>
+      <fullMethod>lock(Playground\Cms\Models\Page $page, Playground\Cms\Resource\Http\Requests\Page\LockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Cms\Resource\Http\Resources\Page</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Controllers</package>
+      <className>Playground\Cms\Resource\Http\Controllers\PageController</className>
+      <methodName>index</methodName>
+      <methodSignature>index(Playground\Cms\Resource\Http\Requests\Page\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Cms\Resource\Http\Resources\PageCollection</methodSignature>
+      <fullMethod>index(Playground\Cms\Resource\Http\Requests\Page\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Cms\Resource\Http\Resources\PageCollection</fullMethod>
+      <crap>6</crap>
+      <complexity>6</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Controllers</package>
+      <className>Playground\Cms\Resource\Http\Controllers\PageController</className>
+      <methodName>restore</methodName>
+      <methodSignature>restore(Playground\Cms\Models\Page $page, Playground\Cms\Resource\Http\Requests\Page\RestoreRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Cms\Resource\Http\Resources\Page</methodSignature>
+      <fullMethod>restore(Playground\Cms\Models\Page $page, Playground\Cms\Resource\Http\Requests\Page\RestoreRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Cms\Resource\Http\Resources\Page</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Controllers</package>
+      <className>Playground\Cms\Resource\Http\Controllers\PageController</className>
+      <methodName>restoreRevision</methodName>
+      <methodSignature>restoreRevision(Playground\Cms\Models\PageRevision $page_revision, Playground\Cms\Resource\Http\Requests\Page\RestoreRevisionRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Cms\Resource\Http\Resources\Page</methodSignature>
+      <fullMethod>restoreRevision(Playground\Cms\Models\PageRevision $page_revision, Playground\Cms\Resource\Http\Requests\Page\RestoreRevisionRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Cms\Resource\Http\Resources\Page</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Controllers</package>
+      <className>Playground\Cms\Resource\Http\Controllers\PageController</className>
+      <methodName>revision</methodName>
+      <methodSignature>revision(Playground\Cms\Models\PageRevision $page_revision, Playground\Cms\Resource\Http\Requests\Page\ShowRevisionRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Cms\Resource\Http\Resources\PageRevision</methodSignature>
+      <fullMethod>revision(Playground\Cms\Models\PageRevision $page_revision, Playground\Cms\Resource\Http\Requests\Page\ShowRevisionRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Cms\Resource\Http\Resources\PageRevision</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Controllers</package>
+      <className>Playground\Cms\Resource\Http\Controllers\PageController</className>
+      <methodName>revisions</methodName>
+      <methodSignature>revisions(Playground\Cms\Models\Page $page, Playground\Cms\Resource\Http\Requests\Page\RevisionsRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Cms\Resource\Http\Resources\PageRevisionCollection</methodSignature>
+      <fullMethod>revisions(Playground\Cms\Models\Page $page, Playground\Cms\Resource\Http\Requests\Page\RevisionsRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Cms\Resource\Http\Resources\PageRevisionCollection</fullMethod>
+      <crap>6</crap>
+      <complexity>6</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Controllers</package>
+      <className>Playground\Cms\Resource\Http\Controllers\PageController</className>
+      <methodName>saveRevision</methodName>
+      <methodSignature>saveRevision(Playground\Cms\Models\Page $page): Playground\Cms\Models\PageRevision</methodSignature>
+      <fullMethod>saveRevision(Playground\Cms\Models\Page $page): Playground\Cms\Models\PageRevision</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Controllers</package>
+      <className>Playground\Cms\Resource\Http\Controllers\PageController</className>
+      <methodName>show</methodName>
+      <methodSignature>show(Playground\Cms\Models\Page $page, Playground\Cms\Resource\Http\Requests\Page\ShowRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Cms\Resource\Http\Resources\Page</methodSignature>
+      <fullMethod>show(Playground\Cms\Models\Page $page, Playground\Cms\Resource\Http\Requests\Page\ShowRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Cms\Resource\Http\Resources\Page</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Controllers</package>
+      <className>Playground\Cms\Resource\Http\Controllers\PageController</className>
+      <methodName>store</methodName>
+      <methodSignature>store(Playground\Cms\Resource\Http\Requests\Page\StoreRequest $request): \Illuminate\Http\Response|\Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Cms\Resource\Http\Resources\Page</methodSignature>
+      <fullMethod>store(Playground\Cms\Resource\Http\Requests\Page\StoreRequest $request): \Illuminate\Http\Response|\Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Cms\Resource\Http\Resources\Page</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Controllers</package>
+      <className>Playground\Cms\Resource\Http\Controllers\PageController</className>
+      <methodName>unlock</methodName>
+      <methodSignature>unlock(Playground\Cms\Models\Page $page, Playground\Cms\Resource\Http\Requests\Page\UnlockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Cms\Resource\Http\Resources\Page</methodSignature>
+      <fullMethod>unlock(Playground\Cms\Models\Page $page, Playground\Cms\Resource\Http\Requests\Page\UnlockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Cms\Resource\Http\Resources\Page</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Controllers</package>
+      <className>Playground\Cms\Resource\Http\Controllers\PageController</className>
+      <methodName>update</methodName>
+      <methodSignature>update(Playground\Cms\Models\Page $page, Playground\Cms\Resource\Http\Requests\Page\UpdateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Cms\Resource\Http\Resources\Page</methodSignature>
+      <fullMethod>update(Playground\Cms\Models\Page $page, Playground\Cms\Resource\Http\Requests\Page\UpdateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Cms\Resource\Http\Resources\Page</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Controllers</package>
+      <className>Playground\Cms\Resource\Http\Controllers\SnippetController</className>
+      <methodName>create</methodName>
+      <methodSignature>create(Playground\Cms\Resource\Http\Requests\Snippet\CreateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View</methodSignature>
+      <fullMethod>create(Playground\Cms\Resource\Http\Requests\Snippet\CreateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Controllers</package>
+      <className>Playground\Cms\Resource\Http\Controllers\SnippetController</className>
+      <methodName>edit</methodName>
+      <methodSignature>edit(Playground\Cms\Models\Snippet $snippet, Playground\Cms\Resource\Http\Requests\Snippet\EditRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View</methodSignature>
+      <fullMethod>edit(Playground\Cms\Models\Snippet $snippet, Playground\Cms\Resource\Http\Requests\Snippet\EditRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View</fullMethod>
+      <crap>3</crap>
+      <complexity>3</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Controllers</package>
+      <className>Playground\Cms\Resource\Http\Controllers\SnippetController</className>
+      <methodName>destroy</methodName>
+      <methodSignature>destroy(Playground\Cms\Models\Snippet $snippet, Playground\Cms\Resource\Http\Requests\Snippet\DestroyRequest $request): \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse</methodSignature>
+      <fullMethod>destroy(Playground\Cms\Models\Snippet $snippet, Playground\Cms\Resource\Http\Requests\Snippet\DestroyRequest $request): \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Controllers</package>
+      <className>Playground\Cms\Resource\Http\Controllers\SnippetController</className>
+      <methodName>lock</methodName>
+      <methodSignature>lock(Playground\Cms\Models\Snippet $snippet, Playground\Cms\Resource\Http\Requests\Snippet\LockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Cms\Resource\Http\Resources\Snippet</methodSignature>
+      <fullMethod>lock(Playground\Cms\Models\Snippet $snippet, Playground\Cms\Resource\Http\Requests\Snippet\LockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Cms\Resource\Http\Resources\Snippet</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Controllers</package>
+      <className>Playground\Cms\Resource\Http\Controllers\SnippetController</className>
+      <methodName>index</methodName>
+      <methodSignature>index(Playground\Cms\Resource\Http\Requests\Snippet\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Cms\Resource\Http\Resources\SnippetCollection</methodSignature>
+      <fullMethod>index(Playground\Cms\Resource\Http\Requests\Snippet\IndexRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Cms\Resource\Http\Resources\SnippetCollection</fullMethod>
+      <crap>6</crap>
+      <complexity>6</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Controllers</package>
+      <className>Playground\Cms\Resource\Http\Controllers\SnippetController</className>
+      <methodName>restore</methodName>
+      <methodSignature>restore(Playground\Cms\Models\Snippet $snippet, Playground\Cms\Resource\Http\Requests\Snippet\RestoreRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Cms\Resource\Http\Resources\Snippet</methodSignature>
+      <fullMethod>restore(Playground\Cms\Models\Snippet $snippet, Playground\Cms\Resource\Http\Requests\Snippet\RestoreRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Cms\Resource\Http\Resources\Snippet</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Controllers</package>
+      <className>Playground\Cms\Resource\Http\Controllers\SnippetController</className>
+      <methodName>restoreRevision</methodName>
+      <methodSignature>restoreRevision(Playground\Cms\Models\SnippetRevision $snippet_revision, Playground\Cms\Resource\Http\Requests\Snippet\RestoreRevisionRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Cms\Resource\Http\Resources\Snippet</methodSignature>
+      <fullMethod>restoreRevision(Playground\Cms\Models\SnippetRevision $snippet_revision, Playground\Cms\Resource\Http\Requests\Snippet\RestoreRevisionRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Cms\Resource\Http\Resources\Snippet</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Controllers</package>
+      <className>Playground\Cms\Resource\Http\Controllers\SnippetController</className>
+      <methodName>revision</methodName>
+      <methodSignature>revision(Playground\Cms\Models\SnippetRevision $snippet_revision, Playground\Cms\Resource\Http\Requests\Snippet\ShowRevisionRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Cms\Resource\Http\Resources\SnippetRevision</methodSignature>
+      <fullMethod>revision(Playground\Cms\Models\SnippetRevision $snippet_revision, Playground\Cms\Resource\Http\Requests\Snippet\ShowRevisionRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Cms\Resource\Http\Resources\SnippetRevision</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Controllers</package>
+      <className>Playground\Cms\Resource\Http\Controllers\SnippetController</className>
+      <methodName>revisions</methodName>
+      <methodSignature>revisions(Playground\Cms\Models\Snippet $snippet, Playground\Cms\Resource\Http\Requests\Snippet\RevisionsRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Cms\Resource\Http\Resources\SnippetRevisionCollection</methodSignature>
+      <fullMethod>revisions(Playground\Cms\Models\Snippet $snippet, Playground\Cms\Resource\Http\Requests\Snippet\RevisionsRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Cms\Resource\Http\Resources\SnippetRevisionCollection</fullMethod>
+      <crap>6</crap>
+      <complexity>6</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Controllers</package>
+      <className>Playground\Cms\Resource\Http\Controllers\SnippetController</className>
+      <methodName>saveRevision</methodName>
+      <methodSignature>saveRevision(Playground\Cms\Models\Snippet $snippet): Playground\Cms\Models\SnippetRevision</methodSignature>
+      <fullMethod>saveRevision(Playground\Cms\Models\Snippet $snippet): Playground\Cms\Models\SnippetRevision</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Controllers</package>
+      <className>Playground\Cms\Resource\Http\Controllers\SnippetController</className>
+      <methodName>show</methodName>
+      <methodSignature>show(Playground\Cms\Models\Snippet $snippet, Playground\Cms\Resource\Http\Requests\Snippet\ShowRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Cms\Resource\Http\Resources\Snippet</methodSignature>
+      <fullMethod>show(Playground\Cms\Models\Snippet $snippet, Playground\Cms\Resource\Http\Requests\Snippet\ShowRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\View\View|\Playground\Cms\Resource\Http\Resources\Snippet</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Controllers</package>
+      <className>Playground\Cms\Resource\Http\Controllers\SnippetController</className>
+      <methodName>store</methodName>
+      <methodSignature>store(Playground\Cms\Resource\Http\Requests\Snippet\StoreRequest $request): \Illuminate\Http\Response|\Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Cms\Resource\Http\Resources\Snippet</methodSignature>
+      <fullMethod>store(Playground\Cms\Resource\Http\Requests\Snippet\StoreRequest $request): \Illuminate\Http\Response|\Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Cms\Resource\Http\Resources\Snippet</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Controllers</package>
+      <className>Playground\Cms\Resource\Http\Controllers\SnippetController</className>
+      <methodName>unlock</methodName>
+      <methodSignature>unlock(Playground\Cms\Models\Snippet $snippet, Playground\Cms\Resource\Http\Requests\Snippet\UnlockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Cms\Resource\Http\Resources\Snippet</methodSignature>
+      <fullMethod>unlock(Playground\Cms\Models\Snippet $snippet, Playground\Cms\Resource\Http\Requests\Snippet\UnlockRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Cms\Resource\Http\Resources\Snippet</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Controllers</package>
+      <className>Playground\Cms\Resource\Http\Controllers\SnippetController</className>
+      <methodName>update</methodName>
+      <methodSignature>update(Playground\Cms\Models\Snippet $snippet, Playground\Cms\Resource\Http\Requests\Snippet\UpdateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Cms\Resource\Http\Resources\Snippet</methodSignature>
+      <fullMethod>update(Playground\Cms\Models\Snippet $snippet, Playground\Cms\Resource\Http\Requests\Snippet\UpdateRequest $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Playground\Cms\Resource\Http\Resources\Snippet</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Requests</package>
+      <className>Playground\Cms\Resource\Http\Requests\FormRequest</className>
+      <methodName>authorize</methodName>
+      <methodSignature>authorize(): bool</methodSignature>
+      <fullMethod>authorize(): bool</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Requests</package>
+      <className>Playground\Cms\Resource\Http\Requests\FormRequest</className>
+      <methodName>rules</methodName>
+      <methodSignature>rules(): array</methodSignature>
+      <fullMethod>rules(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Requests</package>
+      <className>Playground\Cms\Resource\Http\Requests\FormRequest</className>
+      <methodName>userHasAdminPrivileges</methodName>
+      <methodSignature>userHasAdminPrivileges(Illuminate\Contracts\Auth\Authenticatable $user): bool</methodSignature>
+      <fullMethod>userHasAdminPrivileges(Illuminate\Contracts\Auth\Authenticatable $user): bool</fullMethod>
+      <crap>3</crap>
+      <complexity>3</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Requests\Page</package>
+      <className>Playground\Cms\Resource\Http\Requests\Page\DestroyRequest</className>
+      <methodName>rules</methodName>
+      <methodSignature>rules(): array</methodSignature>
+      <fullMethod>rules(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Requests\Page</package>
+      <className>Playground\Cms\Resource\Http\Requests\Page\StoreRequest</className>
+      <methodName>rules</methodName>
+      <methodSignature>rules(): array</methodSignature>
+      <fullMethod>rules(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Requests\Page</package>
+      <className>Playground\Cms\Resource\Http\Requests\Page\StoreRequest</className>
+      <methodName>prepareForValidation</methodName>
+      <methodSignature>prepareForValidation()</methodSignature>
+      <fullMethod>prepareForValidation()</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Requests\Page</package>
+      <className>Playground\Cms\Resource\Http\Requests\Page\UpdateRequest</className>
+      <methodName>rules</methodName>
+      <methodSignature>rules(): array</methodSignature>
+      <fullMethod>rules(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Requests\Page</package>
+      <className>Playground\Cms\Resource\Http\Requests\Page\UpdateRequest</className>
+      <methodName>prepareForValidation</methodName>
+      <methodSignature>prepareForValidation()</methodSignature>
+      <fullMethod>prepareForValidation()</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Requests\Snippet</package>
+      <className>Playground\Cms\Resource\Http\Requests\Snippet\DestroyRequest</className>
+      <methodName>rules</methodName>
+      <methodSignature>rules(): array</methodSignature>
+      <fullMethod>rules(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Requests\Snippet</package>
+      <className>Playground\Cms\Resource\Http\Requests\Snippet\StoreRequest</className>
+      <methodName>rules</methodName>
+      <methodSignature>rules(): array</methodSignature>
+      <fullMethod>rules(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Requests\Snippet</package>
+      <className>Playground\Cms\Resource\Http\Requests\Snippet\StoreRequest</className>
+      <methodName>prepareForValidation</methodName>
+      <methodSignature>prepareForValidation()</methodSignature>
+      <fullMethod>prepareForValidation()</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Requests\Snippet</package>
+      <className>Playground\Cms\Resource\Http\Requests\Snippet\UpdateRequest</className>
+      <methodName>rules</methodName>
+      <methodSignature>rules(): array</methodSignature>
+      <fullMethod>rules(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Requests\Snippet</package>
+      <className>Playground\Cms\Resource\Http\Requests\Snippet\UpdateRequest</className>
+      <methodName>prepareForValidation</methodName>
+      <methodSignature>prepareForValidation()</methodSignature>
+      <fullMethod>prepareForValidation()</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Resources</package>
+      <className>Playground\Cms\Resource\Http\Resources\Page</className>
+      <methodName>toArray</methodName>
+      <methodSignature>toArray(Illuminate\Http\Request $request)</methodSignature>
+      <fullMethod>toArray(Illuminate\Http\Request $request)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Resources</package>
+      <className>Playground\Cms\Resource\Http\Resources\Page</className>
+      <methodName>with</methodName>
+      <methodSignature>with(Illuminate\Http\Request $request): array</methodSignature>
+      <fullMethod>with(Illuminate\Http\Request $request): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Resources</package>
+      <className>Playground\Cms\Resource\Http\Resources\PageCollection</className>
+      <methodName>toArray</methodName>
+      <methodSignature>toArray(Illuminate\Http\Request $request)</methodSignature>
+      <fullMethod>toArray(Illuminate\Http\Request $request)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Resources</package>
+      <className>Playground\Cms\Resource\Http\Resources\PageCollection</className>
+      <methodName>with</methodName>
+      <methodSignature>with(Illuminate\Http\Request $request): array</methodSignature>
+      <fullMethod>with(Illuminate\Http\Request $request): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Resources</package>
+      <className>Playground\Cms\Resource\Http\Resources\PageRevision</className>
+      <methodName>toArray</methodName>
+      <methodSignature>toArray(Illuminate\Http\Request $request)</methodSignature>
+      <fullMethod>toArray(Illuminate\Http\Request $request)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Resources</package>
+      <className>Playground\Cms\Resource\Http\Resources\PageRevision</className>
+      <methodName>with</methodName>
+      <methodSignature>with(Illuminate\Http\Request $request): array</methodSignature>
+      <fullMethod>with(Illuminate\Http\Request $request): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Resources</package>
+      <className>Playground\Cms\Resource\Http\Resources\PageRevisionCollection</className>
+      <methodName>toArray</methodName>
+      <methodSignature>toArray(Illuminate\Http\Request $request)</methodSignature>
+      <fullMethod>toArray(Illuminate\Http\Request $request)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Resources</package>
+      <className>Playground\Cms\Resource\Http\Resources\PageRevisionCollection</className>
+      <methodName>with</methodName>
+      <methodSignature>with(Illuminate\Http\Request $request): array</methodSignature>
+      <fullMethod>with(Illuminate\Http\Request $request): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Resources</package>
+      <className>Playground\Cms\Resource\Http\Resources\Snippet</className>
+      <methodName>toArray</methodName>
+      <methodSignature>toArray(Illuminate\Http\Request $request)</methodSignature>
+      <fullMethod>toArray(Illuminate\Http\Request $request)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Resources</package>
+      <className>Playground\Cms\Resource\Http\Resources\Snippet</className>
+      <methodName>with</methodName>
+      <methodSignature>with(Illuminate\Http\Request $request): array</methodSignature>
+      <fullMethod>with(Illuminate\Http\Request $request): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Resources</package>
+      <className>Playground\Cms\Resource\Http\Resources\SnippetCollection</className>
+      <methodName>toArray</methodName>
+      <methodSignature>toArray(Illuminate\Http\Request $request)</methodSignature>
+      <fullMethod>toArray(Illuminate\Http\Request $request)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Resources</package>
+      <className>Playground\Cms\Resource\Http\Resources\SnippetCollection</className>
+      <methodName>with</methodName>
+      <methodSignature>with(Illuminate\Http\Request $request): array</methodSignature>
+      <fullMethod>with(Illuminate\Http\Request $request): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Resources</package>
+      <className>Playground\Cms\Resource\Http\Resources\SnippetRevision</className>
+      <methodName>toArray</methodName>
+      <methodSignature>toArray(Illuminate\Http\Request $request)</methodSignature>
+      <fullMethod>toArray(Illuminate\Http\Request $request)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Resources</package>
+      <className>Playground\Cms\Resource\Http\Resources\SnippetRevision</className>
+      <methodName>with</methodName>
+      <methodSignature>with(Illuminate\Http\Request $request): array</methodSignature>
+      <fullMethod>with(Illuminate\Http\Request $request): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Resources</package>
+      <className>Playground\Cms\Resource\Http\Resources\SnippetRevisionCollection</className>
+      <methodName>toArray</methodName>
+      <methodSignature>toArray(Illuminate\Http\Request $request)</methodSignature>
+      <fullMethod>toArray(Illuminate\Http\Request $request)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Http\Resources</package>
+      <className>Playground\Cms\Resource\Http\Resources\SnippetRevisionCollection</className>
+      <methodName>with</methodName>
+      <methodSignature>with(Illuminate\Http\Request $request): array</methodSignature>
+      <fullMethod>with(Illuminate\Http\Request $request): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Policies</package>
+      <className>Playground\Cms\Resource\Policies\PagePolicy</className>
+      <methodName>revisions</methodName>
+      <methodSignature>revisions(Illuminate\Contracts\Auth\Authenticatable $user): bool|\Illuminate\Auth\Access\Response</methodSignature>
+      <fullMethod>revisions(Illuminate\Contracts\Auth\Authenticatable $user): bool|\Illuminate\Auth\Access\Response</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Policies</package>
+      <className>Playground\Cms\Resource\Policies\PagePolicy</className>
+      <methodName>viewRevision</methodName>
+      <methodSignature>viewRevision(Illuminate\Contracts\Auth\Authenticatable $user, Playground\Cms\Models\PageRevision $page_revision): bool|\Illuminate\Auth\Access\Response</methodSignature>
+      <fullMethod>viewRevision(Illuminate\Contracts\Auth\Authenticatable $user, Playground\Cms\Models\PageRevision $page_revision): bool|\Illuminate\Auth\Access\Response</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Policies</package>
+      <className>Playground\Cms\Resource\Policies\PagePolicy</className>
+      <methodName>restoreRevision</methodName>
+      <methodSignature>restoreRevision(Illuminate\Contracts\Auth\Authenticatable $user, Playground\Cms\Models\PageRevision $page_revision): bool|\Illuminate\Auth\Access\Response</methodSignature>
+      <fullMethod>restoreRevision(Illuminate\Contracts\Auth\Authenticatable $user, Playground\Cms\Models\PageRevision $page_revision): bool|\Illuminate\Auth\Access\Response</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Policies</package>
+      <className>Playground\Cms\Resource\Policies\SnippetPolicy</className>
+      <methodName>revisions</methodName>
+      <methodSignature>revisions(Illuminate\Contracts\Auth\Authenticatable $user): bool|\Illuminate\Auth\Access\Response</methodSignature>
+      <fullMethod>revisions(Illuminate\Contracts\Auth\Authenticatable $user): bool|\Illuminate\Auth\Access\Response</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Policies</package>
+      <className>Playground\Cms\Resource\Policies\SnippetPolicy</className>
+      <methodName>viewRevision</methodName>
+      <methodSignature>viewRevision(Illuminate\Contracts\Auth\Authenticatable $user, Playground\Cms\Models\SnippetRevision $snippet_revision): bool|\Illuminate\Auth\Access\Response</methodSignature>
+      <fullMethod>viewRevision(Illuminate\Contracts\Auth\Authenticatable $user, Playground\Cms\Models\SnippetRevision $snippet_revision): bool|\Illuminate\Auth\Access\Response</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource\Policies</package>
+      <className>Playground\Cms\Resource\Policies\SnippetPolicy</className>
+      <methodName>restoreRevision</methodName>
+      <methodSignature>restoreRevision(Illuminate\Contracts\Auth\Authenticatable $user, Playground\Cms\Models\SnippetRevision $snippet_revision): bool|\Illuminate\Auth\Access\Response</methodSignature>
+      <fullMethod>restoreRevision(Illuminate\Contracts\Auth\Authenticatable $user, Playground\Cms\Models\SnippetRevision $snippet_revision): bool|\Illuminate\Auth\Access\Response</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource</package>
+      <className>Playground\Cms\Resource\ServiceProvider</className>
+      <methodName>boot</methodName>
+      <methodSignature>boot(): void</methodSignature>
+      <fullMethod>boot(): void</fullMethod>
+      <crap>12</crap>
+      <complexity>12</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource</package>
+      <className>Playground\Cms\Resource\ServiceProvider</className>
+      <methodName>register</methodName>
+      <methodSignature>register(): void</methodSignature>
+      <fullMethod>register(): void</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource</package>
+      <className>Playground\Cms\Resource\ServiceProvider</className>
+      <methodName>setPolicies</methodName>
+      <methodSignature>setPolicies(array $policies): void</methodSignature>
+      <fullMethod>setPolicies(array $policies): void</fullMethod>
+      <crap>10</crap>
+      <complexity>10</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource</package>
+      <className>Playground\Cms\Resource\ServiceProvider</className>
+      <methodName>routes</methodName>
+      <methodSignature>routes(array $config): void</methodSignature>
+      <fullMethod>routes(array $config): void</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource</package>
+      <className>Playground\Cms\Resource\ServiceProvider</className>
+      <methodName>about</methodName>
+      <methodSignature>about(): void</methodSignature>
+      <fullMethod>about(): void</fullMethod>
+      <crap>23</crap>
+      <complexity>23</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Resource</package>
+      <className>Playground\Cms\Resource\ServiceProvider</className>
+      <methodName>version</methodName>
+      <methodSignature>version(): string</methodSignature>
+      <fullMethod>version(): string</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Models</package>
+      <className>Playground\Cms\Models\Page</className>
+      <methodName>casts</methodName>
+      <methodSignature>casts(): array</methodSignature>
+      <fullMethod>casts(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Models</package>
+      <className>Playground\Cms\Models\Page</className>
+      <methodName>revisions</methodName>
+      <methodSignature>revisions(): Illuminate\Database\Eloquent\Relations\HasMany</methodSignature>
+      <fullMethod>revisions(): Illuminate\Database\Eloquent\Relations\HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Models</package>
+      <className>Playground\Cms\Models\PageRevision</className>
+      <methodName>casts</methodName>
+      <methodSignature>casts(): array</methodSignature>
+      <fullMethod>casts(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Models</package>
+      <className>Playground\Cms\Models\PageRevision</className>
+      <methodName>parent</methodName>
+      <methodSignature>parent(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>parent(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Models</package>
+      <className>Playground\Cms\Models\PageRevision</className>
+      <methodName>page</methodName>
+      <methodSignature>page(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>page(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Models</package>
+      <className>Playground\Cms\Models\Snippet</className>
+      <methodName>casts</methodName>
+      <methodSignature>casts(): array</methodSignature>
+      <fullMethod>casts(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Models</package>
+      <className>Playground\Cms\Models\Snippet</className>
+      <methodName>revisions</methodName>
+      <methodSignature>revisions(): Illuminate\Database\Eloquent\Relations\HasMany</methodSignature>
+      <fullMethod>revisions(): Illuminate\Database\Eloquent\Relations\HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Models</package>
+      <className>Playground\Cms\Models\SnippetRevision</className>
+      <methodName>casts</methodName>
+      <methodSignature>casts(): array</methodSignature>
+      <fullMethod>casts(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Models</package>
+      <className>Playground\Cms\Models\SnippetRevision</className>
+      <methodName>parent</methodName>
+      <methodSignature>parent(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>parent(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Models</package>
+      <className>Playground\Cms\Models\SnippetRevision</className>
+      <methodName>snippet</methodName>
+      <methodSignature>snippet(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>snippet(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms</package>
+      <className>Playground\Cms\ServiceProvider</className>
+      <methodName>boot</methodName>
+      <methodSignature>boot()</methodSignature>
+      <fullMethod>boot()</fullMethod>
+      <crap>6</crap>
+      <complexity>6</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms</package>
+      <className>Playground\Cms\ServiceProvider</className>
+      <methodName>register</methodName>
+      <methodSignature>register(): void</methodSignature>
+      <fullMethod>register(): void</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms</package>
+      <className>Playground\Cms\ServiceProvider</className>
+      <methodName>publishMigrations</methodName>
+      <methodSignature>publishMigrations(): void</methodSignature>
+      <fullMethod>publishMigrations(): void</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms</package>
+      <className>Playground\Cms\ServiceProvider</className>
+      <methodName>about</methodName>
+      <methodSignature>about(): void</methodSignature>
+      <fullMethod>about(): void</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms</package>
+      <className>Playground\Cms\ServiceProvider</className>
+      <methodName>version</methodName>
+      <methodSignature>version(): string</methodSignature>
+      <fullMethod>version(): string</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\PaginationColumns</className>
+      <methodName>getPaginationColumns</methodName>
+      <methodSignature>getPaginationColumns(): array</methodSignature>
+      <fullMethod>getPaginationColumns(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\PaginationColumns</className>
+      <methodName>rules_filters_columns</methodName>
+      <methodSignature>rules_filters_columns(array $rules): void</methodSignature>
+      <fullMethod>rules_filters_columns(array $rules): void</fullMethod>
+      <crap>15.48</crap>
+      <complexity>15</complexity>
+      <coverage>87.1</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\PaginationDates</className>
+      <methodName>getPaginationDates</methodName>
+      <methodSignature>getPaginationDates(): array</methodSignature>
+      <fullMethod>getPaginationDates(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\PaginationDates</className>
+      <methodName>rules_filters_dates</methodName>
+      <methodSignature>rules_filters_dates(array $rules): void</methodSignature>
+      <fullMethod>rules_filters_dates(array $rules): void</fullMethod>
+      <crap>4.13</crap>
+      <complexity>4</complexity>
+      <coverage>80</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\PaginationDates</className>
+      <methodName>prepareForValidationForDates</methodName>
+      <methodSignature>prepareForValidationForDates(): ?array</methodSignature>
+      <fullMethod>prepareForValidationForDates(): ?array</fullMethod>
+      <crap>23.2</crap>
+      <complexity>20</complexity>
+      <coverage>80</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\PaginationFlags</className>
+      <methodName>getPaginationFlags</methodName>
+      <methodSignature>getPaginationFlags(): array</methodSignature>
+      <fullMethod>getPaginationFlags(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\PaginationFlags</className>
+      <methodName>rules_filters_flags</methodName>
+      <methodSignature>rules_filters_flags(array $rules): void</methodSignature>
+      <fullMethod>rules_filters_flags(array $rules): void</fullMethod>
+      <crap>8.63</crap>
+      <complexity>8</complexity>
+      <coverage>78.57</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\PaginationIds</className>
+      <methodName>getPaginationIds</methodName>
+      <methodSignature>getPaginationIds(): array</methodSignature>
+      <fullMethod>getPaginationIds(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\PaginationIds</className>
+      <methodName>rules_filters_ids</methodName>
+      <methodSignature>rules_filters_ids(array $rules): void</methodSignature>
+      <fullMethod>rules_filters_ids(array $rules): void</fullMethod>
+      <crap>4.13</crap>
+      <complexity>4</complexity>
+      <coverage>80</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\PaginationIds</className>
+      <methodName>prepareForValidationIds</methodName>
+      <methodSignature>prepareForValidationIds(): array</methodSignature>
+      <fullMethod>prepareForValidationIds(): array</fullMethod>
+      <crap>380</crap>
+      <complexity>19</complexity>
+      <coverage>0</coverage>
+      <crapLoad>19</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\PaginationOperators</className>
+      <methodName>getPaginationOperators</methodName>
+      <methodSignature>getPaginationOperators(): array</methodSignature>
+      <fullMethod>getPaginationOperators(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\PaginationSortable</className>
+      <methodName>getSortable</methodName>
+      <methodSignature>getSortable(): array</methodSignature>
+      <fullMethod>getSortable(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\PaginationSortable</className>
+      <methodName>rules_sortable</methodName>
+      <methodSignature>rules_sortable(array $rules): void</methodSignature>
+      <fullMethod>rules_sortable(array $rules): void</fullMethod>
+      <crap>6</crap>
+      <complexity>2</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\PaginationSortable</className>
+      <methodName>prepareForValidationSort</methodName>
+      <methodSignature>prepareForValidationSort(): array</methodSignature>
+      <fullMethod>prepareForValidationSort(): array</fullMethod>
+      <crap>4.77</crap>
+      <complexity>4</complexity>
+      <coverage>63.64</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\StoreContent</className>
+      <methodName>exorcise</methodName>
+      <methodSignature>exorcise(mixed $content): string</methodSignature>
+      <fullMethod>exorcise(mixed $content): string</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\StoreContent</className>
+      <methodName>purify</methodName>
+      <methodSignature>purify(mixed $content): string</methodSignature>
+      <fullMethod>purify(mixed $content): string</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\StoreContent</className>
+      <methodName>getHtmlPurifier</methodName>
+      <methodSignature>getHtmlPurifier(array $config): HTMLPurifier</methodSignature>
+      <fullMethod>getHtmlPurifier(array $config): HTMLPurifier</fullMethod>
+      <crap>13</crap>
+      <complexity>13</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\StoreFilter</className>
+      <methodName>filterArray</methodName>
+      <methodSignature>filterArray(mixed $value): array</methodSignature>
+      <fullMethod>filterArray(mixed $value): array</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\StoreFilter</className>
+      <methodName>filterArrayToJson</methodName>
+      <methodSignature>filterArrayToJson(mixed $value): string|false</methodSignature>
+      <fullMethod>filterArrayToJson(mixed $value): string|false</fullMethod>
+      <crap>3</crap>
+      <complexity>3</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\StoreFilter</className>
+      <methodName>filterBits</methodName>
+      <methodSignature>filterBits($value, $exponent): int</methodSignature>
+      <fullMethod>filterBits($value, $exponent): int</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\StoreFilter</className>
+      <methodName>filterBoolean</methodName>
+      <methodSignature>filterBoolean(mixed $value): bool</methodSignature>
+      <fullMethod>filterBoolean(mixed $value): bool</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\StoreFilter</className>
+      <methodName>filterDate</methodName>
+      <methodSignature>filterDate(mixed $value, $locale): ?string</methodSignature>
+      <fullMethod>filterDate(mixed $value, $locale): ?string</fullMethod>
+      <crap>6</crap>
+      <complexity>6</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\StoreFilter</className>
+      <methodName>filterDateAsCarbon</methodName>
+      <methodSignature>filterDateAsCarbon($value, $locale): ?Illuminate\Support\Carbon</methodSignature>
+      <fullMethod>filterDateAsCarbon($value, $locale): ?Illuminate\Support\Carbon</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\StoreFilter</className>
+      <methodName>filterEmail</methodName>
+      <methodSignature>filterEmail(mixed $email): string</methodSignature>
+      <fullMethod>filterEmail(mixed $email): string</fullMethod>
+      <crap>3</crap>
+      <complexity>3</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\StoreFilter</className>
+      <methodName>filterFloat</methodName>
+      <methodSignature>filterFloat(mixed $value, $locale): ?float</methodSignature>
+      <fullMethod>filterFloat(mixed $value, $locale): ?float</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\StoreFilter</className>
+      <methodName>filterHtml</methodName>
+      <methodSignature>filterHtml(mixed $content): string</methodSignature>
+      <fullMethod>filterHtml(mixed $content): string</fullMethod>
+      <crap>3</crap>
+      <complexity>3</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\StoreFilter</className>
+      <methodName>filterInteger</methodName>
+      <methodSignature>filterInteger(mixed $value, $locale): int</methodSignature>
+      <fullMethod>filterInteger(mixed $value, $locale): int</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\StoreFilter</className>
+      <methodName>filterIntegerId</methodName>
+      <methodSignature>filterIntegerId(mixed $value): ?int</methodSignature>
+      <fullMethod>filterIntegerId(mixed $value): ?int</fullMethod>
+      <crap>3</crap>
+      <complexity>3</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\StoreFilter</className>
+      <methodName>filterIntegerPositive</methodName>
+      <methodSignature>filterIntegerPositive(mixed $value, $absolute): int</methodSignature>
+      <fullMethod>filterIntegerPositive(mixed $value, $absolute): int</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\StoreFilter</className>
+      <methodName>filterPercent</methodName>
+      <methodSignature>filterPercent(mixed $value, $locale): ?float</methodSignature>
+      <fullMethod>filterPercent(mixed $value, $locale): ?float</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\StoreFilter</className>
+      <methodName>filterPhone</methodName>
+      <methodSignature>filterPhone(mixed $value, string $locale): string</methodSignature>
+      <fullMethod>filterPhone(mixed $value, string $locale): string</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>97.56</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\StoreFilter</className>
+      <methodName>filterStatus</methodName>
+      <methodSignature>filterStatus(array $input): void</methodSignature>
+      <fullMethod>filterStatus(array $input): void</fullMethod>
+      <crap>7</crap>
+      <complexity>7</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\StoreFilter</className>
+      <methodName>filterCommonFields</methodName>
+      <methodSignature>filterCommonFields(array $input): void</methodSignature>
+      <fullMethod>filterCommonFields(array $input): void</fullMethod>
+      <crap>9</crap>
+      <complexity>9</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\StoreFilter</className>
+      <methodName>filterContentFields</methodName>
+      <methodSignature>filterContentFields(array $input): void</methodSignature>
+      <fullMethod>filterContentFields(array $input): void</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\StoreFilter</className>
+      <methodName>filterSystemFields</methodName>
+      <methodSignature>filterSystemFields(array $input): void</methodSignature>
+      <fullMethod>filterSystemFields(array $input): void</fullMethod>
+      <crap>19</crap>
+      <complexity>19</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\StoreFilter</className>
+      <methodName>filterUri</methodName>
+      <methodSignature>filterUri(mixed $value): string</methodSignature>
+      <fullMethod>filterUri(mixed $value): string</fullMethod>
+      <crap>6</crap>
+      <complexity>4</complexity>
+      <coverage>50</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\StoreFilter</className>
+      <methodName>filterUuid</methodName>
+      <methodSignature>filterUuid(mixed $value): ?string</methodSignature>
+      <fullMethod>filterUuid(mixed $value): ?string</fullMethod>
+      <crap>3</crap>
+      <complexity>3</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\StoreSlug</className>
+      <methodName>rules_store_slug_create</methodName>
+      <methodSignature>rules_store_slug_create(array $rules): void</methodSignature>
+      <fullMethod>rules_store_slug_create(array $rules): void</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\StoreSlug</className>
+      <methodName>rules_store_slug_update</methodName>
+      <methodSignature>rules_store_slug_update(array $rules): void</methodSignature>
+      <fullMethod>rules_store_slug_update(array $rules): void</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests\Concerns</package>
+      <className>Playground\Http\Requests\Concerns\StoreSlug</className>
+      <methodName>prepareForValidationForSlug</methodName>
+      <methodSignature>prepareForValidationForSlug(): array</methodSignature>
+      <fullMethod>prepareForValidationForSlug(): array</fullMethod>
+      <crap>14.43</crap>
+      <complexity>14</complexity>
+      <coverage>86.96</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests</package>
+      <className>Playground\Http\Requests\FormRequest</className>
+      <methodName>authorize</methodName>
+      <methodSignature>authorize(): bool</methodSignature>
+      <fullMethod>authorize(): bool</fullMethod>
+      <crap>2.06</crap>
+      <complexity>2</complexity>
+      <coverage>75</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests</package>
+      <className>Playground\Http\Requests\FormRequest</className>
+      <methodName>rules</methodName>
+      <methodSignature>rules(): array</methodSignature>
+      <fullMethod>rules(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests</package>
+      <className>Playground\Http\Requests\IndexRequest</className>
+      <methodName>rules</methodName>
+      <methodSignature>rules(): array</methodSignature>
+      <fullMethod>rules(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests</package>
+      <className>Playground\Http\Requests\IndexRequest</className>
+      <methodName>rules_filters</methodName>
+      <methodSignature>rules_filters(array $rules): void</methodSignature>
+      <fullMethod>rules_filters(array $rules): void</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests</package>
+      <className>Playground\Http\Requests\IndexRequest</className>
+      <methodName>prepareForValidation</methodName>
+      <methodSignature>prepareForValidation(): void</methodSignature>
+      <fullMethod>prepareForValidation(): void</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests</package>
+      <className>Playground\Http\Requests\IndexRequest</className>
+      <methodName>passedValidation</methodName>
+      <methodSignature>passedValidation()</methodSignature>
+      <fullMethod>passedValidation()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests</package>
+      <className>Playground\Http\Requests\IndexRequest</className>
+      <methodName>prepareForValidationPagination</methodName>
+      <methodSignature>prepareForValidationPagination(): array</methodSignature>
+      <fullMethod>prepareForValidationPagination(): array</fullMethod>
+      <crap>4</crap>
+      <complexity>4</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests</package>
+      <className>Playground\Http\Requests\StoreRequest</className>
+      <methodName>messages</methodName>
+      <methodSignature>messages(): array</methodSignature>
+      <fullMethod>messages(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests</package>
+      <className>Playground\Http\Requests\StoreRequest</className>
+      <methodName>rules</methodName>
+      <methodSignature>rules(): array</methodSignature>
+      <fullMethod>rules(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests</package>
+      <className>Playground\Http\Requests\StoreRequest</className>
+      <methodName>prepareForValidation</methodName>
+      <methodSignature>prepareForValidation()</methodSignature>
+      <fullMethod>prepareForValidation()</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests</package>
+      <className>Playground\Http\Requests\UpdateRequest</className>
+      <methodName>messages</methodName>
+      <methodSignature>messages(): array</methodSignature>
+      <fullMethod>messages(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests</package>
+      <className>Playground\Http\Requests\UpdateRequest</className>
+      <methodName>rules</methodName>
+      <methodSignature>rules(): array</methodSignature>
+      <fullMethod>rules(): array</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http\Requests</package>
+      <className>Playground\Http\Requests\UpdateRequest</className>
+      <methodName>prepareForValidation</methodName>
+      <methodSignature>prepareForValidation()</methodSignature>
+      <fullMethod>prepareForValidation()</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http</package>
+      <className>Playground\Http\ServiceProvider</className>
+      <methodName>boot</methodName>
+      <methodSignature>boot()</methodSignature>
+      <fullMethod>boot()</fullMethod>
+      <crap>5</crap>
+      <complexity>5</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http</package>
+      <className>Playground\Http\ServiceProvider</className>
+      <methodName>register</methodName>
+      <methodSignature>register(): void</methodSignature>
+      <fullMethod>register(): void</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http</package>
+      <className>Playground\Http\ServiceProvider</className>
+      <methodName>about</methodName>
+      <methodSignature>about(): void</methodSignature>
+      <fullMethod>about(): void</fullMethod>
+      <crap>7</crap>
+      <complexity>7</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Http</package>
+      <className>Playground\Http\ServiceProvider</className>
+      <methodName>version</methodName>
+      <methodSignature>version(): string</methodSignature>
+      <fullMethod>version(): string</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
       <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
